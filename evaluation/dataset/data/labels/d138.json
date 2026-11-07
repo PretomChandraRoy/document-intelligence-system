@@ -1,0 +1,50 @@
+{
+  "doc_id": "d138",
+  "file": "files/d138.xlsx",
+  "format": "xlsx",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0138",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/5063",
+        "invoice_date": "2026-04-14",
+        "supplier_name": "Jamuna Logistics",
+        "customer_name": "Sharmin Sultana",
+        "subtotal": "83764",
+        "tax": "4188.20",
+        "total": "87952.20",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "5",
+            "unit_price": "820",
+            "amount": "4100"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "20",
+            "unit_price": "2638",
+            "amount": "52760"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "2",
+            "unit_price": "13452",
+            "amount": "26904"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 3, \"sheet_names\": [\"Summary\", \"Items\", \"Notes\"], \"date_as_text\": true}"
+}

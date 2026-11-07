@@ -1,0 +1,50 @@
+{
+  "doc_id": "d004",
+  "file": "files/d004.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0004",
+      "locale": "homecare",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "HC-774079",
+        "invoice_date": "2026-07-22",
+        "supplier_name": "Silver Oak Care Partners Inc.",
+        "customer_name": "April Gutierrez",
+        "subtotal": "2647.59",
+        "tax": "0",
+        "total": "2647.59",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "16",
+            "unit_price": "31.86",
+            "amount": "509.76"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "7",
+            "unit_price": "212.13",
+            "amount": "1484.91"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "6",
+            "unit_price": "108.82",
+            "amount": "652.92"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

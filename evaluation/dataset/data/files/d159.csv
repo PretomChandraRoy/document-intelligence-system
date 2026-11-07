@@ -1,0 +1,9 @@
+Invoice No,Invoice Date,Supplier,Customer,Currency,Item Description,Qty,Unit Price,Line Amount,Subtotal,Tax,Total
+SI-452001,2026-02-11,Jamuna Logistics,Rahman Office Solutions,BDT,"Filing Cabinet, 4 drawer",50.00,12583.00,629150.00,1564339.00,234650.85,1798989.85
+SI-452001,2026-02-11,Jamuna Logistics,Rahman Office Solutions,BDT,Stationery Bundle,20.00,4072.00,81440.00,1564339.00,234650.85,1798989.85
+SI-452001,2026-02-11,Jamuna Logistics,Rahman Office Solutions,BDT,Cleaning Services (monthly),2.00,54905.00,109810.00,1564339.00,234650.85,1798989.85
+SI-452001,2026-02-11,Jamuna Logistics,Rahman Office Solutions,BDT,Printed Brochures (pack of 100),20.00,9494.00,189880.00,1564339.00,234650.85,1798989.85
+SI-452001,2026-02-11,Jamuna Logistics,Rahman Office Solutions,BDT,A4 Paper 80gsm (ream),1.00,779.00,779.00,1564339.00,234650.85,1798989.85
+SI-452001,2026-02-11,Jamuna Logistics,Rahman Office Solutions,BDT,Courier Delivery Charge,25.00,676.00,16900.00,1564339.00,234650.85,1798989.85
+SI-452001,2026-02-11,Jamuna Logistics,Rahman Office Solutions,BDT,Bottled Water 19L,5.00,681.00,3405.00,1564339.00,234650.85,1798989.85
+SI-452001,2026-02-11,Jamuna Logistics,Rahman Office Solutions,BDT,Training Workshop (per seat),25.00,21319.00,532975.00,1564339.00,234650.85,1798989.85

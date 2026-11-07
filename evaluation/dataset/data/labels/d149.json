@@ -1,0 +1,46 @@
+{
+  "doc_id": "d149",
+  "file": "files/d149.xls",
+  "format": "xls",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0164",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-289592",
+        "invoice_date": "2026-09-06",
+        "supplier_name": "Willow Creek Care Partners Inc.",
+        "customer_name": "Michael Savage",
+        "subtotal": "1315",
+        "tax": null,
+        "total": "1315",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Companion Care services",
+            "quantity": "32",
+            "unit_price": "23.70",
+            "amount": "758.40"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "20",
+            "unit_price": "27.83",
+            "amount": "556.60"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

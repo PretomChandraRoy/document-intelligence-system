@@ -1,0 +1,62 @@
+{
+  "doc_id": "d096",
+  "file": "files/d096.png",
+  "format": "png",
+  "layout": "receipt",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0096",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-52880",
+        "invoice_date": "2026-01-10",
+        "supplier_name": "Sonali Engineering Works",
+        "customer_name": "Padma Office Solutions",
+        "subtotal": "772647",
+        "tax": "57948.53",
+        "total": "830595.53",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "1",
+            "unit_price": "6653",
+            "amount": "6653"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "12",
+            "unit_price": "14567",
+            "amount": "174804"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "50210",
+            "amount": "50210"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "20",
+            "unit_price": "13843",
+            "amount": "276860"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "20",
+            "unit_price": "13206",
+            "amount": "264120"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

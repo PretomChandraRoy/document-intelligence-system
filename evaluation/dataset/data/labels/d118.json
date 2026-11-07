@@ -1,0 +1,66 @@
+{
+  "doc_id": "d118",
+  "file": "files/d118.tiff",
+  "format": "tiff",
+  "layout": "receipt",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0118",
+      "locale": "bd",
+      "defects": [
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "A57943",
+        "invoice_date": "2026-08-15",
+        "supplier_name": "Jamuna Engineering Works",
+        "customer_name": "Shapla Office Solutions",
+        "subtotal": "720288",
+        "tax": "108043.20",
+        "total": "830294.74",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "25",
+            "unit_price": "6175",
+            "amount": "154375"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "2",
+            "unit_price": "17249",
+            "amount": "34498"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "50",
+            "unit_price": "2775",
+            "amount": "138750"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "5",
+            "unit_price": "21798",
+            "amount": "108990"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "25",
+            "unit_price": "11347",
+            "amount": "283675"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

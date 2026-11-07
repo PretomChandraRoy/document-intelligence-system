@@ -1,0 +1,56 @@
+{
+  "doc_id": "d043",
+  "file": "files/d043.pdf",
+  "format": "pdf_digital",
+  "layout": "modern",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0043",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "28018",
+        "invoice_date": "2026-02-21",
+        "supplier_name": "Riley PLC",
+        "customer_name": "Riley Inc",
+        "subtotal": "1619.86",
+        "tax": "113.39",
+        "total": "1733.25",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "287.76",
+            "amount": "287.76"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "153.64",
+            "amount": "460.92"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "3",
+            "unit_price": "266.04",
+            "amount": "798.12"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "1",
+            "unit_price": "73.06",
+            "amount": "73.06"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

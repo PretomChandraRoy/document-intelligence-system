@@ -1,0 +1,58 @@
+{
+  "doc_id": "d202",
+  "file": "files/d202.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0232b",
+      "locale": "homecare",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "HC-813944",
+        "invoice_date": "2026-07-25",
+        "supplier_name": "Willow Creek Home Care LLC",
+        "customer_name": "Brandon Skinner",
+        "subtotal": "3602.87",
+        "tax": "0",
+        "total": "3602.87",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "6",
+            "unit_price": "228.20",
+            "amount": "1369.20"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "28",
+            "unit_price": "20.61",
+            "amount": "577.08"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "12",
+            "unit_price": "32.83",
+            "amount": "393.96"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "37.5",
+            "unit_price": "33.67",
+            "amount": "1262.63"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Internal copy of d201"
+}

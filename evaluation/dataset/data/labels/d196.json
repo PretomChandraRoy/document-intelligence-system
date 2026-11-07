@@ -1,0 +1,68 @@
+{
+  "doc_id": "d196",
+  "file": "files/d196.xlsx",
+  "format": "xlsx",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0229b",
+      "locale": "bd",
+      "defects": [
+        "twin_total_differs"
+      ],
+      "ground_truth": {
+        "invoice_number": "SI-144008",
+        "invoice_date": "2026-02-22",
+        "supplier_name": "Padma Logistics",
+        "customer_name": "Anika Tabassum",
+        "subtotal": "1904816",
+        "tax": "95240.80",
+        "total": "2002656.03",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "10",
+            "unit_price": "3512",
+            "amount": "35120"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "5",
+            "unit_price": "21617",
+            "amount": "108085"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "50",
+            "unit_price": "30548",
+            "amount": "1527400"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "20",
+            "unit_price": "11431",
+            "amount": "228620"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "5591",
+            "amount": "5591"
+          }
+        ]
+      },
+      "expected_flags": [
+        "cross_mismatch:total",
+        "duplicate",
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": "Accounting record for d195; total differs"
+}

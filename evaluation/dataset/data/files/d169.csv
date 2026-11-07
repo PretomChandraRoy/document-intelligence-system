@@ -1,0 +1,19 @@
+INVOICE
+
+Supplier,Holden-Clark
+Invoice Number,SI-995852
+Invoice Date,2026-09-01
+Bill To,Jones PLC
+Currency,GBP
+
+Description,Quantity,Unit Price,Amount
+Stationery Bundle,20.00,11.26,225.20
+Network Switch 24-port,25.00,317.82,7945.50
+Website Maintenance (monthly),2.00,420.31,840.62
+27-inch LED Monitor,5.00,311.77,1558.85
+Data Entry Services (batch),1.00,168.08,168.08
+Data Entry Services (batch),25.00,190.22,4755.50
+
+,,Subtotal,15493.75
+,,VAT,3098.75
+,,Total,18592.50

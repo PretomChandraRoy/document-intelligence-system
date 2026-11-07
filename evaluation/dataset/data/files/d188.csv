@@ -1,0 +1,17 @@
+INVOICE
+
+Supplier,Rahman Supplies Ltd.
+Invoice Number,2026/01/0881
+Invoice Date,2026-08-16
+Bill To,Bengal Traders
+Currency,BDT
+
+Description,Quantity,Unit Price,Amount
+27-inch LED Monitor,3.00,26905.00,80715.00
+UPS 1200VA,3.00,10031.00,30093.00
+Stationery Bundle,2.00,2925.00,5850.00
+A4 Paper 80gsm (ream),1.00,586.00,586.00
+
+,,Subtotal,117244.00
+,,VAT,17586.60
+,,Total,134830.60

@@ -1,0 +1,56 @@
+{
+  "doc_id": "d063",
+  "file": "files/d063.pdf",
+  "format": "pdf_scanned",
+  "layout": "receipt",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0063",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2026/01/0512",
+        "invoice_date": "2026-09-12",
+        "supplier_name": "Larson, Dodson and Vance",
+        "customer_name": "Flores-Fernandez",
+        "subtotal": "2501.15",
+        "tax": "0",
+        "total": "2501.15",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "10",
+            "unit_price": "158.08",
+            "amount": "1580.80"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "1",
+            "unit_price": "79",
+            "amount": "79"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "10",
+            "unit_price": "10.46",
+            "amount": "104.60"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "25",
+            "unit_price": "29.47",
+            "amount": "736.75"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

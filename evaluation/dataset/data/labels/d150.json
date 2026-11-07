@@ -1,0 +1,68 @@
+{
+  "doc_id": "d150",
+  "file": "files/d150.xls",
+  "format": "xls",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0165",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A29025",
+        "invoice_date": "2026-08-31",
+        "supplier_name": "Smith, Hale and Watts",
+        "customer_name": "Andrews Group",
+        "subtotal": "7979.08",
+        "tax": "1595.82",
+        "total": "9574.90",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "3",
+            "unit_price": "437.12",
+            "amount": "1311.36"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "3",
+            "unit_price": "293.33",
+            "amount": "879.99"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "1",
+            "unit_price": "81.38",
+            "amount": "81.38"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "25.04",
+            "amount": "25.04"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "20",
+            "unit_price": "264.66",
+            "amount": "5293.20"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "3",
+            "unit_price": "129.37",
+            "amount": "388.11"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

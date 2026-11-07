@@ -1,0 +1,62 @@
+{
+  "doc_id": "d136",
+  "file": "files/d136.xlsx",
+  "format": "xlsx",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0136",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "12816",
+        "invoice_date": "2026-10-15",
+        "supplier_name": "Riverside Supplies Ltd.",
+        "customer_name": "Rahman Enterprise",
+        "subtotal": "1212881",
+        "tax": "90966.08",
+        "total": "1303847.08",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "3331",
+            "amount": "3331"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "3",
+            "unit_price": "64933",
+            "amount": "194799"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "40088",
+            "amount": "40088"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "50",
+            "unit_price": "17710",
+            "amount": "885500"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "3",
+            "unit_price": "29721",
+            "amount": "89163"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 3, \"sheet_names\": [\"Summary\", \"Items\", \"Notes\"], \"date_as_text\": false}"
+}

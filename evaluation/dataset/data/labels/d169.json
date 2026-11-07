@@ -1,0 +1,68 @@
+{
+  "doc_id": "d169",
+  "file": "files/d169.csv",
+  "format": "csv",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0201",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-995852",
+        "invoice_date": "2026-09-01",
+        "supplier_name": "Holden-Clark",
+        "customer_name": "Jones PLC",
+        "subtotal": "15493.75",
+        "tax": "3098.75",
+        "total": "18592.50",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Stationery Bundle",
+            "quantity": "20",
+            "unit_price": "11.26",
+            "amount": "225.20"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "25",
+            "unit_price": "317.82",
+            "amount": "7945.50"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "2",
+            "unit_price": "420.31",
+            "amount": "840.62"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "5",
+            "unit_price": "311.77",
+            "amount": "1558.85"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "1",
+            "unit_price": "168.08",
+            "amount": "168.08"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "25",
+            "unit_price": "190.22",
+            "amount": "4755.50"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": false}"
+}

@@ -1,0 +1,50 @@
+{
+  "doc_id": "d143",
+  "file": "files/d143.xlsx",
+  "format": "xlsx",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0151",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-58167",
+        "invoice_date": "2026-04-14",
+        "supplier_name": "Rees, Oliver and Kennedy",
+        "customer_name": "George Stokes",
+        "subtotal": "3475.89",
+        "tax": "695.18",
+        "total": "4171.07",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "20",
+            "unit_price": "96.36",
+            "amount": "1927.20"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "3",
+            "unit_price": "438.81",
+            "amount": "1316.43"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "232.26",
+            "amount": "232.26"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Export\"], \"date_as_text\": false}"
+}

@@ -1,0 +1,42 @@
+{
+  "doc_id": "d126",
+  "file": "files/d126.xlsx",
+  "format": "xlsx",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0126",
+      "locale": "eu",
+      "defects": [
+        "wrong_subtotal"
+      ],
+      "ground_truth": {
+        "invoice_number": "SI-350385",
+        "invoice_date": "2026-07-06",
+        "supplier_name": "Käster Bauer KG",
+        "customer_name": "Wilmsen Jacobi Jäckel GmbH & Co. KGaA",
+        "subtotal": "3649.20",
+        "tax": "687.31",
+        "total": "4336.51",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "12",
+            "unit_price": "301.45",
+            "amount": "3617.40"
+          }
+        ]
+      },
+      "expected_flags": [
+        "line_items_mismatch"
+      ]
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

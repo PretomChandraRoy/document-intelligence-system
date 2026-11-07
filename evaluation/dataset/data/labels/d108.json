@@ -1,0 +1,50 @@
+{
+  "doc_id": "d108",
+  "file": "files/d108.png",
+  "format": "png",
+  "layout": "classic",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0108",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2025/09/0226",
+        "invoice_date": "2026-01-16",
+        "supplier_name": "Lalbagh Enterprise",
+        "customer_name": "Dhanmondi Traders",
+        "subtotal": "1133248",
+        "tax": "56662.40",
+        "total": "1189910.40",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "15096",
+            "amount": "15096"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "50",
+            "unit_price": "21734",
+            "amount": "1086700"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "12",
+            "unit_price": "2621",
+            "amount": "31452"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

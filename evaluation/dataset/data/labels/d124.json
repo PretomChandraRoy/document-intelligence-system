@@ -1,0 +1,80 @@
+{
+  "doc_id": "d124",
+  "file": "files/d124.tiff",
+  "format": "tiff",
+  "layout": "classic",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0124",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "27659",
+        "invoice_date": "2026-07-03",
+        "supplier_name": "Green Valley Distributors",
+        "customer_name": "Md. Arifur Rahman",
+        "subtotal": "2328756",
+        "tax": "174656.70",
+        "total": "2503412.70",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "10",
+            "unit_price": "35749",
+            "amount": "357490"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "2",
+            "unit_price": "53893",
+            "amount": "107786"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "10",
+            "unit_price": "31098",
+            "amount": "310980"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "1",
+            "unit_price": "7529",
+            "amount": "7529"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "25",
+            "unit_price": "36295",
+            "amount": "907375"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "20",
+            "unit_price": "21543",
+            "amount": "430860"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "10",
+            "unit_price": "20319",
+            "amount": "203190"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "3",
+            "unit_price": "1182",
+            "amount": "3546"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,68 @@
+{
+  "doc_id": "d130",
+  "file": "files/d130.xlsx",
+  "format": "xlsx",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0130",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-60342",
+        "invoice_date": "2026-02-18",
+        "supplier_name": "Bryant-Davies",
+        "customer_name": "Murphy-Stewart",
+        "subtotal": "8937.01",
+        "tax": "1787.40",
+        "total": "10724.41",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "1",
+            "unit_price": "11.86",
+            "amount": "11.86"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "1",
+            "unit_price": "179.40",
+            "amount": "179.40"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "1",
+            "unit_price": "315.18",
+            "amount": "315.18"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "3",
+            "unit_price": "781.69",
+            "amount": "2345.07"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "5",
+            "unit_price": "11.35",
+            "amount": "56.75"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "25",
+            "unit_price": "241.15",
+            "amount": "6028.75"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

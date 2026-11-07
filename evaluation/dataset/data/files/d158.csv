@@ -1,0 +1,18 @@
+Invoice No,Invoice Date,Supplier,Customer,Currency,Item Description,Qty,Unit Price,Line Amount,Subtotal,Tax,Total
+BD/26-27/7122,05/26/2026,"Anderson, Browning and Murphy",Julie Jones,USD,27-inch LED Monitor,20.00,259.40,5188.00,5324.21,472.52,5796.73
+BD/26-27/7122,05/26/2026,"Anderson, Browning and Murphy",Julie Jones,USD,Network Switch 24-port,1.00,136.21,136.21,5324.21,472.52,5796.73
+HC-441806,10/24/2026,Maple Grove Care Partners Inc.,Zachary Combs,USD,Companion Care services,4.00,24.85,99.40,392.52,,392.52
+HC-441806,10/24/2026,Maple Grove Care Partners Inc.,Zachary Combs,USD,Home Health Aide services,8.00,36.64,293.12,392.52,,392.52
+HC-854787,08/23/2026,Gentle Hands Home Care LLC,Lori Johnston,USD,Skilled Nursing Visit (RN),2.00,125.61,251.22,1043.91,,1043.91
+HC-854787,08/23/2026,Gentle Hands Home Care LLC,Lori Johnston,USD,Care Coordination fee,1.00,111.24,111.24,1043.91,,1043.91
+HC-854787,08/23/2026,Gentle Hands Home Care LLC,Lori Johnston,USD,Companion Care services,16.00,29.28,468.48,1043.91,,1043.91
+HC-854787,08/23/2026,Gentle Hands Home Care LLC,Lori Johnston,USD,Care Coordination fee,3.00,70.99,212.97,1043.91,,1043.91
+SI-996536,23.10.2026,Renner Junitz KG,Bertram auch Schlauchin,EUR,Wireless Keyboard and Mouse Set,20.00,37.26,745.20,14416.30,2739.10,17155.40
+SI-996536,23.10.2026,Renner Junitz KG,Bertram auch Schlauchin,EUR,Network Switch 24-port,10.00,185.96,1859.60,14416.30,2739.10,17155.40
+SI-996536,23.10.2026,Renner Junitz KG,Bertram auch Schlauchin,EUR,Website Maintenance (monthly),50.00,236.23,11811.50,14416.30,2739.10,17155.40
+22844,03/09/2026,Davis-Sims,Dr Leigh Brown,GBP,Software Licence (annual),3.00,348.38,1045.14,4708.88,941.78,5650.66
+22844,03/09/2026,Davis-Sims,Dr Leigh Brown,GBP,"Filing Cabinet, 4 drawer",3.00,270.53,811.59,4708.88,941.78,5650.66
+22844,03/09/2026,Davis-Sims,Dr Leigh Brown,GBP,"Filing Cabinet, 4 drawer",2.00,274.48,548.96,4708.88,941.78,5650.66
+22844,03/09/2026,Davis-Sims,Dr Leigh Brown,GBP,A4 Paper 80gsm (ream),12.00,11.84,142.08,4708.88,941.78,5650.66
+22844,03/09/2026,Davis-Sims,Dr Leigh Brown,GBP,Laser Toner Cartridge,20.00,98.68,1973.60,4708.88,941.78,5650.66
+22844,03/09/2026,Davis-Sims,Dr Leigh Brown,GBP,Cloud Hosting (monthly),1.00,187.51,187.51,4708.88,941.78,5650.66

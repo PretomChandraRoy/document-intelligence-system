@@ -1,0 +1,80 @@
+{
+  "doc_id": "d094",
+  "file": "files/d094.png",
+  "format": "png",
+  "layout": "receipt",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0094",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2026/07/0665",
+        "invoice_date": "2026-05-20",
+        "supplier_name": "Chittagong Port Enterprise",
+        "customer_name": "Teesta Technologies Ltd.",
+        "subtotal": "1191169",
+        "tax": "89337.68",
+        "total": "1280506.68",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "2",
+            "unit_price": "6019",
+            "amount": "12038"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "10",
+            "unit_price": "64997",
+            "amount": "649970"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "12",
+            "unit_price": "3393",
+            "amount": "40716"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "2025",
+            "amount": "2025"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "2",
+            "unit_price": "24077",
+            "amount": "48154"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "50",
+            "unit_price": "2133",
+            "amount": "106650"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "10",
+            "unit_price": "30519",
+            "amount": "305190"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "26426",
+            "amount": "26426"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

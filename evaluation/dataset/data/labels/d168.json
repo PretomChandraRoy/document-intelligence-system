@@ -1,0 +1,58 @@
+{
+  "doc_id": "d168",
+  "file": "files/d168.csv",
+  "format": "csv",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0200",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-794255",
+        "invoice_date": "2026-05-31",
+        "supplier_name": "Maple Grove Home Care LLC",
+        "customer_name": "James Cowan",
+        "subtotal": "1336.07",
+        "tax": null,
+        "total": "1336.07",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "12",
+            "unit_price": "26.59",
+            "amount": "319.08"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "3",
+            "unit_price": "216.33",
+            "amount": "648.99"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "8",
+            "unit_price": "33.59",
+            "amount": "268.72"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "146",
+            "unit_price": "0.68",
+            "amount": "99.28"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": false}"
+}

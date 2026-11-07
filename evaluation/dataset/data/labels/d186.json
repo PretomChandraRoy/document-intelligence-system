@@ -1,0 +1,65 @@
+{
+  "doc_id": "d186",
+  "file": "files/d186.xls",
+  "format": "xls",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0224b",
+      "locale": "homecare",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "HC-789666",
+        "invoice_date": "2026-07-27",
+        "supplier_name": "Hearthside Care Partners Inc.",
+        "customer_name": "Steven Hansen",
+        "subtotal": "1903.08",
+        "tax": null,
+        "total": "1903.08",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Respite Care services",
+            "quantity": "24",
+            "unit_price": "35.60",
+            "amount": "854.40"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "16",
+            "unit_price": "21.85",
+            "amount": "349.60"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "8",
+            "unit_price": "29.21",
+            "amount": "233.68"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "4",
+            "unit_price": "26.74",
+            "amount": "106.96"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "12",
+            "unit_price": "29.87",
+            "amount": "358.44"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate",
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": "Accounting record for d185"
+}

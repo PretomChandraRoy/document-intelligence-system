@@ -1,0 +1,62 @@
+{
+  "doc_id": "d040",
+  "file": "files/d040.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0040",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line",
+        "missing_invoice_number"
+      ],
+      "ground_truth": {
+        "invoice_number": null,
+        "invoice_date": "2026-01-17",
+        "supplier_name": "Maple Grove Care Partners Inc.",
+        "customer_name": "Andrea Ray",
+        "subtotal": "3075.52",
+        "tax": null,
+        "total": "3075.52",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Respite Care services",
+            "quantity": "40",
+            "unit_price": "30.93",
+            "amount": "1237.20"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "40",
+            "unit_price": "27.77",
+            "amount": "1110.80"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "178",
+            "unit_price": "0.68",
+            "amount": "121.04"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "12",
+            "unit_price": "50.54",
+            "amount": "606.48"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency",
+        "missing:invoice_number"
+      ]
+    }
+  ],
+  "notes": null
+}

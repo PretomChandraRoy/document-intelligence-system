@@ -1,0 +1,42 @@
+{
+  "doc_id": "d065",
+  "file": "files/d065.pdf",
+  "format": "pdf_scanned",
+  "layout": "modern",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0065",
+      "locale": "bd",
+      "defects": [
+        "missing_invoice_date"
+      ],
+      "ground_truth": {
+        "invoice_number": "A21322",
+        "invoice_date": null,
+        "supplier_name": "Sundarban Logistics",
+        "customer_name": "Meghna Engineering Works",
+        "subtotal": "59505",
+        "tax": "4462.88",
+        "total": "63967.88",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "1",
+            "unit_price": "59505",
+            "amount": "59505"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:invoice_date"
+      ]
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,44 @@
+{
+  "doc_id": "d147",
+  "file": "files/d147.xls",
+  "format": "xls",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0162",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2026/10/0752",
+        "invoice_date": "2026-08-29",
+        "supplier_name": "Chittagong Port Technologies Ltd.",
+        "customer_name": "Banani Enterprise",
+        "subtotal": "754530",
+        "tax": "113179.50",
+        "total": "867709.50",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "UPS 1200VA",
+            "quantity": "50",
+            "unit_price": "13269",
+            "amount": "663450"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "10",
+            "unit_price": "9108",
+            "amount": "91080"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": true}"
+}

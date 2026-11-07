@@ -1,0 +1,280 @@
+{
+  "doc_id": "d054",
+  "file": "files/d054.pdf",
+  "format": "pdf_scanned",
+  "layout": "classic",
+  "degradation": "moderate",
+  "pages": 2,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0054",
+      "locale": "us",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "A55688",
+        "invoice_date": "2026-08-19",
+        "supplier_name": "Rush LLC",
+        "customer_name": "Megan Orr",
+        "subtotal": "90484.85",
+        "tax": null,
+        "total": "90484.85",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "1",
+            "unit_price": "41.81",
+            "amount": "41.81"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "1",
+            "unit_price": "28.70",
+            "amount": "28.70"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "3",
+            "unit_price": "274.80",
+            "amount": "824.40"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "2",
+            "unit_price": "123.03",
+            "amount": "246.06"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "20",
+            "unit_price": "3.39",
+            "amount": "67.80"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "2",
+            "unit_price": "209.47",
+            "amount": "418.94"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "12",
+            "unit_price": "2.18",
+            "amount": "26.16"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "3",
+            "unit_price": "162.39",
+            "amount": "487.17"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "12",
+            "unit_price": "2.03",
+            "amount": "24.36"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "3",
+            "unit_price": "95.05",
+            "amount": "285.15"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "50",
+            "unit_price": "113.40",
+            "amount": "5670"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "2",
+            "unit_price": "127.55",
+            "amount": "255.10"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "20",
+            "unit_price": "80.26",
+            "amount": "1605.20"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "25",
+            "unit_price": "243.52",
+            "amount": "6088"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "50",
+            "unit_price": "18.60",
+            "amount": "930"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "50",
+            "unit_price": "174.83",
+            "amount": "8741.50"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "20",
+            "unit_price": "79.39",
+            "amount": "1587.80"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "50",
+            "unit_price": "474.59",
+            "amount": "23729.50"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "10",
+            "unit_price": "168.29",
+            "amount": "1682.90"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "1",
+            "unit_price": "250.67",
+            "amount": "250.67"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "25",
+            "unit_price": "233.23",
+            "amount": "5830.75"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "2",
+            "unit_price": "193.70",
+            "amount": "387.40"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "2",
+            "unit_price": "4.92",
+            "amount": "9.84"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "2",
+            "unit_price": "152.14",
+            "amount": "304.28"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "5",
+            "unit_price": "86.66",
+            "amount": "433.30"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "20",
+            "unit_price": "26.68",
+            "amount": "533.60"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "1",
+            "unit_price": "68.77",
+            "amount": "68.77"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "12",
+            "unit_price": "156.74",
+            "amount": "1880.88"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "20",
+            "unit_price": "181.38",
+            "amount": "3627.60"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "12",
+            "unit_price": "194.93",
+            "amount": "2339.16"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "20",
+            "unit_price": "15.85",
+            "amount": "317"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "253.26",
+            "amount": "253.26"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "5",
+            "unit_price": "106.81",
+            "amount": "534.05"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "25",
+            "unit_price": "316.71",
+            "amount": "7917.75"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "50",
+            "unit_price": "35.99",
+            "amount": "1799.50"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "25",
+            "unit_price": "157.05",
+            "amount": "3926.25"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "158.22",
+            "amount": "158.22"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "10",
+            "unit_price": "150.47",
+            "amount": "1504.70"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "20",
+            "unit_price": "83.71",
+            "amount": "1674.20"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "6.42",
+            "amount": "6.42"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "5",
+            "unit_price": "797.34",
+            "amount": "3986.70"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

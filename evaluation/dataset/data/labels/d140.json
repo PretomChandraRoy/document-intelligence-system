@@ -1,0 +1,46 @@
+{
+  "doc_id": "d140",
+  "file": "files/d140.xlsx",
+  "format": "xlsx",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0140",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-342129",
+        "invoice_date": "2026-04-29",
+        "supplier_name": "Brightpath Home Care LLC",
+        "customer_name": "Shannon Adkins",
+        "subtotal": "1560.80",
+        "tax": null,
+        "total": "1560.80",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Home Health Aide services",
+            "quantity": "12",
+            "unit_price": "27.40",
+            "amount": "328.80"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "40",
+            "unit_price": "30.80",
+            "amount": "1232"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 3, \"sheet_names\": [\"Summary\", \"Items\", \"Notes\"], \"date_as_text\": true}"
+}

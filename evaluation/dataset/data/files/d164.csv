@@ -1,0 +1,17 @@
+INVOICE
+
+Supplier,Padma Technologies Ltd.
+Invoice Number,BD/26-27/3139
+Invoice Date,2026-09-28
+Bill To,Banani Supplies Ltd.
+
+Description,Quantity,Unit Price,Amount
+A4 Paper 80gsm (ream),1.00,568.00,568.00
+IT Support Services (hours),50.00,5428.00,271400.00
+Network Switch 24-port,25.00,38966.00,974150.00
+Training Workshop (per seat),3.00,19385.00,58155.00
+Ergonomic Office Chair,1.00,30636.00,30636.00
+
+,,Subtotal,1334909.00
+,,Tax,200236.35
+,,Total,1535145.35

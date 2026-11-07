@@ -1,0 +1,70 @@
+{
+  "doc_id": "d173",
+  "file": "files/d173.png",
+  "format": "png",
+  "layout": "classic",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0036d",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-470037",
+        "invoice_date": "2026-04-21",
+        "supplier_name": "Shapla Supplies Ltd.",
+        "customer_name": "Jamuna Enterprise",
+        "subtotal": "2275994",
+        "tax": "341399.10",
+        "total": "2617393.10",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "2",
+            "unit_price": "82176",
+            "amount": "164352"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "10",
+            "unit_price": "15859",
+            "amount": "158590"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "20",
+            "unit_price": "46067",
+            "amount": "921340"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "20",
+            "unit_price": "4484",
+            "amount": "89680"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "1",
+            "unit_price": "8482",
+            "amount": "8482"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "25",
+            "unit_price": "37342",
+            "amount": "933550"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Duplicate of d036"
+}

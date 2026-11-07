@@ -1,0 +1,62 @@
+{
+  "doc_id": "d085",
+  "file": "files/d085.jpg",
+  "format": "jpg",
+  "layout": "classic",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0085",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "87826",
+        "invoice_date": "2026-10-15",
+        "supplier_name": "Keith-Sanchez",
+        "customer_name": "Cortez Group",
+        "subtotal": "16149.43",
+        "tax": "1433.26",
+        "total": "17582.69",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "5",
+            "unit_price": "383.09",
+            "amount": "1915.45"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "10",
+            "unit_price": "340.32",
+            "amount": "3403.20"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "20",
+            "unit_price": "97.19",
+            "amount": "1943.80"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "50",
+            "unit_price": "176.95",
+            "amount": "8847.50"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "39.48",
+            "amount": "39.48"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

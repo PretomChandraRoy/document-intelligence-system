@@ -1,0 +1,52 @@
+{
+  "doc_id": "d190",
+  "file": "files/d190.xls",
+  "format": "xls",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0226b",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-166595",
+        "invoice_date": "2026-06-11",
+        "supplier_name": "Shapla Traders",
+        "customer_name": "Sundarban Office Solutions",
+        "subtotal": "1157815",
+        "tax": "57890.75",
+        "total": "1215705.75",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "20",
+            "unit_price": "40305",
+            "amount": "806100"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "20",
+            "unit_price": "11877",
+            "amount": "237540"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "25",
+            "unit_price": "4567",
+            "amount": "114175"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Accounting record for d189"
+}

@@ -1,0 +1,50 @@
+{
+  "doc_id": "d127",
+  "file": "files/d127.xlsx",
+  "format": "xlsx",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0127",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-48019",
+        "invoice_date": "2026-05-12",
+        "supplier_name": "Banani Technologies Ltd.",
+        "customer_name": "Meghna Engineering Works",
+        "subtotal": "347385",
+        "tax": "17369.25",
+        "total": "364754.25",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "19869",
+            "amount": "19869"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "3",
+            "unit_price": "8664",
+            "amount": "25992"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "12",
+            "unit_price": "25127",
+            "amount": "301524"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

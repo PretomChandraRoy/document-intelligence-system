@@ -1,0 +1,58 @@
+{
+  "doc_id": "d089",
+  "file": "files/d089.jpg",
+  "format": "jpg",
+  "layout": "homecare",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0089",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-809621",
+        "invoice_date": "2026-01-10",
+        "supplier_name": "Gentle Hands Care Partners Inc.",
+        "customer_name": "Scott Kennedy",
+        "subtotal": "2216.52",
+        "tax": null,
+        "total": "2216.52",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "28",
+            "unit_price": "40.73",
+            "amount": "1140.44"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "7",
+            "unit_price": "40.37",
+            "amount": "282.59"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "71",
+            "unit_price": "0.67",
+            "amount": "47.57"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "24",
+            "unit_price": "31.08",
+            "amount": "745.92"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

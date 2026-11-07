@@ -1,0 +1,442 @@
+{
+  "doc_id": "d171",
+  "file": "files/d171.pdf",
+  "format": "pdf_digital",
+  "layout": "bundle",
+  "degradation": null,
+  "pages": 10,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0203",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A59510",
+        "invoice_date": "2026-01-12",
+        "supplier_name": "Turner, Schneider and Johnson",
+        "customer_name": "Donald Schultz",
+        "subtotal": "534.41",
+        "tax": "37.41",
+        "total": "571.82",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "25",
+            "unit_price": "6.61",
+            "amount": "165.25"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "12",
+            "unit_price": "29.88",
+            "amount": "358.56"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "5",
+            "unit_price": "2.12",
+            "amount": "10.60"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "invoice_id": "inv0204",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-411762",
+        "invoice_date": "2026-01-25",
+        "supplier_name": "Silver Oak Home Health Services",
+        "customer_name": "Tyler Pollard",
+        "subtotal": "3052.99",
+        "tax": null,
+        "total": "3052.99",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "106",
+            "unit_price": "0.62",
+            "amount": "65.72"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "24",
+            "unit_price": "35.63",
+            "amount": "855.12"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "8",
+            "unit_price": "136.30",
+            "amount": "1090.40"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "37.5",
+            "unit_price": "27.78",
+            "amount": "1041.75"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ],
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "invoice_id": "inv0205",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-994199",
+        "invoice_date": "2026-09-30",
+        "supplier_name": "Dhanmondi Engineering Works",
+        "customer_name": "Padma Technologies Ltd.",
+        "subtotal": "892706",
+        "tax": "44635.30",
+        "total": "937341.30",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "12",
+            "unit_price": "11683",
+            "amount": "140196"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "25",
+            "unit_price": "17964",
+            "amount": "449100"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "2",
+            "unit_price": "21397",
+            "amount": "42794"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "2",
+            "unit_price": "26778",
+            "amount": "53556"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "20",
+            "unit_price": "10353",
+            "amount": "207060"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        3,
+        3
+      ]
+    },
+    {
+      "invoice_id": "inv0206",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "14850",
+        "invoice_date": "2026-08-05",
+        "supplier_name": "Salz Trupp GbR",
+        "customer_name": "Frau Catherine Zimmer",
+        "subtotal": "16890.63",
+        "tax": "3547.03",
+        "total": "20437.66",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "3",
+            "unit_price": "176.11",
+            "amount": "528.33"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "12",
+            "unit_price": "375.64",
+            "amount": "4507.68"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "3",
+            "unit_price": "284.57",
+            "amount": "853.71"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "5",
+            "unit_price": "70.22",
+            "amount": "351.10"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "50",
+            "unit_price": "41.53",
+            "amount": "2076.50"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "202.97",
+            "amount": "202.97"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "3",
+            "unit_price": "10.38",
+            "amount": "31.14"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "20",
+            "unit_price": "416.96",
+            "amount": "8339.20"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        4,
+        4
+      ]
+    },
+    {
+      "invoice_id": "inv0207",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "96170",
+        "invoice_date": "2026-07-06",
+        "supplier_name": "Perry-Davis",
+        "customer_name": "Parrish-Griffith",
+        "subtotal": "2762.03",
+        "tax": "193.34",
+        "total": "2955.37",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "20",
+            "unit_price": "102.58",
+            "amount": "2051.60"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "1",
+            "unit_price": "65.11",
+            "amount": "65.11"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "1",
+            "unit_price": "645.32",
+            "amount": "645.32"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        5,
+        5
+      ]
+    },
+    {
+      "invoice_id": "inv0208",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-228216",
+        "invoice_date": "2026-05-02",
+        "supplier_name": "Killer KG",
+        "customer_name": "Mans Sauer e.V.",
+        "subtotal": "20137.45",
+        "tax": "3826.12",
+        "total": "23963.57",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "50",
+            "unit_price": "381.38",
+            "amount": "19069"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "5",
+            "unit_price": "213.69",
+            "amount": "1068.45"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        6,
+        6
+      ]
+    },
+    {
+      "invoice_id": "inv0209",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-492906",
+        "invoice_date": "2026-09-09",
+        "supplier_name": "White, Barker and Jones",
+        "customer_name": "Tracey Myers",
+        "subtotal": "1459.74",
+        "tax": "291.95",
+        "total": "1751.69",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "3",
+            "unit_price": "410.98",
+            "amount": "1232.94"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "12",
+            "unit_price": "18.90",
+            "amount": "226.80"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        7,
+        7
+      ]
+    },
+    {
+      "invoice_id": "inv0210",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-824233",
+        "invoice_date": "2026-01-28",
+        "supplier_name": "Silver Oak Home Health Services",
+        "customer_name": "Miss Deborah Weaver",
+        "subtotal": "2254",
+        "tax": null,
+        "total": "2254",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "8",
+            "unit_price": "265.88",
+            "amount": "2127.04"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "4",
+            "unit_price": "31.74",
+            "amount": "126.96"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ],
+      "pages": [
+        8,
+        8
+      ]
+    },
+    {
+      "invoice_id": "inv0211",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-320606",
+        "invoice_date": "2026-06-02",
+        "supplier_name": "Willow Creek Care Partners Inc.",
+        "customer_name": "Michael Fisher",
+        "subtotal": "1034.81",
+        "tax": null,
+        "total": "1034.81",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Care Coordination fee",
+            "quantity": "7",
+            "unit_price": "40.63",
+            "amount": "284.41"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "20",
+            "unit_price": "37.52",
+            "amount": "750.40"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        9,
+        9
+      ]
+    },
+    {
+      "invoice_id": "inv0212",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "94094",
+        "invoice_date": "2026-01-27",
+        "supplier_name": "Rupsha Office Solutions",
+        "customer_name": "Sundarban Enterprise",
+        "subtotal": "256008",
+        "tax": "38401.20",
+        "total": "294409.20",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "12",
+            "unit_price": "8599",
+            "amount": "103188"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "10",
+            "unit_price": "15282",
+            "amount": "152820"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        10,
+        10
+      ]
+    }
+  ],
+  "notes": "Several invoices in one PDF; the system must split them."
+}

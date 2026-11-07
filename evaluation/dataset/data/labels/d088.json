@@ -1,0 +1,64 @@
+{
+  "doc_id": "d088",
+  "file": "files/d088.jpg",
+  "format": "jpg",
+  "layout": "receipt",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0088",
+      "locale": "us",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "A37444",
+        "invoice_date": "2026-08-20",
+        "supplier_name": "Raymond, Little and Mullins",
+        "customer_name": "Vasquez-Ray",
+        "subtotal": "4642.83",
+        "tax": null,
+        "total": "4642.83",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "2",
+            "unit_price": "378.16",
+            "amount": "756.32"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "12",
+            "unit_price": "39.55",
+            "amount": "474.60"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "2",
+            "unit_price": "21.07",
+            "amount": "42.14"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "266.27",
+            "amount": "266.27"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "10",
+            "unit_price": "310.35",
+            "amount": "3103.50"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

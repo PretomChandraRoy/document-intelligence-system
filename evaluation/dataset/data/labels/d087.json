@@ -1,0 +1,82 @@
+{
+  "doc_id": "d087",
+  "file": "files/d087.jpg",
+  "format": "jpg",
+  "layout": "homecare",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0087",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-765213",
+        "invoice_date": "2026-01-28",
+        "supplier_name": "Hearthside Care Partners Inc.",
+        "customer_name": "Kayla Mills",
+        "subtotal": "5179.51",
+        "tax": null,
+        "total": "5179.51",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "5",
+            "unit_price": "281.45",
+            "amount": "1407.25"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "66",
+            "unit_price": "0.63",
+            "amount": "41.58"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "3",
+            "unit_price": "99.27",
+            "amount": "297.81"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "66",
+            "unit_price": "0.69",
+            "amount": "45.54"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "2",
+            "unit_price": "206.67",
+            "amount": "413.34"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "5",
+            "unit_price": "122.33",
+            "amount": "611.65"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "6",
+            "unit_price": "211.27",
+            "amount": "1267.62"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "32",
+            "unit_price": "34.21",
+            "amount": "1094.72"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

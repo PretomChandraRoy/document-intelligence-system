@@ -1,0 +1,56 @@
+{
+  "doc_id": "d060",
+  "file": "files/d060.pdf",
+  "format": "pdf_scanned",
+  "layout": "receipt",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0060",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "87847",
+        "invoice_date": "2026-09-13",
+        "supplier_name": "Dhanmondi Printing & Packaging",
+        "customer_name": "Delta Technologies Ltd.",
+        "subtotal": "1379035",
+        "tax": "206855.25",
+        "total": "1585890.25",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "5",
+            "unit_price": "621",
+            "amount": "3105"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "25",
+            "unit_price": "10688",
+            "amount": "267200"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "5",
+            "unit_price": "47318",
+            "amount": "236590"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "20",
+            "unit_price": "43607",
+            "amount": "872140"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,268 @@
+{
+  "doc_id": "d144",
+  "file": "files/d144.xlsx",
+  "format": "xlsx",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0152",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A15771",
+        "invoice_date": "2026-01-03",
+        "supplier_name": "Wilson, White and Yates",
+        "customer_name": "Hancock-Dunn",
+        "subtotal": "2585.82",
+        "tax": "517.16",
+        "total": "3102.98",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "2",
+            "unit_price": "31.93",
+            "amount": "63.86"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "25",
+            "unit_price": "46.42",
+            "amount": "1160.50"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "3",
+            "unit_price": "313.90",
+            "amount": "941.70"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "12",
+            "unit_price": "34.98",
+            "amount": "419.76"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0153",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A82006",
+        "invoice_date": "2026-10-05",
+        "supplier_name": "Chittagong Port Technologies Ltd.",
+        "customer_name": "Bengal Logistics",
+        "subtotal": "705652",
+        "tax": "105847.80",
+        "total": "811499.80",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "UPS 1200VA",
+            "quantity": "10",
+            "unit_price": "19851",
+            "amount": "198510"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "5",
+            "unit_price": "2670",
+            "amount": "13350"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "1",
+            "unit_price": "2867",
+            "amount": "2867"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "25",
+            "unit_price": "19637",
+            "amount": "490925"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0154",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/9767",
+        "invoice_date": "2026-07-20",
+        "supplier_name": "Padma Technologies Ltd.",
+        "customer_name": "Md. Arifur Rahman",
+        "subtotal": "26748",
+        "tax": "2006.10",
+        "total": "28754.10",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "12",
+            "unit_price": "2229",
+            "amount": "26748"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0155",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2025/12/0940",
+        "invoice_date": "2026-07-06",
+        "supplier_name": "Carsten Stiebitz AG & Co. KG",
+        "customer_name": "Thanel e.G.",
+        "subtotal": "4617.60",
+        "tax": "969.70",
+        "total": "5587.30",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "25",
+            "unit_price": "77.07",
+            "amount": "1926.75"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "50",
+            "unit_price": "14.61",
+            "amount": "730.50"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "1",
+            "unit_price": "25.95",
+            "amount": "25.95"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "20",
+            "unit_price": "18.11",
+            "amount": "362.20"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "2",
+            "unit_price": "786.10",
+            "amount": "1572.20"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0156",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A81372",
+        "invoice_date": "2026-10-18",
+        "supplier_name": "Rupsha Enterprise",
+        "customer_name": "Riverside Logistics",
+        "subtotal": "2669759",
+        "tax": "200231.93",
+        "total": "2869990.93",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "10",
+            "unit_price": "4549",
+            "amount": "45490"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "5",
+            "unit_price": "23378",
+            "amount": "116890"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "50",
+            "unit_price": "35030",
+            "amount": "1751500"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "3",
+            "unit_price": "20569",
+            "amount": "61707"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "12",
+            "unit_price": "7981",
+            "amount": "95772"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "50",
+            "unit_price": "11968",
+            "amount": "598400"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0157",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-328182",
+        "invoice_date": "2026-02-16",
+        "supplier_name": "Hearthside Home Care LLC",
+        "customer_name": "Adam Ortega",
+        "subtotal": "3221.52",
+        "tax": null,
+        "total": "3221.52",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "2",
+            "unit_price": "278.64",
+            "amount": "557.28"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "20",
+            "unit_price": "29.56",
+            "amount": "591.20"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "40",
+            "unit_price": "26.41",
+            "amount": "1056.40"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "24",
+            "unit_price": "42.36",
+            "amount": "1016.64"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Export\"], \"date_as_text\": false}"
+}

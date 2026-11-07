@@ -1,0 +1,46 @@
+{
+  "doc_id": "d067",
+  "file": "files/d067.pdf",
+  "format": "pdf_scanned",
+  "layout": "homecare",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0067",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-342716",
+        "invoice_date": "2026-01-23",
+        "supplier_name": "Brightpath Home Care LLC",
+        "customer_name": "Joseph Hughes",
+        "subtotal": "417.68",
+        "tax": null,
+        "total": "417.68",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "80",
+            "unit_price": "0.64",
+            "amount": "51.20"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "12",
+            "unit_price": "30.54",
+            "amount": "366.48"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

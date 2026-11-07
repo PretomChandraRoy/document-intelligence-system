@@ -1,0 +1,52 @@
+{
+  "doc_id": "d071",
+  "file": "files/d071.jpg",
+  "format": "jpg",
+  "layout": "homecare",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0071",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-623125",
+        "invoice_date": "2026-06-01",
+        "supplier_name": "Gentle Hands Home Care LLC",
+        "customer_name": "Alicia Hall",
+        "subtotal": "1847.56",
+        "tax": null,
+        "total": "1847.56",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "4",
+            "unit_price": "289",
+            "amount": "1156"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "20",
+            "unit_price": "29.35",
+            "amount": "587"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "4",
+            "unit_price": "26.14",
+            "amount": "104.56"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

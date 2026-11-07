@@ -1,0 +1,73 @@
+{
+  "doc_id": "d041",
+  "file": "files/d041.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0041",
+      "locale": "uk",
+      "defects": [
+        "missing_invoice_date"
+      ],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/4039",
+        "invoice_date": null,
+        "supplier_name": "Green Group",
+        "customer_name": "Parry, Brady and Morrison",
+        "subtotal": "32387.88",
+        "tax": "6477.58",
+        "total": "38865.46",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "50",
+            "unit_price": "370.59",
+            "amount": "18529.50"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "2",
+            "unit_price": "81.49",
+            "amount": "162.98"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "10",
+            "unit_price": "209.76",
+            "amount": "2097.60"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "25",
+            "unit_price": "131.60",
+            "amount": "3290"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "20",
+            "unit_price": "393.64",
+            "amount": "7872.80"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "25",
+            "unit_price": "17.40",
+            "amount": "435"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate",
+        "missing:invoice_date"
+      ]
+    }
+  ],
+  "notes": null
+}

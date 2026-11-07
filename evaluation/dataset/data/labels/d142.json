@@ -1,0 +1,238 @@
+{
+  "doc_id": "d142",
+  "file": "files/d142.xlsx",
+  "format": "xlsx",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0146",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-804737",
+        "invoice_date": "2026-03-24",
+        "supplier_name": "Brightpath Home Health Services",
+        "customer_name": "Tony Smith",
+        "subtotal": "216",
+        "tax": null,
+        "total": "216",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "8",
+            "unit_price": "27",
+            "amount": "216"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0147",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-988980",
+        "invoice_date": "2026-08-07",
+        "supplier_name": "Owens Ltd",
+        "customer_name": "Brown Group",
+        "subtotal": "2192.35",
+        "tax": "438.47",
+        "total": "2630.82",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "UPS 1200VA",
+            "quantity": "1",
+            "unit_price": "118.07",
+            "amount": "118.07"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "306.71",
+            "amount": "306.71"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "10",
+            "unit_price": "61.89",
+            "amount": "618.90"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "3",
+            "unit_price": "287.46",
+            "amount": "862.38"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "1",
+            "unit_price": "77.33",
+            "amount": "77.33"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "208.96",
+            "amount": "208.96"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0148",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-43751",
+        "invoice_date": "2026-07-31",
+        "supplier_name": "Bell LLC",
+        "customer_name": "Hancock-Jones",
+        "subtotal": "787.35",
+        "tax": "157.47",
+        "total": "944.82",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "3",
+            "unit_price": "150.87",
+            "amount": "452.61"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "20",
+            "unit_price": "9",
+            "amount": "180"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "3",
+            "unit_price": "51.58",
+            "amount": "154.74"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0149",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A98142",
+        "invoice_date": "2026-06-19",
+        "supplier_name": "Barber-Monroe",
+        "customer_name": "Kennedy, Mcintyre and James",
+        "subtotal": "11944.20",
+        "tax": "746.51",
+        "total": "12690.71",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "25",
+            "unit_price": "452.50",
+            "amount": "11312.50"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "1",
+            "unit_price": "9.49",
+            "amount": "9.49"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "12",
+            "unit_price": "30.35",
+            "amount": "364.20"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "1",
+            "unit_price": "258.01",
+            "amount": "258.01"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0150",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-222520",
+        "invoice_date": "2026-04-06",
+        "supplier_name": "Davies Inc",
+        "customer_name": "Justin Sullivan-Barlow",
+        "subtotal": "49288.27",
+        "tax": "9857.65",
+        "total": "59145.92",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "UPS 1200VA",
+            "quantity": "10",
+            "unit_price": "140.12",
+            "amount": "1401.20"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "7.01",
+            "amount": "7.01"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "50",
+            "unit_price": "548.73",
+            "amount": "27436.50"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "25",
+            "unit_price": "23.76",
+            "amount": "594"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "50",
+            "unit_price": "131.69",
+            "amount": "6584.50"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "1",
+            "unit_price": "107.57",
+            "amount": "107.57"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "1",
+            "unit_price": "48.74",
+            "amount": "48.74"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "25",
+            "unit_price": "524.35",
+            "amount": "13108.75"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Export\"], \"date_as_text\": false}"
+}

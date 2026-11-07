@@ -1,0 +1,62 @@
+{
+  "doc_id": "d026",
+  "file": "files/d026.pdf",
+  "format": "pdf_digital",
+  "layout": "modern",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0026",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "12128",
+        "invoice_date": "2026-05-10",
+        "supplier_name": "Meghna Office Solutions",
+        "customer_name": "Jamuna Technologies Ltd.",
+        "subtotal": "3897386",
+        "tax": "292303.95",
+        "total": "4189689.95",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "50",
+            "unit_price": "46374",
+            "amount": "2318700"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "25",
+            "unit_price": "34559",
+            "amount": "863975"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "25",
+            "unit_price": "23665",
+            "amount": "591625"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "25",
+            "unit_price": "4128",
+            "amount": "103200"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "1",
+            "unit_price": "19886",
+            "amount": "19886"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,68 @@
+{
+  "doc_id": "d076",
+  "file": "files/d076.jpg",
+  "format": "jpg",
+  "layout": "modern",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0076",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/7394",
+        "invoice_date": "2026-04-26",
+        "supplier_name": "Golden Harvest Logistics",
+        "customer_name": "Shapla Office Solutions",
+        "subtotal": "1291952",
+        "tax": "64597.60",
+        "total": "1356549.60",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "40413",
+            "amount": "40413"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "2202",
+            "amount": "2202"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "12",
+            "unit_price": "4831",
+            "amount": "57972"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "20",
+            "unit_price": "802",
+            "amount": "16040"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "25",
+            "unit_price": "6603",
+            "amount": "165075"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "50",
+            "unit_price": "20205",
+            "amount": "1010250"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

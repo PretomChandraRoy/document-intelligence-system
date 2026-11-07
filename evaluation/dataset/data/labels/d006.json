@@ -1,0 +1,50 @@
+{
+  "doc_id": "d006",
+  "file": "files/d006.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0006",
+      "locale": "homecare",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "HC-982554",
+        "invoice_date": "2026-06-02",
+        "supplier_name": "Brightpath Care Partners Inc.",
+        "customer_name": "Tammy James",
+        "subtotal": "1972.06",
+        "tax": "0",
+        "total": "1972.06",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Home Health Aide services",
+            "quantity": "20",
+            "unit_price": "30.65",
+            "amount": "613"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "1",
+            "unit_price": "116.31",
+            "amount": "116.31"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "37.5",
+            "unit_price": "33.14",
+            "amount": "1242.75"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

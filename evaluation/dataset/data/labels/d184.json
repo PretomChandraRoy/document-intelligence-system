@@ -1,0 +1,70 @@
+{
+  "doc_id": "d184",
+  "file": "files/d184.xls",
+  "format": "xls",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0223b",
+      "locale": "eu",
+      "defects": [
+        "twin_quantity_differs"
+      ],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/6439",
+        "invoice_date": "2026-04-02",
+        "supplier_name": "Warmer Weimer GmbH & Co. OHG",
+        "customer_name": "Ing. Timm Säuberlich MBA.",
+        "subtotal": "4819.29",
+        "tax": "1012.05",
+        "total": "5831.34",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "1",
+            "unit_price": "208.09",
+            "amount": "208.09"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "12",
+            "unit_price": "182.82",
+            "amount": "2193.84"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "51",
+            "unit_price": "38.45",
+            "amount": "1960.95"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "5",
+            "unit_price": "76.85",
+            "amount": "384.25"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "72.16",
+            "amount": "72.16"
+          }
+        ]
+      },
+      "expected_flags": [
+        "cross_mismatch:line_items",
+        "cross_mismatch:subtotal",
+        "cross_mismatch:tax",
+        "cross_mismatch:total",
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Accounting record for d183; quantity differs"
+}

@@ -1,0 +1,62 @@
+{
+  "doc_id": "d086",
+  "file": "files/d086.jpg",
+  "format": "jpg",
+  "layout": "classic",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0086",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2026/07/0755",
+        "invoice_date": "2026-05-13",
+        "supplier_name": "Kennedy-Schmidt",
+        "customer_name": "Bray, Warren and Campbell",
+        "subtotal": "4387.39",
+        "tax": "389.38",
+        "total": "4776.77",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "5",
+            "unit_price": "14.14",
+            "amount": "70.70"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "3",
+            "unit_price": "232.46",
+            "amount": "697.38"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "740.45",
+            "amount": "740.45"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "12",
+            "unit_price": "215.13",
+            "amount": "2581.56"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "297.30",
+            "amount": "297.30"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

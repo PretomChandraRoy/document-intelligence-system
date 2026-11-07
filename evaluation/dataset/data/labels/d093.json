@@ -1,0 +1,56 @@
+{
+  "doc_id": "d093",
+  "file": "files/d093.png",
+  "format": "png",
+  "layout": "classic",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0093",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/0045",
+        "invoice_date": "2026-06-19",
+        "supplier_name": "Heath-Birch",
+        "customer_name": "Conor Cole",
+        "subtotal": "2972.87",
+        "tax": "594.57",
+        "total": "3567.44",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "5",
+            "unit_price": "144.83",
+            "amount": "724.15"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "10",
+            "unit_price": "133.31",
+            "amount": "1333.10"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "2",
+            "unit_price": "171.67",
+            "amount": "343.34"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "3",
+            "unit_price": "190.76",
+            "amount": "572.28"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

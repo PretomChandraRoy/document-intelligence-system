@@ -1,0 +1,68 @@
+{
+  "doc_id": "d073",
+  "file": "files/d073.jpg",
+  "format": "jpg",
+  "layout": "classic",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0073",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A17806",
+        "invoice_date": "2026-04-01",
+        "supplier_name": "Dhanmondi Logistics",
+        "customer_name": "Imran Kabir",
+        "subtotal": "3933252",
+        "tax": "294993.90",
+        "total": "4228245.90",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "50",
+            "unit_price": "40437",
+            "amount": "2021850"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "25",
+            "unit_price": "13059",
+            "amount": "326475"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "1",
+            "unit_price": "8486",
+            "amount": "8486"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "50",
+            "unit_price": "28537",
+            "amount": "1426850"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "20",
+            "unit_price": "3328",
+            "amount": "66560"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "3",
+            "unit_price": "27677",
+            "amount": "83031"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,58 @@
+{
+  "doc_id": "d206",
+  "file": "files/d206.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0234b",
+      "locale": "bd",
+      "defects": [
+        "twin_quantity_differs"
+      ],
+      "ground_truth": {
+        "invoice_number": "2026/04/0825",
+        "invoice_date": "2026-01-03",
+        "supplier_name": "Rahman Engineering Works",
+        "customer_name": "Sundarban Engineering Works",
+        "subtotal": "118307",
+        "tax": "5915.35",
+        "total": "124222.35",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "5",
+            "unit_price": "8818",
+            "amount": "44090"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "1",
+            "unit_price": "3720",
+            "amount": "3720"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "21",
+            "unit_price": "3357",
+            "amount": "70497"
+          }
+        ]
+      },
+      "expected_flags": [
+        "cross_mismatch:line_items",
+        "cross_mismatch:subtotal",
+        "cross_mismatch:tax",
+        "cross_mismatch:total",
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Internal copy of d205; quantity differs"
+}

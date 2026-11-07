@@ -1,0 +1,54 @@
+{
+  "doc_id": "d120",
+  "file": "files/d120.tiff",
+  "format": "tiff",
+  "layout": "receipt",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0120",
+      "locale": "bd",
+      "defects": [
+        "missing_customer_name"
+      ],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/7184",
+        "invoice_date": "2026-05-18",
+        "supplier_name": "Padma Trading Co.",
+        "customer_name": null,
+        "subtotal": "83496",
+        "tax": "6262.20",
+        "total": "89758.20",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "3",
+            "unit_price": "13301",
+            "amount": "39903"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "41001",
+            "amount": "41001"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "2",
+            "unit_price": "1296",
+            "amount": "2592"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:customer_name"
+      ]
+    }
+  ],
+  "notes": null
+}

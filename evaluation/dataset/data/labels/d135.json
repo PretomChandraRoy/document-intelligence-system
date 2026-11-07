@@ -1,0 +1,80 @@
+{
+  "doc_id": "d135",
+  "file": "files/d135.xlsx",
+  "format": "xlsx",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0135",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2025/12/0716",
+        "invoice_date": "2026-10-08",
+        "supplier_name": "Wolf-Harris",
+        "customer_name": "Collier, Jimenez and Moran",
+        "subtotal": "4038.11",
+        "tax": "358.38",
+        "total": "4396.49",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "2",
+            "unit_price": "160.12",
+            "amount": "320.24"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "3",
+            "unit_price": "641.99",
+            "amount": "1925.97"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "166.97",
+            "amount": "166.97"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "3",
+            "unit_price": "115.92",
+            "amount": "347.76"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "5",
+            "unit_price": "143.30",
+            "amount": "716.50"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "5",
+            "unit_price": "36.90",
+            "amount": "184.50"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "10",
+            "unit_price": "5.67",
+            "amount": "56.70"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "3",
+            "unit_price": "106.49",
+            "amount": "319.47"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 3, \"sheet_names\": [\"Summary\", \"Items\", \"Notes\"], \"date_as_text\": false}"
+}

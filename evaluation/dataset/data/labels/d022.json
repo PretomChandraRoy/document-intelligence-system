@@ -1,0 +1,38 @@
+{
+  "doc_id": "d022",
+  "file": "files/d022.pdf",
+  "format": "pdf_digital",
+  "layout": "classic",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0022",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/2963",
+        "invoice_date": "2026-03-20",
+        "supplier_name": "Shapla Office Solutions",
+        "customer_name": "Sabbir Hossain",
+        "subtotal": "52750",
+        "tax": "3956.25",
+        "total": "56706.25",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "50",
+            "unit_price": "1055",
+            "amount": "52750"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

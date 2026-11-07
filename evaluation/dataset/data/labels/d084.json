@@ -1,0 +1,68 @@
+{
+  "doc_id": "d084",
+  "file": "files/d084.jpg",
+  "format": "jpg",
+  "layout": "classic",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0084",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-89418",
+        "invoice_date": "2026-09-20",
+        "supplier_name": "Drub KGaA",
+        "customer_name": "Henck",
+        "subtotal": "10369.46",
+        "tax": "2177.59",
+        "total": "12547.05",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "50",
+            "unit_price": "164.75",
+            "amount": "8237.50"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "2",
+            "unit_price": "97.01",
+            "amount": "194.02"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "1",
+            "unit_price": "44.95",
+            "amount": "44.95"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "1",
+            "unit_price": "198.20",
+            "amount": "198.20"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "264.28",
+            "amount": "792.84"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "3",
+            "unit_price": "300.65",
+            "amount": "901.95"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

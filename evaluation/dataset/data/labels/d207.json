@@ -1,0 +1,59 @@
+{
+  "doc_id": "d207",
+  "file": "files/d207.pdf",
+  "format": "pdf_digital",
+  "layout": "classic",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0235",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-12092",
+        "invoice_date": "2026-07-30",
+        "supplier_name": "Wagner and Sons",
+        "customer_name": "Michael Mitchell",
+        "subtotal": "6503.25",
+        "tax": "455.23",
+        "total": "6958.48",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "2",
+            "unit_price": "238.58",
+            "amount": "477.16"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "3",
+            "unit_price": "68.93",
+            "amount": "206.79"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "50",
+            "unit_price": "101.25",
+            "amount": "5062.50"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "20",
+            "unit_price": "37.84",
+            "amount": "756.80"
+          }
+        ]
+      },
+      "expected_flags": [
+        "cross_mismatch:invoice_date",
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Supplier copy"
+}

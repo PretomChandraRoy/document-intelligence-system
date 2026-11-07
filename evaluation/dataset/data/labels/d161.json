@@ -1,0 +1,328 @@
+{
+  "doc_id": "d161",
+  "file": "files/d161.csv",
+  "format": "csv",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0185",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-486028",
+        "invoice_date": "2026-08-20",
+        "supplier_name": "Chambers, Richards and Carson",
+        "customer_name": "Henson, Hoffman and Herman",
+        "subtotal": "8242.43",
+        "tax": "731.52",
+        "total": "8973.95",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "12",
+            "unit_price": "132.54",
+            "amount": "1590.48"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "10",
+            "unit_price": "169.40",
+            "amount": "1694"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "25",
+            "unit_price": "160.07",
+            "amount": "4001.75"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "20",
+            "unit_price": "47.81",
+            "amount": "956.20"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0186",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-566885",
+        "invoice_date": "2026-09-29",
+        "supplier_name": "Padma Printing & Packaging",
+        "customer_name": "Sabbir Hossain",
+        "subtotal": "368102",
+        "tax": "18405.10",
+        "total": "386507.10",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "3",
+            "unit_price": "29146",
+            "amount": "87438"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "5",
+            "unit_price": "807",
+            "amount": "4035"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "2",
+            "unit_price": "15577",
+            "amount": "31154"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "20",
+            "unit_price": "707",
+            "amount": "14140"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "5",
+            "unit_price": "606",
+            "amount": "3030"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "3",
+            "unit_price": "1175",
+            "amount": "3525"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "10",
+            "unit_price": "20056",
+            "amount": "200560"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "10",
+            "unit_price": "2422",
+            "amount": "24220"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0187",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-232617",
+        "invoice_date": "2026-06-12",
+        "supplier_name": "Taylor, Chavez and Santiago",
+        "customer_name": "Steven Newman",
+        "subtotal": "15970.61",
+        "tax": "0",
+        "total": "15970.61",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "1",
+            "unit_price": "231.59",
+            "amount": "231.59"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "20",
+            "unit_price": "675.92",
+            "amount": "13518.40"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "2",
+            "unit_price": "227.95",
+            "amount": "455.90"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "2",
+            "unit_price": "685.26",
+            "amount": "1370.52"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "2",
+            "unit_price": "197.10",
+            "amount": "394.20"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0188",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/9027",
+        "invoice_date": "2026-01-21",
+        "supplier_name": "Murphy and Sons",
+        "customer_name": "Derek Martinez",
+        "subtotal": "17605.78",
+        "tax": "1232.40",
+        "total": "18838.18",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "UPS 1200VA",
+            "quantity": "2",
+            "unit_price": "149.37",
+            "amount": "298.74"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "34.99",
+            "amount": "34.99"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "2",
+            "unit_price": "240.08",
+            "amount": "480.16"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "2",
+            "unit_price": "5.15",
+            "amount": "10.30"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "25",
+            "unit_price": "123.07",
+            "amount": "3076.75"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "20",
+            "unit_price": "642.79",
+            "amount": "12855.80"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "2",
+            "unit_price": "253.92",
+            "amount": "507.84"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "10",
+            "unit_price": "34.12",
+            "amount": "341.20"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0189",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-734470",
+        "invoice_date": "2026-06-12",
+        "supplier_name": "Page, Stewart and Phillips",
+        "customer_name": "Green Group",
+        "subtotal": "16273.39",
+        "tax": "3254.68",
+        "total": "19528.07",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "50",
+            "unit_price": "91.31",
+            "amount": "4565.50"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "25",
+            "unit_price": "149.99",
+            "amount": "3749.75"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "3",
+            "unit_price": "26.58",
+            "amount": "79.74"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "20",
+            "unit_price": "168.02",
+            "amount": "3360.40"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "25",
+            "unit_price": "180.72",
+            "amount": "4518"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0190",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-944809",
+        "invoice_date": "2026-03-25",
+        "supplier_name": "Gentle Hands Home Health Services",
+        "customer_name": "David Robinson",
+        "subtotal": "2456.73",
+        "tax": null,
+        "total": "2456.73",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "1",
+            "unit_price": "214.16",
+            "amount": "214.16"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "5",
+            "unit_price": "297.30",
+            "amount": "1486.50"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "42",
+            "unit_price": "0.62",
+            "amount": "26.04"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "7",
+            "unit_price": "104.29",
+            "amount": "730.03"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": false}"
+}

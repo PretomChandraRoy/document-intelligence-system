@@ -1,0 +1,56 @@
+{
+  "doc_id": "d128",
+  "file": "files/d128.xlsx",
+  "format": "xlsx",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0128",
+      "locale": "homecare",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "HC-644719",
+        "invoice_date": "2026-04-21",
+        "supplier_name": "Hearthside Home Care LLC",
+        "customer_name": "Rachel Munoz",
+        "subtotal": "3149.12",
+        "tax": "0",
+        "total": "3149.12",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "24",
+            "unit_price": "28.70",
+            "amount": "688.80"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "24",
+            "unit_price": "49.86",
+            "amount": "1196.64"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "40",
+            "unit_price": "25.19",
+            "amount": "1007.60"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "8",
+            "unit_price": "32.01",
+            "amount": "256.08"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

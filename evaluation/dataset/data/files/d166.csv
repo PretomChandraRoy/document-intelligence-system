@@ -1,0 +1,16 @@
+INVOICE
+
+Supplier,Hearthside Home Care LLC
+Invoice Number,HC-250331
+Invoice Date,2026-03-03
+Bill To,Ronald Ward
+Currency,USD
+
+Description,Quantity,Unit Price,Amount
+Respite Care services,28.00,26.27,735.56
+Home Health Aide services,32.00,37.21,1190.72
+Overnight Care,3.00,181.53,544.59
+Care Coordination fee,2.00,71.71,143.42
+
+,,Subtotal,2614.29
+,,Total,2614.29

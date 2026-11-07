@@ -1,0 +1,48 @@
+{
+  "doc_id": "d003",
+  "file": "files/d003.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0003",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-835911",
+        "invoice_date": "2026-05-17",
+        "supplier_name": "Brightpath Home Care LLC",
+        "customer_name": "Rachel Shannon",
+        "subtotal": "1474.34",
+        "tax": null,
+        "total": "1474.34",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Home Health Aide services",
+            "quantity": "28",
+            "unit_price": "28.61",
+            "amount": "801.08"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "3",
+            "unit_price": "224.42",
+            "amount": "673.26"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,13 @@
+{
+  "doc_id": "d216",
+  "file": "files/d216.csv",
+  "format": "csv",
+  "layout": null,
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "failed",
+  "expected_error": "no_data",
+  "invoices": [],
+  "notes": "Header row only"
+}

@@ -1,0 +1,38 @@
+{
+  "doc_id": "d133",
+  "file": "files/d133.xlsx",
+  "format": "xlsx",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0133",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2025/03/0493",
+        "invoice_date": "2026-09-14",
+        "supplier_name": "Shea Group",
+        "customer_name": "Jennifer Robertson",
+        "subtotal": "1369.56",
+        "tax": "95.87",
+        "total": "1465.43",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "UPS 1200VA",
+            "quantity": "12",
+            "unit_price": "114.13",
+            "amount": "1369.56"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

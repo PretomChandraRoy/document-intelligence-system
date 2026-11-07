@@ -1,0 +1,48 @@
+{
+  "doc_id": "d032",
+  "file": "files/d032.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0032",
+      "locale": "us",
+      "defects": [
+        "missing_currency"
+      ],
+      "ground_truth": {
+        "invoice_number": "SI-335134",
+        "invoice_date": "2026-07-05",
+        "supplier_name": "Sellers, George and Burns",
+        "customer_name": "Henderson, Lewis and Ryan",
+        "subtotal": "4026.75",
+        "tax": "251.67",
+        "total": "4278.42",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "UPS 1200VA",
+            "quantity": "25",
+            "unit_price": "117.75",
+            "amount": "2943.75"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "2",
+            "unit_price": "541.50",
+            "amount": "1083"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": null
+}

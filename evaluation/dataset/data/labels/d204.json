@@ -1,0 +1,56 @@
+{
+  "doc_id": "d204",
+  "file": "files/d204.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0233b",
+      "locale": "bd",
+      "defects": [
+        "twin_total_differs"
+      ],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/1521",
+        "invoice_date": "2026-05-26",
+        "supplier_name": "Lalbagh Office Solutions",
+        "customer_name": "Banani Office Solutions",
+        "subtotal": "284004",
+        "tax": "14200.20",
+        "total": "302502.46",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "3",
+            "unit_price": "59715",
+            "amount": "179145"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "1",
+            "unit_price": "23497",
+            "amount": "23497"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "2",
+            "unit_price": "40681",
+            "amount": "81362"
+          }
+        ]
+      },
+      "expected_flags": [
+        "cross_mismatch:total",
+        "duplicate",
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": "Internal copy of d203; total differs"
+}

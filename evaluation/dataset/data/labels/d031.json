@@ -1,0 +1,60 @@
+{
+  "doc_id": "d031",
+  "file": "files/d031.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0031",
+      "locale": "us",
+      "defects": [
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/2010",
+        "invoice_date": "2026-09-09",
+        "supplier_name": "Campos Inc",
+        "customer_name": "Maldonado PLC",
+        "subtotal": "6522.08",
+        "tax": "578.83",
+        "total": "7141.63",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "101.25",
+            "amount": "101.25"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "20",
+            "unit_price": "275.32",
+            "amount": "5506.40"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "1",
+            "unit_price": "114.03",
+            "amount": "114.03"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "20",
+            "unit_price": "40.02",
+            "amount": "800.40"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

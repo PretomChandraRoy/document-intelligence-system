@@ -1,0 +1,50 @@
+{
+  "doc_id": "d131",
+  "file": "files/d131.xlsx",
+  "format": "xlsx",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0131",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A66925",
+        "invoice_date": "2026-06-21",
+        "supplier_name": "Green Valley Technologies Ltd.",
+        "customer_name": "Bengal Enterprise",
+        "subtotal": "1821650",
+        "tax": "273247.50",
+        "total": "2094897.50",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "50",
+            "unit_price": "23728",
+            "amount": "1186400"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "50",
+            "unit_price": "4947",
+            "amount": "247350"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "50",
+            "unit_price": "7758",
+            "amount": "387900"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

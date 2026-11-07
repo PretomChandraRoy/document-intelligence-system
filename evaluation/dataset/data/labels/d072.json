@@ -1,0 +1,80 @@
+{
+  "doc_id": "d072",
+  "file": "files/d072.jpg",
+  "format": "jpg",
+  "layout": "modern",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0072",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/9433",
+        "invoice_date": "2026-01-29",
+        "supplier_name": "Chittagong Port Supplies Ltd.",
+        "customer_name": "Rupsha Engineering Works",
+        "subtotal": "1182322",
+        "tax": "59116.10",
+        "total": "1241438.10",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "25",
+            "unit_price": "18468",
+            "amount": "461700"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "2",
+            "unit_price": "2951",
+            "amount": "5902"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "3",
+            "unit_price": "6306",
+            "amount": "18918"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "1",
+            "unit_price": "8977",
+            "amount": "8977"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "25",
+            "unit_price": "14070",
+            "amount": "351750"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "31385",
+            "amount": "94155"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "3",
+            "unit_price": "5015",
+            "amount": "15045"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "25",
+            "unit_price": "9035",
+            "amount": "225875"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

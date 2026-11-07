@@ -1,0 +1,13 @@
+{
+  "doc_id": "d211",
+  "file": "files/d211.png",
+  "format": "png",
+  "layout": null,
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "failed",
+  "expected_error": "empty_file",
+  "invoices": [],
+  "notes": "Zero-byte PNG"
+}

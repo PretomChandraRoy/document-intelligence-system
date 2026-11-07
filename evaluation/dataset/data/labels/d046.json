@@ -1,0 +1,54 @@
+{
+  "doc_id": "d046",
+  "file": "files/d046.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0046",
+      "locale": "us",
+      "defects": [
+        "wrong_subtotal"
+      ],
+      "ground_truth": {
+        "invoice_number": "SI-331577",
+        "invoice_date": "2026-07-08",
+        "supplier_name": "Harris-Walters",
+        "customer_name": "Gardner LLC",
+        "subtotal": "4519.53",
+        "tax": "398.34",
+        "total": "4917.87",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "1",
+            "unit_price": "77.23",
+            "amount": "77.23"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "12",
+            "unit_price": "325.82",
+            "amount": "3909.84"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "1",
+            "unit_price": "501.29",
+            "amount": "501.29"
+          }
+        ]
+      },
+      "expected_flags": [
+        "line_items_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,38 @@
+{
+  "doc_id": "d058",
+  "file": "files/d058.pdf",
+  "format": "pdf_scanned",
+  "layout": "receipt",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0058",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2025/04/0393",
+        "invoice_date": "2026-03-09",
+        "supplier_name": "Schüler KG",
+        "customer_name": "Caspar Schönland GmbH & Co. OHG",
+        "subtotal": "105.40",
+        "tax": "22.13",
+        "total": "127.53",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "10",
+            "unit_price": "10.54",
+            "amount": "105.40"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

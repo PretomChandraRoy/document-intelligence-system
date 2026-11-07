@@ -1,0 +1,55 @@
+{
+  "doc_id": "d007",
+  "file": "files/d007.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0007",
+      "locale": "homecare",
+      "defects": [
+        "missing_invoice_number"
+      ],
+      "ground_truth": {
+        "invoice_number": null,
+        "invoice_date": "2026-02-05",
+        "supplier_name": "Maple Grove Care Partners Inc.",
+        "customer_name": "Brian Valenzuela",
+        "subtotal": "1293.74",
+        "tax": "0",
+        "total": "1293.74",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Care Coordination fee",
+            "quantity": "1",
+            "unit_price": "48.95",
+            "amount": "48.95"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "5",
+            "unit_price": "208.73",
+            "amount": "1043.65"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "2",
+            "unit_price": "100.57",
+            "amount": "201.14"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate",
+        "missing:invoice_number"
+      ]
+    }
+  ],
+  "notes": null
+}

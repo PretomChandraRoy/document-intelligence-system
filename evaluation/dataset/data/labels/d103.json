@@ -1,0 +1,55 @@
+{
+  "doc_id": "d103",
+  "file": "files/d103.png",
+  "format": "png",
+  "layout": "homecare",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0103",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line",
+        "missing_customer_name"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-683635",
+        "invoice_date": "2026-05-23",
+        "supplier_name": "Silver Oak Home Health Services",
+        "customer_name": null,
+        "subtotal": "838.16",
+        "tax": null,
+        "total": "838.16",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Care Coordination fee",
+            "quantity": "3",
+            "unit_price": "118.68",
+            "amount": "356.04"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "12",
+            "unit_price": "37.51",
+            "amount": "450.12"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "50",
+            "unit_price": "0.64",
+            "amount": "32"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:customer_name"
+      ]
+    }
+  ],
+  "notes": null
+}

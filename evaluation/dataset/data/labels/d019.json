@@ -1,0 +1,54 @@
+{
+  "doc_id": "d019",
+  "file": "files/d019.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0019",
+      "locale": "eu",
+      "defects": [
+        "missing_invoice_date"
+      ],
+      "ground_truth": {
+        "invoice_number": "SI-648141",
+        "invoice_date": null,
+        "supplier_name": "Krause Dietz GmbH & Co. KGaA",
+        "customer_name": "Meyer Walter OHG mbH",
+        "subtotal": "1182.58",
+        "tax": "248.34",
+        "total": "1430.92",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "20",
+            "unit_price": "48.28",
+            "amount": "965.60"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "1",
+            "unit_price": "22.66",
+            "amount": "22.66"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "194.32",
+            "amount": "194.32"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:invoice_date"
+      ]
+    }
+  ],
+  "notes": null
+}

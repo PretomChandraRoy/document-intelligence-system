@@ -1,0 +1,60 @@
+{
+  "doc_id": "d035",
+  "file": "files/d035.pdf",
+  "format": "pdf_digital",
+  "layout": "modern",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0035",
+      "locale": "bd",
+      "defects": [
+        "wrong_subtotal"
+      ],
+      "ground_truth": {
+        "invoice_number": "A51853",
+        "invoice_date": "2026-03-15",
+        "supplier_name": "Padma Traders",
+        "customer_name": "Sundarban Distributors",
+        "subtotal": "1048385.67",
+        "tax": "52292.65",
+        "total": "1100678.32",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "20",
+            "unit_price": "31315",
+            "amount": "626300"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "5",
+            "unit_price": "37147",
+            "amount": "185735"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "2",
+            "unit_price": "8269",
+            "amount": "16538"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "20",
+            "unit_price": "10864",
+            "amount": "217280"
+          }
+        ]
+      },
+      "expected_flags": [
+        "line_items_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

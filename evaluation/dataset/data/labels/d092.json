@@ -1,0 +1,38 @@
+{
+  "doc_id": "d092",
+  "file": "files/d092.png",
+  "format": "png",
+  "layout": "classic",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0092",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-67055",
+        "invoice_date": "2026-08-03",
+        "supplier_name": "Moss, Bevan and Bennett",
+        "customer_name": "Payne-Price",
+        "subtotal": "1302.20",
+        "tax": "260.44",
+        "total": "1562.64",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "5",
+            "unit_price": "260.44",
+            "amount": "1302.20"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,292 @@
+{
+  "doc_id": "d113",
+  "file": "files/d113.tiff",
+  "format": "tiff",
+  "layout": "homecare",
+  "degradation": "mild",
+  "pages": 2,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0113",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-822689",
+        "invoice_date": "2026-06-11",
+        "supplier_name": "Hearthside Home Health Services",
+        "customer_name": "Anthony Medina",
+        "subtotal": "25544.43",
+        "tax": null,
+        "total": "25544.43",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "16",
+            "unit_price": "32.21",
+            "amount": "515.36"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "93",
+            "unit_price": "0.62",
+            "amount": "57.66"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "152",
+            "unit_price": "0.67",
+            "amount": "101.84"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "4",
+            "unit_price": "23.60",
+            "amount": "94.40"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "12",
+            "unit_price": "23.04",
+            "amount": "276.48"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "28",
+            "unit_price": "28.24",
+            "amount": "790.72"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "28",
+            "unit_price": "44.65",
+            "amount": "1250.20"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "23",
+            "unit_price": "0.67",
+            "amount": "15.41"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "8",
+            "unit_price": "32.14",
+            "amount": "257.12"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "169",
+            "unit_price": "0.63",
+            "amount": "106.47"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "16",
+            "unit_price": "31.28",
+            "amount": "500.48"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "8",
+            "unit_price": "155.43",
+            "amount": "1243.44"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "20",
+            "unit_price": "24.10",
+            "amount": "482"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "47",
+            "unit_price": "0.66",
+            "amount": "31.02"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "95",
+            "unit_price": "0.63",
+            "amount": "59.85"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "37.5",
+            "unit_price": "37.44",
+            "amount": "1404"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "167",
+            "unit_price": "0.63",
+            "amount": "105.21"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "7",
+            "unit_price": "85.05",
+            "amount": "595.35"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "6",
+            "unit_price": "157.48",
+            "amount": "944.88"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "8",
+            "unit_price": "111.72",
+            "amount": "893.76"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "32",
+            "unit_price": "23.40",
+            "amount": "748.80"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "28",
+            "unit_price": "33.24",
+            "amount": "930.72"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "4",
+            "unit_price": "147.01",
+            "amount": "588.04"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "24",
+            "unit_price": "42.91",
+            "amount": "1029.84"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "20",
+            "unit_price": "24.98",
+            "amount": "499.60"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "28",
+            "unit_price": "33.76",
+            "amount": "945.28"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "2",
+            "unit_price": "246.55",
+            "amount": "493.10"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "32",
+            "unit_price": "23.14",
+            "amount": "740.48"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "5",
+            "unit_price": "106.88",
+            "amount": "534.40"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "8",
+            "unit_price": "142.91",
+            "amount": "1143.28"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "4",
+            "unit_price": "151.73",
+            "amount": "606.92"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "4",
+            "unit_price": "108.18",
+            "amount": "432.72"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "6",
+            "unit_price": "105.14",
+            "amount": "630.84"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "8",
+            "unit_price": "36.96",
+            "amount": "295.68"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "1",
+            "unit_price": "101.14",
+            "amount": "101.14"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "30",
+            "unit_price": "0.68",
+            "amount": "20.40"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "6",
+            "unit_price": "239.08",
+            "amount": "1434.48"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "32",
+            "unit_price": "26.19",
+            "amount": "838.08"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "91",
+            "unit_price": "0.64",
+            "amount": "58.24"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "4",
+            "unit_price": "25.26",
+            "amount": "101.04"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "32",
+            "unit_price": "53.49",
+            "amount": "1711.68"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "37.5",
+            "unit_price": "26.17",
+            "amount": "981.38"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "32",
+            "unit_price": "29.77",
+            "amount": "952.64"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

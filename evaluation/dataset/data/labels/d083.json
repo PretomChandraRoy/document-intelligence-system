@@ -1,0 +1,46 @@
+{
+  "doc_id": "d083",
+  "file": "files/d083.jpg",
+  "format": "jpg",
+  "layout": "homecare",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0083",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-387286",
+        "invoice_date": "2026-04-12",
+        "supplier_name": "Maple Grove Home Care LLC",
+        "customer_name": "Austin Black",
+        "subtotal": "722.27",
+        "tax": null,
+        "total": "722.27",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "4",
+            "unit_price": "149.40",
+            "amount": "597.60"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "1",
+            "unit_price": "124.67",
+            "amount": "124.67"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

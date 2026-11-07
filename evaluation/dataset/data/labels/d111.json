@@ -1,0 +1,280 @@
+{
+  "doc_id": "d111",
+  "file": "files/d111.tiff",
+  "format": "tiff",
+  "layout": "homecare",
+  "degradation": "clean",
+  "pages": 2,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0111",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-602290",
+        "invoice_date": "2026-09-03",
+        "supplier_name": "Willow Creek Home Care LLC",
+        "customer_name": "Christopher Alvarez",
+        "subtotal": "27298.78",
+        "tax": null,
+        "total": "27298.78",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "8",
+            "unit_price": "234.08",
+            "amount": "1872.64"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "40",
+            "unit_price": "25.83",
+            "amount": "1033.20"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "6",
+            "unit_price": "295.04",
+            "amount": "1770.24"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "4",
+            "unit_price": "23.13",
+            "amount": "92.52"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "7",
+            "unit_price": "112.98",
+            "amount": "790.86"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "3",
+            "unit_price": "261.55",
+            "amount": "784.65"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "8",
+            "unit_price": "235.54",
+            "amount": "1884.32"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "5",
+            "unit_price": "238.44",
+            "amount": "1192.20"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "12",
+            "unit_price": "33.39",
+            "amount": "400.68"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "20",
+            "unit_price": "36.16",
+            "amount": "723.20"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "37.5",
+            "unit_price": "21.96",
+            "amount": "823.50"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "8",
+            "unit_price": "36.60",
+            "amount": "292.80"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "27",
+            "unit_price": "0.68",
+            "amount": "18.36"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "40",
+            "unit_price": "35.32",
+            "amount": "1412.80"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "37.5",
+            "unit_price": "25.13",
+            "amount": "942.38"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "140",
+            "unit_price": "0.67",
+            "amount": "93.80"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "24",
+            "unit_price": "23.92",
+            "amount": "574.08"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "12",
+            "unit_price": "29.58",
+            "amount": "354.96"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "43",
+            "unit_price": "0.64",
+            "amount": "27.52"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "22",
+            "unit_price": "0.67",
+            "amount": "14.74"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "37.5",
+            "unit_price": "21.40",
+            "amount": "802.50"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "12",
+            "unit_price": "25.66",
+            "amount": "307.92"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "32",
+            "unit_price": "29.39",
+            "amount": "940.48"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "16",
+            "unit_price": "31.14",
+            "amount": "498.24"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "2",
+            "unit_price": "112.18",
+            "amount": "224.36"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "1",
+            "unit_price": "138.46",
+            "amount": "138.46"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "112",
+            "unit_price": "0.64",
+            "amount": "71.68"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "1",
+            "unit_price": "43.19",
+            "amount": "43.19"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "2",
+            "unit_price": "264.45",
+            "amount": "528.90"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "90",
+            "unit_price": "0.68",
+            "amount": "61.20"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "40",
+            "unit_price": "30.53",
+            "amount": "1221.20"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "28",
+            "unit_price": "26.54",
+            "amount": "743.12"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "2",
+            "unit_price": "242",
+            "amount": "484"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "16",
+            "unit_price": "42.91",
+            "amount": "686.56"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "6",
+            "unit_price": "238.42",
+            "amount": "1430.52"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "1",
+            "unit_price": "80.15",
+            "amount": "80.15"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "32",
+            "unit_price": "21.66",
+            "amount": "693.12"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "37.5",
+            "unit_price": "33.37",
+            "amount": "1251.38"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "3",
+            "unit_price": "107.15",
+            "amount": "321.45"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "2",
+            "unit_price": "259.33",
+            "amount": "518.66"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "24",
+            "unit_price": "48.01",
+            "amount": "1152.24"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

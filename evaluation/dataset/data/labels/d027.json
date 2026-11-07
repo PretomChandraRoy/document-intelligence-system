@@ -1,0 +1,64 @@
+{
+  "doc_id": "d027",
+  "file": "files/d027.pdf",
+  "format": "pdf_digital",
+  "layout": "classic",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0027",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-41366",
+        "invoice_date": "2026-04-13",
+        "supplier_name": "Hauffer KG",
+        "customer_name": "Gieß Stroh GmbH & Co. OHG",
+        "subtotal": "1266.99",
+        "tax": "240.73",
+        "total": "1507.72",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "224.55",
+            "amount": "224.55"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "2",
+            "unit_price": "34.06",
+            "amount": "68.12"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "20",
+            "unit_price": "32.11",
+            "amount": "642.20"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "311.85",
+            "amount": "311.85"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "1",
+            "unit_price": "20.27",
+            "amount": "20.27"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": null
+}

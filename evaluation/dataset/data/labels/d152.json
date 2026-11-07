@@ -1,0 +1,46 @@
+{
+  "doc_id": "d152",
+  "file": "files/d152.xls",
+  "format": "xls",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0167",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-112542",
+        "invoice_date": "2026-02-04",
+        "supplier_name": "Silver Oak Care Partners Inc.",
+        "customer_name": "Scott Davenport",
+        "subtotal": "682.54",
+        "tax": null,
+        "total": "682.54",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "106",
+            "unit_price": "0.67",
+            "amount": "71.02"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "24",
+            "unit_price": "25.48",
+            "amount": "611.52"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 3, \"sheet_names\": [\"Summary\", \"Items\", \"Notes\"], \"date_as_text\": false}"
+}

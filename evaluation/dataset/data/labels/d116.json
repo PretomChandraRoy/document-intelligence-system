@@ -1,0 +1,60 @@
+{
+  "doc_id": "d116",
+  "file": "files/d116.tiff",
+  "format": "tiff",
+  "layout": "receipt",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0116",
+      "locale": "us",
+      "defects": [
+        "wrong_line_amount"
+      ],
+      "ground_truth": {
+        "invoice_number": "INV-2026-21234",
+        "invoice_date": "2026-02-06",
+        "supplier_name": "Kerr and Sons",
+        "customer_name": "Miller-Williams",
+        "subtotal": "18382.16",
+        "tax": "1285.88",
+        "total": "19668.04",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "20",
+            "unit_price": "229.03",
+            "amount": "4580.60"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "50",
+            "unit_price": "257.53",
+            "amount": "12876.50"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "2",
+            "unit_price": "293.74",
+            "amount": "599.98"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "12",
+            "unit_price": "27.09",
+            "amount": "325.08"
+          }
+        ]
+      },
+      "expected_flags": [
+        "line_amount_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

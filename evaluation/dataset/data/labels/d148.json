@@ -1,0 +1,38 @@
+{
+  "doc_id": "d148",
+  "file": "files/d148.xls",
+  "format": "xls",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0163",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A43036",
+        "invoice_date": "2026-02-09",
+        "supplier_name": "Banani Technologies Ltd.",
+        "customer_name": "Sonali Distributors",
+        "subtotal": "429840",
+        "tax": "21492",
+        "total": "451332",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "20",
+            "unit_price": "21492",
+            "amount": "429840"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

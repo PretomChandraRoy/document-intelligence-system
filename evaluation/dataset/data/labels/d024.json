@@ -1,0 +1,48 @@
+{
+  "doc_id": "d024",
+  "file": "files/d024.pdf",
+  "format": "pdf_digital",
+  "layout": "classic",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0024",
+      "locale": "uk",
+      "defects": [
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "INV-2026-29103",
+        "invoice_date": "2026-08-12",
+        "supplier_name": "Wilson-Hale",
+        "customer_name": "Sullivan Group",
+        "subtotal": "1409.47",
+        "tax": "281.89",
+        "total": "1665.76",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "135.47",
+            "amount": "135.47"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "5",
+            "unit_price": "254.80",
+            "amount": "1274"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

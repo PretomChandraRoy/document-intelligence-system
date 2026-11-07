@@ -1,0 +1,56 @@
+{
+  "doc_id": "d056",
+  "file": "files/d056.pdf",
+  "format": "pdf_scanned",
+  "layout": "classic",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0056",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "70089",
+        "invoice_date": "2026-02-17",
+        "supplier_name": "Delta Trading Co.",
+        "customer_name": "Lalbagh Office Solutions",
+        "subtotal": "531696",
+        "tax": "26584.80",
+        "total": "558280.80",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "12",
+            "unit_price": "518",
+            "amount": "6216"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "12",
+            "unit_price": "22945",
+            "amount": "275340"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "10",
+            "unit_price": "6251",
+            "amount": "62510"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "10",
+            "unit_price": "18763",
+            "amount": "187630"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

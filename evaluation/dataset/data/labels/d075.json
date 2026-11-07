@@ -1,0 +1,50 @@
+{
+  "doc_id": "d075",
+  "file": "files/d075.jpg",
+  "format": "jpg",
+  "layout": "classic",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0075",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "84127",
+        "invoice_date": "2026-04-24",
+        "supplier_name": "Walton-Decker",
+        "customer_name": "Hernandez, Martinez and Caldwell",
+        "subtotal": "994.75",
+        "tax": "88.28",
+        "total": "1083.03",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "2",
+            "unit_price": "247.74",
+            "amount": "495.48"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "50",
+            "unit_price": "7.13",
+            "amount": "356.50"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "142.77",
+            "amount": "142.77"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

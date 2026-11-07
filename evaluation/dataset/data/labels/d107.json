@@ -1,0 +1,44 @@
+{
+  "doc_id": "d107",
+  "file": "files/d107.png",
+  "format": "png",
+  "layout": "classic",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0107",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A63429",
+        "invoice_date": "2026-04-27",
+        "supplier_name": "Bengal Engineering Works",
+        "customer_name": "Jamuna Traders",
+        "subtotal": "163130",
+        "tax": "8156.50",
+        "total": "171286.50",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "1",
+            "unit_price": "5045",
+            "amount": "5045"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "5",
+            "unit_price": "31617",
+            "amount": "158085"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

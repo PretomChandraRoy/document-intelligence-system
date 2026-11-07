@@ -1,0 +1,38 @@
+{
+  "doc_id": "d102",
+  "file": "files/d102.png",
+  "format": "png",
+  "layout": "receipt",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0102",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "94886",
+        "invoice_date": "2026-04-26",
+        "supplier_name": "Lalbagh Printing & Packaging",
+        "customer_name": "Northern Traders",
+        "subtotal": "815100",
+        "tax": "61132.50",
+        "total": "876232.50",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "50",
+            "unit_price": "16302",
+            "amount": "815100"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

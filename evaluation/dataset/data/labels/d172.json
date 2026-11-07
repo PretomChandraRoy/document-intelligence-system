@@ -1,0 +1,430 @@
+{
+  "doc_id": "d172",
+  "file": "files/d172.pdf",
+  "format": "pdf_scanned",
+  "layout": "bundle",
+  "degradation": "mild",
+  "pages": 8,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0213",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/9717",
+        "invoice_date": "2026-05-14",
+        "supplier_name": "Jennings-Singh",
+        "customer_name": "Justin Bennett",
+        "subtotal": "16882.53",
+        "tax": "3376.51",
+        "total": "20259.04",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "50",
+            "unit_price": "7.88",
+            "amount": "394"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "3",
+            "unit_price": "274.91",
+            "amount": "824.73"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "50",
+            "unit_price": "304.58",
+            "amount": "15229"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "20",
+            "unit_price": "21.74",
+            "amount": "434.80"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "invoice_id": "inv0214",
+      "locale": "us",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/9294",
+        "invoice_date": "2026-07-08",
+        "supplier_name": "Boone LLC",
+        "customer_name": "Kylie Morales",
+        "subtotal": "2533.33",
+        "tax": null,
+        "total": "2533.33",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "113.73",
+            "amount": "341.19"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "25",
+            "unit_price": "9.18",
+            "amount": "229.50"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "878.78",
+            "amount": "878.78"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "5",
+            "unit_price": "133.11",
+            "amount": "665.55"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "240.31",
+            "amount": "240.31"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "50",
+            "unit_price": "3.56",
+            "amount": "178"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "invoice_id": "inv0215",
+      "locale": "homecare",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "HC-130170",
+        "invoice_date": "2026-03-16",
+        "supplier_name": "Silver Oak Home Care LLC",
+        "customer_name": "Christian Gibbs",
+        "subtotal": "2098.88",
+        "tax": "0",
+        "total": "2098.88",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Respite Care services",
+            "quantity": "32",
+            "unit_price": "28.58",
+            "amount": "914.56"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "16",
+            "unit_price": "45",
+            "amount": "720"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "16",
+            "unit_price": "29.02",
+            "amount": "464.32"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        3,
+        3
+      ]
+    },
+    {
+      "invoice_id": "inv0216",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A61733",
+        "invoice_date": "2026-07-15",
+        "supplier_name": "Rahman Office Solutions",
+        "customer_name": "Lalbagh Supplies Ltd.",
+        "subtotal": "429889",
+        "tax": "21494.45",
+        "total": "451383.45",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "1",
+            "unit_price": "23992",
+            "amount": "23992"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "10",
+            "unit_price": "12593",
+            "amount": "125930"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "10",
+            "unit_price": "27432",
+            "amount": "274320"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "1",
+            "unit_price": "5647",
+            "amount": "5647"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        4,
+        4
+      ]
+    },
+    {
+      "invoice_id": "inv0217",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-994470",
+        "invoice_date": "2026-03-19",
+        "supplier_name": "Moore PLC",
+        "customer_name": "Kelsey Parker",
+        "subtotal": "15644.38",
+        "tax": "1095.11",
+        "total": "16739.49",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "20",
+            "unit_price": "9.62",
+            "amount": "192.40"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "25",
+            "unit_price": "20.15",
+            "amount": "503.75"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "1",
+            "unit_price": "46.93",
+            "amount": "46.93"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "20",
+            "unit_price": "349.20",
+            "amount": "6984"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "10",
+            "unit_price": "89.84",
+            "amount": "898.40"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "5",
+            "unit_price": "487.11",
+            "amount": "2435.55"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "25",
+            "unit_price": "46.91",
+            "amount": "1172.75"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "10",
+            "unit_price": "341.06",
+            "amount": "3410.60"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ],
+      "pages": [
+        5,
+        5
+      ]
+    },
+    {
+      "invoice_id": "inv0218",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-32265",
+        "invoice_date": "2026-08-02",
+        "supplier_name": "Karim Supplies Ltd.",
+        "customer_name": "Imran Kabir",
+        "subtotal": "1213590",
+        "tax": "182038.50",
+        "total": "1395628.50",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "20",
+            "unit_price": "7537",
+            "amount": "150740"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "20",
+            "unit_price": "15346",
+            "amount": "306920"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "2",
+            "unit_price": "2551",
+            "amount": "5102"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "3",
+            "unit_price": "31865",
+            "amount": "95595"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "2",
+            "unit_price": "37948",
+            "amount": "75896"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "50",
+            "unit_price": "9610",
+            "amount": "480500"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "23654",
+            "amount": "70962"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "25",
+            "unit_price": "1115",
+            "amount": "27875"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        6,
+        6
+      ]
+    },
+    {
+      "invoice_id": "inv0219",
+      "locale": "us",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "96447",
+        "invoice_date": "2026-08-24",
+        "supplier_name": "Padilla, Mason and Whitaker",
+        "customer_name": "Smith-Nguyen",
+        "subtotal": "4278.20",
+        "tax": null,
+        "total": "4278.20",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "10",
+            "unit_price": "403.36",
+            "amount": "4033.60"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "10",
+            "unit_price": "24.46",
+            "amount": "244.60"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        7,
+        7
+      ]
+    },
+    {
+      "invoice_id": "inv0220",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2026/05/0663",
+        "invoice_date": "2026-03-25",
+        "supplier_name": "Banani Office Solutions",
+        "customer_name": "Dhanmondi Trading Co.",
+        "subtotal": "843392",
+        "tax": "126508.80",
+        "total": "969900.80",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "1",
+            "unit_price": "3414",
+            "amount": "3414"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "50",
+            "unit_price": "14254",
+            "amount": "712700"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "5",
+            "unit_price": "22599",
+            "amount": "112995"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "1",
+            "unit_price": "14283",
+            "amount": "14283"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        8,
+        8
+      ]
+    }
+  ],
+  "notes": "Several invoices in one PDF; the system must split them."
+}

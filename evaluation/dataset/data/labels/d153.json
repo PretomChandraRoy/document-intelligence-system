@@ -1,0 +1,44 @@
+{
+  "doc_id": "d153",
+  "file": "files/d153.xls",
+  "format": "xls",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0168",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A48609",
+        "invoice_date": "2026-04-05",
+        "supplier_name": "Karim Traders",
+        "customer_name": "Bengal Distributors",
+        "subtotal": "91360",
+        "tax": "4568",
+        "total": "95928",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "2",
+            "unit_price": "15839",
+            "amount": "31678"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "2",
+            "unit_price": "29841",
+            "amount": "59682"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 3, \"sheet_names\": [\"Summary\", \"Items\", \"Notes\"], \"date_as_text\": false}"
+}

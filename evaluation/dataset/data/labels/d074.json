@@ -1,0 +1,56 @@
+{
+  "doc_id": "d074",
+  "file": "files/d074.jpg",
+  "format": "jpg",
+  "layout": "receipt",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0074",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/9208",
+        "invoice_date": "2026-06-12",
+        "supplier_name": "Atzler AG & Co. KGaA",
+        "customer_name": "Mies",
+        "subtotal": "17486.50",
+        "tax": "3672.17",
+        "total": "21158.67",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "10",
+            "unit_price": "252.04",
+            "amount": "2520.40"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "50",
+            "unit_price": "168.50",
+            "amount": "8425"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "10",
+            "unit_price": "225.05",
+            "amount": "2250.50"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "12",
+            "unit_price": "357.55",
+            "amount": "4290.60"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

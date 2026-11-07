@@ -1,0 +1,110 @@
+{
+  "doc_id": "d145",
+  "file": "files/d145.xlsx",
+  "format": "xlsx",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0158",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A18180",
+        "invoice_date": "2026-03-07",
+        "supplier_name": "Harloff",
+        "customer_name": "Hiller AG",
+        "subtotal": "7583.90",
+        "tax": "1592.62",
+        "total": "9176.52",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "10",
+            "unit_price": "96.98",
+            "amount": "969.80"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "12",
+            "unit_price": "544.79",
+            "amount": "6537.48"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "1",
+            "unit_price": "76.62",
+            "amount": "76.62"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0159",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/3084",
+        "invoice_date": "2026-09-01",
+        "supplier_name": "Lozano, Smith and Thomas",
+        "customer_name": "Williamson and Sons",
+        "subtotal": "530.77",
+        "tax": "33.17",
+        "total": "563.94",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "50",
+            "unit_price": "4.37",
+            "amount": "218.50"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "12",
+            "unit_price": "19.21",
+            "amount": "230.52"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "25",
+            "unit_price": "3.27",
+            "amount": "81.75"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0160",
+      "locale": "homecare",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "HC-242371",
+        "invoice_date": "2026-08-12",
+        "supplier_name": "Harbor Light Home Care LLC",
+        "customer_name": "Jose Tyler",
+        "subtotal": "107.48",
+        "tax": "0",
+        "total": "107.48",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Home Health Aide services",
+            "quantity": "4",
+            "unit_price": "26.87",
+            "amount": "107.48"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Export\"], \"date_as_text\": false}"
+}

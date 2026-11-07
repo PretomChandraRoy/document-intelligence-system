@@ -1,0 +1,62 @@
+{
+  "doc_id": "d154",
+  "file": "files/d154.xls",
+  "format": "xls",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0169",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-18858",
+        "invoice_date": "2026-09-09",
+        "supplier_name": "Harrison, Miles and Shaw",
+        "customer_name": "Rogers LLC",
+        "subtotal": "864.70",
+        "tax": "172.94",
+        "total": "1037.64",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "2",
+            "unit_price": "79.65",
+            "amount": "159.30"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "1",
+            "unit_price": "51.80",
+            "amount": "51.80"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "1",
+            "unit_price": "14.04",
+            "amount": "14.04"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "2",
+            "unit_price": "55.84",
+            "amount": "111.68"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "3",
+            "unit_price": "175.96",
+            "amount": "527.88"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 3, \"sheet_names\": [\"Summary\", \"Items\", \"Notes\"], \"date_as_text\": false}"
+}

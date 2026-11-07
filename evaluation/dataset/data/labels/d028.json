@@ -1,0 +1,54 @@
+{
+  "doc_id": "d028",
+  "file": "files/d028.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0028",
+      "locale": "homecare",
+      "defects": [
+        "missing_currency"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-825686",
+        "invoice_date": "2026-09-12",
+        "supplier_name": "Silver Oak Home Health Services",
+        "customer_name": "Jessica Benjamin",
+        "subtotal": "3083.74",
+        "tax": "0",
+        "total": "3083.74",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "24",
+            "unit_price": "25.28",
+            "amount": "606.72"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "7",
+            "unit_price": "286.74",
+            "amount": "2007.18"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "7",
+            "unit_price": "67.12",
+            "amount": "469.84"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": null
+}

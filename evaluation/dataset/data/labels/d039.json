@@ -1,0 +1,54 @@
+{
+  "doc_id": "d039",
+  "file": "files/d039.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0039",
+      "locale": "eu",
+      "defects": [
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "A72245",
+        "invoice_date": "2026-10-16",
+        "supplier_name": "Juncken",
+        "customer_name": "Fischer Jacob GbR",
+        "subtotal": "41301.50",
+        "tax": "8673.32",
+        "total": "49934.78",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "50",
+            "unit_price": "16.15",
+            "amount": "807.50"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "50",
+            "unit_price": "474.87",
+            "amount": "23743.50"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "50",
+            "unit_price": "335.01",
+            "amount": "16750.50"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,72 @@
+{
+  "doc_id": "d068",
+  "file": "files/d068.pdf",
+  "format": "pdf_scanned",
+  "layout": "receipt",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0068",
+      "locale": "bd",
+      "defects": [
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "INV-2026-11852",
+        "invoice_date": "2026-05-16",
+        "supplier_name": "Lalbagh Enterprise",
+        "customer_name": "Delta Technologies Ltd.",
+        "subtotal": "1072814",
+        "tax": "80461.05",
+        "total": "1157890.68",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "10",
+            "unit_price": "2293",
+            "amount": "22930"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "93909",
+            "amount": "93909"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "50",
+            "unit_price": "18277",
+            "amount": "913850"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "2",
+            "unit_price": "4057",
+            "amount": "8114"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "12",
+            "unit_price": "1015",
+            "amount": "12180"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "3",
+            "unit_price": "7277",
+            "amount": "21831"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

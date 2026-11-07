@@ -1,0 +1,68 @@
+{
+  "doc_id": "d167",
+  "file": "files/d167.csv",
+  "format": "csv",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0199",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-32859",
+        "invoice_date": "2026-02-25",
+        "supplier_name": "Sauer",
+        "customer_name": "Heydrich KGaA",
+        "subtotal": "16612.41",
+        "tax": "3488.61",
+        "total": "20101.02",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "3",
+            "unit_price": "53.20",
+            "amount": "159.60"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "5",
+            "unit_price": "205.32",
+            "amount": "1026.60"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "50",
+            "unit_price": "159.14",
+            "amount": "7957"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "10",
+            "unit_price": "348.40",
+            "amount": "3484"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "12",
+            "unit_price": "296.88",
+            "amount": "3562.56"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "5",
+            "unit_price": "84.53",
+            "amount": "422.65"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"eu\", \"date_as_text\": false}"
+}

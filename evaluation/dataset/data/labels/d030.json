@@ -1,0 +1,61 @@
+{
+  "doc_id": "d030",
+  "file": "files/d030.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0030",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line",
+        "missing_invoice_date"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-812048",
+        "invoice_date": null,
+        "supplier_name": "Maple Grove Home Care LLC",
+        "customer_name": "Diane Mason",
+        "subtotal": "2715.53",
+        "tax": null,
+        "total": "2715.53",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "3",
+            "unit_price": "294.33",
+            "amount": "882.99"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "40",
+            "unit_price": "26.78",
+            "amount": "1071.20"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "1",
+            "unit_price": "50.10",
+            "amount": "50.10"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "6",
+            "unit_price": "118.54",
+            "amount": "711.24"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:invoice_date"
+      ]
+    }
+  ],
+  "notes": null
+}

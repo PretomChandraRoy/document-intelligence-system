@@ -1,0 +1,61 @@
+{
+  "doc_id": "d042",
+  "file": "files/d042.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0042",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line",
+        "wrong_line_amount"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-144109",
+        "invoice_date": "2026-05-29",
+        "supplier_name": "Silver Oak Care Partners Inc.",
+        "customer_name": "Stephanie Williams",
+        "subtotal": "3674.42",
+        "tax": null,
+        "total": "3674.42",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "8",
+            "unit_price": "221.86",
+            "amount": "1774.88"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "20",
+            "unit_price": "25.46",
+            "amount": "525.93"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "117",
+            "unit_price": "0.69",
+            "amount": "80.73"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "24",
+            "unit_price": "53.87",
+            "amount": "1292.88"
+          }
+        ]
+      },
+      "expected_flags": [
+        "line_amount_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

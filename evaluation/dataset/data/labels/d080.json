@@ -1,0 +1,68 @@
+{
+  "doc_id": "d080",
+  "file": "files/d080.jpg",
+  "format": "jpg",
+  "layout": "classic",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0080",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "29382",
+        "invoice_date": "2026-04-14",
+        "supplier_name": "Odonnell, Brooks and David",
+        "customer_name": "Ashley Yu",
+        "subtotal": "17752.81",
+        "tax": "1242.70",
+        "total": "18995.51",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "25",
+            "unit_price": "85.70",
+            "amount": "2142.50"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "50",
+            "unit_price": "280.69",
+            "amount": "14034.50"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "2",
+            "unit_price": "80.07",
+            "amount": "160.14"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "2",
+            "unit_price": "43.22",
+            "amount": "86.44"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "3",
+            "unit_price": "362.54",
+            "amount": "1087.62"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "241.61",
+            "amount": "241.61"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

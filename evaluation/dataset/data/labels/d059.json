@@ -1,0 +1,54 @@
+{
+  "doc_id": "d059",
+  "file": "files/d059.pdf",
+  "format": "pdf_scanned",
+  "layout": "classic",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0059",
+      "locale": "us",
+      "defects": [
+        "missing_currency"
+      ],
+      "ground_truth": {
+        "invoice_number": "SI-819916",
+        "invoice_date": "2026-07-30",
+        "supplier_name": "Hopkins LLC",
+        "customer_name": "Matthew Smith",
+        "subtotal": "1080.22",
+        "tax": "67.51",
+        "total": "1147.73",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "267.32",
+            "amount": "267.32"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "50",
+            "unit_price": "9.20",
+            "amount": "460"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "10",
+            "unit_price": "35.29",
+            "amount": "352.90"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": null
+}

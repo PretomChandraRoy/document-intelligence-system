@@ -1,0 +1,56 @@
+{
+  "doc_id": "d079",
+  "file": "files/d079.jpg",
+  "format": "jpg",
+  "layout": "modern",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0079",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-50739",
+        "invoice_date": "2026-10-11",
+        "supplier_name": "Cole, Stevenson and Mills",
+        "customer_name": "Claire Johnson",
+        "subtotal": "4370.24",
+        "tax": "874.05",
+        "total": "5244.29",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Stationery Bundle",
+            "quantity": "20",
+            "unit_price": "19.22",
+            "amount": "384.40"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "50",
+            "unit_price": "29.31",
+            "amount": "1465.50"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "46.06",
+            "amount": "46.06"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "12",
+            "unit_price": "206.19",
+            "amount": "2474.28"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

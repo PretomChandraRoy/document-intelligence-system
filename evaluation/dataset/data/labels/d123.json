@@ -1,0 +1,40 @@
+{
+  "doc_id": "d123",
+  "file": "files/d123.tiff",
+  "format": "tiff",
+  "layout": "homecare",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0123",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-769536",
+        "invoice_date": "2026-09-04",
+        "supplier_name": "Harbor Light Care Partners Inc.",
+        "customer_name": "Allison Myers",
+        "subtotal": "1059.38",
+        "tax": null,
+        "total": "1059.38",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "37.5",
+            "unit_price": "28.25",
+            "amount": "1059.38"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

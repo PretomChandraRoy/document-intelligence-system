@@ -1,0 +1,13 @@
+{
+  "doc_id": "d215",
+  "file": "files/d215.pdf",
+  "format": "pdf_digital",
+  "layout": null,
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "failed",
+  "expected_error": "encrypted",
+  "invoices": [],
+  "notes": "Password-protected PDF"
+}

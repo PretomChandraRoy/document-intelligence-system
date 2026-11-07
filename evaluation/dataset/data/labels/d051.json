@@ -1,0 +1,289 @@
+{
+  "doc_id": "d051",
+  "file": "files/d051.pdf",
+  "format": "pdf_scanned",
+  "layout": "classic",
+  "degradation": "clean",
+  "pages": 2,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0051",
+      "locale": "us",
+      "defects": [
+        "no_tax_line",
+        "missing_customer_name"
+      ],
+      "ground_truth": {
+        "invoice_number": "INV-2026-54054",
+        "invoice_date": "2026-01-25",
+        "supplier_name": "Ramirez-Jones",
+        "customer_name": null,
+        "subtotal": "111294.13",
+        "tax": null,
+        "total": "111294.13",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "10",
+            "unit_price": "213.95",
+            "amount": "2139.50"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "3",
+            "unit_price": "15.56",
+            "amount": "46.68"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "25",
+            "unit_price": "193.05",
+            "amount": "4826.25"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "5",
+            "unit_price": "183.53",
+            "amount": "917.65"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "2",
+            "unit_price": "222.68",
+            "amount": "445.36"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "25",
+            "unit_price": "4.97",
+            "amount": "124.25"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "12",
+            "unit_price": "92.86",
+            "amount": "1114.32"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "12",
+            "unit_price": "19.29",
+            "amount": "231.48"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "12",
+            "unit_price": "251.13",
+            "amount": "3013.56"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "20",
+            "unit_price": "111.33",
+            "amount": "2226.60"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "5",
+            "unit_price": "783.18",
+            "amount": "3915.90"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "20",
+            "unit_price": "359.54",
+            "amount": "7190.80"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "12",
+            "unit_price": "205.81",
+            "amount": "2469.72"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "25",
+            "unit_price": "97.43",
+            "amount": "2435.75"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "5",
+            "unit_price": "246.74",
+            "amount": "1233.70"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "20",
+            "unit_price": "284.84",
+            "amount": "5696.80"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "25",
+            "unit_price": "256.65",
+            "amount": "6416.25"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "1",
+            "unit_price": "94.16",
+            "amount": "94.16"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "50",
+            "unit_price": "59.89",
+            "amount": "2994.50"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "3",
+            "unit_price": "275.07",
+            "amount": "825.21"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "25",
+            "unit_price": "149.06",
+            "amount": "3726.50"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "10",
+            "unit_price": "97.29",
+            "amount": "972.90"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "3",
+            "unit_price": "11.50",
+            "amount": "34.50"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "20",
+            "unit_price": "56.41",
+            "amount": "1128.20"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "3",
+            "unit_price": "149.16",
+            "amount": "447.48"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "25",
+            "unit_price": "343.72",
+            "amount": "8593"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "12",
+            "unit_price": "406.44",
+            "amount": "4877.28"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "5",
+            "unit_price": "50.92",
+            "amount": "254.60"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "20",
+            "unit_price": "202.42",
+            "amount": "4048.40"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "10",
+            "unit_price": "233.72",
+            "amount": "2337.20"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "10",
+            "unit_price": "63.11",
+            "amount": "631.10"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "243.43",
+            "amount": "730.29"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "5",
+            "unit_price": "8.43",
+            "amount": "42.15"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "50",
+            "unit_price": "239.60",
+            "amount": "11980"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "2",
+            "unit_price": "257.91",
+            "amount": "515.82"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "12",
+            "unit_price": "547.23",
+            "amount": "6566.76"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "20",
+            "unit_price": "531.53",
+            "amount": "10630.60"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "5",
+            "unit_price": "31.72",
+            "amount": "158.60"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "20",
+            "unit_price": "147.56",
+            "amount": "2951.20"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "2",
+            "unit_price": "41.20",
+            "amount": "82.40"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "20",
+            "unit_price": "103.93",
+            "amount": "2078.60"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "1",
+            "unit_price": "148.11",
+            "amount": "148.11"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:customer_name"
+      ]
+    }
+  ],
+  "notes": null
+}

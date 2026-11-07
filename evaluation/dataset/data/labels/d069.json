@@ -1,0 +1,50 @@
+{
+  "doc_id": "d069",
+  "file": "files/d069.pdf",
+  "format": "pdf_scanned",
+  "layout": "modern",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0069",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "82105",
+        "invoice_date": "2026-10-12",
+        "supplier_name": "Smith, Gilmore and Johnston",
+        "customer_name": "Tamara Hooper",
+        "subtotal": "4263.84",
+        "tax": "298.47",
+        "total": "4562.31",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "12",
+            "unit_price": "71.08",
+            "amount": "852.96"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "5",
+            "unit_price": "601.05",
+            "amount": "3005.25"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "405.63",
+            "amount": "405.63"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

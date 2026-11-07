@@ -1,0 +1,3 @@
+Invoice No,Invoice Date,Supplier,Customer,Currency,Item Description,Qty,Unit Price,Line Amount,Subtotal,Tax,Total
+86037,2026-09-02,Meghna Printing & Packaging,Mehedi Hasan,BDT,UPS 1200VA,3.00,10779.00,32337.00,40221.00,2011.05,42232.05
+86037,2026-09-02,Meghna Printing & Packaging,Mehedi Hasan,BDT,Courier Delivery Charge,3.00,2628.00,7884.00,40221.00,2011.05,42232.05

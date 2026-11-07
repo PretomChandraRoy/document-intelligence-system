@@ -1,0 +1,13 @@
+{
+  "doc_id": "d209",
+  "file": "files/d209.pdf",
+  "format": "pdf_digital",
+  "layout": null,
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "failed",
+  "expected_error": "corrupted",
+  "invoices": [],
+  "notes": "PDF truncated to one third"
+}

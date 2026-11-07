@@ -1,0 +1,78 @@
+{
+  "doc_id": "d082",
+  "file": "files/d082.jpg",
+  "format": "jpg",
+  "layout": "receipt",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0082",
+      "locale": "bd",
+      "defects": [
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "SI-929937",
+        "invoice_date": "2026-01-29",
+        "supplier_name": "Lalbagh Logistics",
+        "customer_name": "Green Valley Logistics",
+        "subtotal": "529986",
+        "tax": "39748.95",
+        "total": "574051.93",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "5",
+            "unit_price": "33461",
+            "amount": "167305"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "1",
+            "unit_price": "26925",
+            "amount": "26925"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "2",
+            "unit_price": "35903",
+            "amount": "71806"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "10",
+            "unit_price": "2137",
+            "amount": "21370"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "50",
+            "unit_price": "646",
+            "amount": "32300"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "20",
+            "unit_price": "9793",
+            "amount": "195860"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "20",
+            "unit_price": "721",
+            "amount": "14420"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

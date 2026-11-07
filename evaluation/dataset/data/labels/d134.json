@@ -1,0 +1,50 @@
+{
+  "doc_id": "d134",
+  "file": "files/d134.xlsx",
+  "format": "xlsx",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0134",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A55653",
+        "invoice_date": "2026-08-05",
+        "supplier_name": "Freudenberger",
+        "customer_name": "Atzler AG & Co. OHG",
+        "subtotal": "489.69",
+        "tax": "102.83",
+        "total": "592.52",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "298.33",
+            "amount": "298.33"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "10",
+            "unit_price": "6.11",
+            "amount": "61.10"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "130.26",
+            "amount": "130.26"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 3, \"sheet_names\": [\"Summary\", \"Items\", \"Notes\"], \"date_as_text\": true}"
+}

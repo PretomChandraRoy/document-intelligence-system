@@ -1,0 +1,56 @@
+{
+  "doc_id": "d194",
+  "file": "files/d194.xls",
+  "format": "xls",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0228b",
+      "locale": "homecare",
+      "defects": [
+        "twin_date_differs"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-149334",
+        "invoice_date": "2026-10-14",
+        "supplier_name": "Willow Creek Care Partners Inc.",
+        "customer_name": "Jared Vasquez",
+        "subtotal": "2361.26",
+        "tax": "0",
+        "total": "2361.26",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Care Coordination fee",
+            "quantity": "3",
+            "unit_price": "53.86",
+            "amount": "161.58"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "40",
+            "unit_price": "24.92",
+            "amount": "996.80"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "32",
+            "unit_price": "37.59",
+            "amount": "1202.88"
+          }
+        ]
+      },
+      "expected_flags": [
+        "cross_mismatch:invoice_date",
+        "duplicate",
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": "Accounting record for d193; date differs"
+}

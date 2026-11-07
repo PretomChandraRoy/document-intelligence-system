@@ -1,0 +1,68 @@
+{
+  "doc_id": "d115",
+  "file": "files/d115.tiff",
+  "format": "tiff",
+  "layout": "modern",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0115",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-703869",
+        "invoice_date": "2026-04-12",
+        "supplier_name": "Chittagong Port Engineering Works",
+        "customer_name": "Northern Distributors",
+        "subtotal": "437207",
+        "tax": "21860.35",
+        "total": "459067.35",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "20310",
+            "amount": "20310"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "20",
+            "unit_price": "9210",
+            "amount": "184200"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "20",
+            "unit_price": "5420",
+            "amount": "108400"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "10",
+            "unit_price": "5524",
+            "amount": "55240"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "5",
+            "unit_price": "13721",
+            "amount": "68605"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "452",
+            "amount": "452"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,52 @@
+{
+  "doc_id": "d132",
+  "file": "files/d132.xlsx",
+  "format": "xlsx",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0132",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-889410",
+        "invoice_date": "2026-08-17",
+        "supplier_name": "Gentle Hands Home Care LLC",
+        "customer_name": "Steven Wood",
+        "subtotal": "914.22",
+        "tax": null,
+        "total": "914.22",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "30",
+            "unit_price": "0.63",
+            "amount": "18.90"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "24",
+            "unit_price": "25.02",
+            "amount": "600.48"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "3",
+            "unit_price": "98.28",
+            "amount": "294.84"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

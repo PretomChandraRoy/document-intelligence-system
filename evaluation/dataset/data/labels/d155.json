@@ -1,0 +1,40 @@
+{
+  "doc_id": "d155",
+  "file": "files/d155.xls",
+  "format": "xls",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0170",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-119676",
+        "invoice_date": "2026-08-17",
+        "supplier_name": "Brightpath Home Care LLC",
+        "customer_name": "Jacqueline Higgins",
+        "subtotal": "259.44",
+        "tax": null,
+        "total": "259.44",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Home Health Aide services",
+            "quantity": "8",
+            "unit_price": "32.43",
+            "amount": "259.44"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 3, \"sheet_names\": [\"Summary\", \"Items\", \"Notes\"], \"date_as_text\": true}"
+}

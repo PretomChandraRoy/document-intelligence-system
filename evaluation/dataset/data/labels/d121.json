@@ -1,0 +1,60 @@
+{
+  "doc_id": "d121",
+  "file": "files/d121.tiff",
+  "format": "tiff",
+  "layout": "modern",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0121",
+      "locale": "uk",
+      "defects": [
+        "wrong_subtotal"
+      ],
+      "ground_truth": {
+        "invoice_number": "SI-592984",
+        "invoice_date": "2026-02-06",
+        "supplier_name": "Wilson-Gregory",
+        "customer_name": "Jenna Matthews",
+        "subtotal": "2221.82",
+        "tax": "436.54",
+        "total": "2658.36",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "5",
+            "unit_price": "6.71",
+            "amount": "33.55"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "10",
+            "unit_price": "148.10",
+            "amount": "1481"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "10",
+            "unit_price": "46.42",
+            "amount": "464.20"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "203.96",
+            "amount": "203.96"
+          }
+        ]
+      },
+      "expected_flags": [
+        "line_items_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

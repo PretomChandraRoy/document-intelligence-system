@@ -1,0 +1,19 @@
+﻿INVOICE
+
+Supplier;Sauer
+Invoice Number;INV-2026-32859
+Invoice Date;2026-02-25
+Bill To;Heydrich KGaA
+Currency;EUR
+
+Description;Quantity;Unit Price;Amount
+Wireless Keyboard and Mouse Set;3,00;53,20;159,60
+Data Entry Services (batch);5,00;205,32;1026,60
+Filing Cabinet, 4 drawer;50,00;159,14;7957,00
+Cleaning Services (monthly);10,00;348,40;3484,00
+Training Workshop (per seat);12,00;296,88;3562,56
+Cloud Hosting (monthly);5,00;84,53;422,65
+
+;;Subtotal;16612,41
+;;VAT;3488,61
+;;Total;20101,02

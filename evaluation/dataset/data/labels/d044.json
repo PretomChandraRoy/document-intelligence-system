@@ -1,0 +1,56 @@
+{
+  "doc_id": "d044",
+  "file": "files/d044.pdf",
+  "format": "pdf_digital",
+  "layout": "classic",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0044",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/4743",
+        "invoice_date": "2026-09-11",
+        "supplier_name": "Burton-Collins",
+        "customer_name": "Patel Group",
+        "subtotal": "7874.56",
+        "tax": "1574.91",
+        "total": "9449.47",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "5",
+            "unit_price": "27.61",
+            "amount": "138.05"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "50",
+            "unit_price": "143.41",
+            "amount": "7170.50"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "2",
+            "unit_price": "73.43",
+            "amount": "146.86"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "419.15",
+            "amount": "419.15"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

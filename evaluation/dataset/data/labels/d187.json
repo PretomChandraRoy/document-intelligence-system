@@ -1,0 +1,58 @@
+{
+  "doc_id": "d187",
+  "file": "files/d187.pdf",
+  "format": "pdf_digital",
+  "layout": "classic",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0225",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2026/01/0881",
+        "invoice_date": "2026-08-16",
+        "supplier_name": "Rahman Supplies Ltd.",
+        "customer_name": "Bengal Traders",
+        "subtotal": "117244",
+        "tax": "17586.60",
+        "total": "134830.60",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "3",
+            "unit_price": "26905",
+            "amount": "80715"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "3",
+            "unit_price": "10031",
+            "amount": "30093"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "2",
+            "unit_price": "2925",
+            "amount": "5850"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "1",
+            "unit_price": "586",
+            "amount": "586"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Cross-verification source document"
+}

@@ -1,0 +1,58 @@
+{
+  "doc_id": "d166",
+  "file": "files/d166.csv",
+  "format": "csv",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0198",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-250331",
+        "invoice_date": "2026-03-03",
+        "supplier_name": "Hearthside Home Care LLC",
+        "customer_name": "Ronald Ward",
+        "subtotal": "2614.29",
+        "tax": null,
+        "total": "2614.29",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Respite Care services",
+            "quantity": "28",
+            "unit_price": "26.27",
+            "amount": "735.56"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "32",
+            "unit_price": "37.21",
+            "amount": "1190.72"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "3",
+            "unit_price": "181.53",
+            "amount": "544.59"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "2",
+            "unit_price": "71.71",
+            "amount": "143.42"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": false}"
+}

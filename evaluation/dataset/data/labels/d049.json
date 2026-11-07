@@ -1,0 +1,50 @@
+{
+  "doc_id": "d049",
+  "file": "files/d049.pdf",
+  "format": "pdf_digital",
+  "layout": "classic",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0049",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "81361",
+        "invoice_date": "2026-08-26",
+        "supplier_name": "Sundarban Logistics",
+        "customer_name": "Lalbagh Printing & Packaging",
+        "subtotal": "278222",
+        "tax": "20866.65",
+        "total": "299088.65",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "1",
+            "unit_price": "4871",
+            "amount": "4871"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "12",
+            "unit_price": "16362",
+            "amount": "196344"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "77007",
+            "amount": "77007"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

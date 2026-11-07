@@ -1,0 +1,44 @@
+{
+  "doc_id": "d005",
+  "file": "files/d005.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0005",
+      "locale": "homecare",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "HC-725380",
+        "invoice_date": "2026-08-05",
+        "supplier_name": "Gentle Hands Home Health Services",
+        "customer_name": "Garrett Smith",
+        "subtotal": "1125.89",
+        "tax": "0",
+        "total": "1125.89",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Companion Care services",
+            "quantity": "37.5",
+            "unit_price": "24.94",
+            "amount": "935.25"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "8",
+            "unit_price": "23.83",
+            "amount": "190.64"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

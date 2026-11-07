@@ -1,0 +1,4 @@
+Invoice No,Invoice Date,Supplier,Customer,Currency,Item Description,Qty,Unit Price,Line Amount,Subtotal,Tax,Total
+2026/01/0252,"April 14, 2026",Dixon Inc,Lori Marshall,USD,Website Maintenance (monthly),20.00,569.08,11381.60,12426.22,,12426.22
+2026/01/0252,"April 14, 2026",Dixon Inc,Lori Marshall,USD,Data Entry Services (batch),1.00,89.32,89.32,12426.22,,12426.22
+2026/01/0252,"April 14, 2026",Dixon Inc,Lori Marshall,USD,Printed Brochures (pack of 100),10.00,95.53,955.30,12426.22,,12426.22

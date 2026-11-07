@@ -1,0 +1,85 @@
+{
+  "doc_id": "d101",
+  "file": "files/d101.png",
+  "format": "png",
+  "layout": "modern",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0101",
+      "locale": "us",
+      "defects": [
+        "no_tax_line",
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "2025/10/0889",
+        "invoice_date": "2026-07-03",
+        "supplier_name": "Dalton-Branch",
+        "customer_name": "Hayes-Wheeler",
+        "subtotal": "17952.42",
+        "tax": null,
+        "total": "17917.47",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "50",
+            "unit_price": "279.68",
+            "amount": "13984"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "25",
+            "unit_price": "3.72",
+            "amount": "93"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "5.14",
+            "amount": "5.14"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "12",
+            "unit_price": "5.16",
+            "amount": "61.92"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "3",
+            "unit_price": "61.36",
+            "amount": "184.08"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "5",
+            "unit_price": "325.02",
+            "amount": "1625.10"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "305.74",
+            "amount": "305.74"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "3",
+            "unit_price": "564.48",
+            "amount": "1693.44"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,62 @@
+{
+  "doc_id": "d165",
+  "file": "files/d165.csv",
+  "format": "csv",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0197",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A74711",
+        "invoice_date": "2026-02-12",
+        "supplier_name": "Chittagong Port Office Solutions",
+        "customer_name": "Jannatul Ferdous",
+        "subtotal": "612235",
+        "tax": "91835.25",
+        "total": "704070.25",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "12",
+            "unit_price": "24514",
+            "amount": "294168"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "12",
+            "unit_price": "18979",
+            "amount": "227748"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "1",
+            "unit_price": "2344",
+            "amount": "2344"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "2",
+            "unit_price": "23480",
+            "amount": "46960"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "5",
+            "unit_price": "8203",
+            "amount": "41015"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": true}"
+}

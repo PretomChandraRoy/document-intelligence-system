@@ -1,0 +1,200 @@
+{
+  "doc_id": "d162",
+  "file": "files/d162.csv",
+  "format": "csv",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0191",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-614416",
+        "invoice_date": "2026-05-29",
+        "supplier_name": "Patel Group",
+        "customer_name": "Jones, Townsend and Stevenson",
+        "subtotal": "16201.98",
+        "tax": "3240.40",
+        "total": "19442.38",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "50",
+            "unit_price": "263.91",
+            "amount": "13195.50"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "1",
+            "unit_price": "184.18",
+            "amount": "184.18"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "12",
+            "unit_price": "37.24",
+            "amount": "446.88"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "50",
+            "unit_price": "36.43",
+            "amount": "1821.50"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "3",
+            "unit_price": "184.64",
+            "amount": "553.92"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0192",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "27759",
+        "invoice_date": "2026-08-25",
+        "supplier_name": "Rahman Traders",
+        "customer_name": "Rupsha Enterprise",
+        "subtotal": "3165703",
+        "tax": "237427.73",
+        "total": "3403130.73",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "19566",
+            "amount": "19566"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "20",
+            "unit_price": "10406",
+            "amount": "208120"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "50",
+            "unit_price": "28763",
+            "amount": "1438150"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "20",
+            "unit_price": "23298",
+            "amount": "465960"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "20",
+            "unit_price": "10252",
+            "amount": "205040"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "10",
+            "unit_price": "4348",
+            "amount": "43480"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "28837",
+            "amount": "28837"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "50",
+            "unit_price": "15131",
+            "amount": "756550"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0193",
+      "locale": "homecare",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "HC-438277",
+        "invoice_date": "2026-10-06",
+        "supplier_name": "Evergreen Home Care LLC",
+        "customer_name": "Miss Brooke Li",
+        "subtotal": "2427.55",
+        "tax": "0",
+        "total": "2427.55",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Respite Care services",
+            "quantity": "37.5",
+            "unit_price": "31.67",
+            "amount": "1187.63"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "37.5",
+            "unit_price": "27.52",
+            "amount": "1032"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "8",
+            "unit_price": "25.99",
+            "amount": "207.92"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0194",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/0285",
+        "invoice_date": "2026-03-01",
+        "supplier_name": "Jamuna Engineering Works",
+        "customer_name": "Shapla Trading Co.",
+        "subtotal": "1201134",
+        "tax": "180170.10",
+        "total": "1381304.10",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "25",
+            "unit_price": "13773",
+            "amount": "344325"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "25",
+            "unit_price": "32301",
+            "amount": "807525"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "12",
+            "unit_price": "4107",
+            "amount": "49284"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": false}"
+}

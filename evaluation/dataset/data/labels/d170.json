@@ -1,0 +1,62 @@
+{
+  "doc_id": "d170",
+  "file": "files/d170.csv",
+  "format": "csv",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0202",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2026/01/0678",
+        "invoice_date": "2026-07-02",
+        "supplier_name": "Klemt Hornich GbR",
+        "customer_name": "Pruschke",
+        "subtotal": "3267.13",
+        "tax": "686.10",
+        "total": "3953.23",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "10",
+            "unit_price": "183.78",
+            "amount": "1837.80"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "133.08",
+            "amount": "133.08"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "10",
+            "unit_price": "94.76",
+            "amount": "947.60"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "247.73",
+            "amount": "247.73"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "12",
+            "unit_price": "8.41",
+            "amount": "100.92"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"eu\", \"date_as_text\": false}"
+}

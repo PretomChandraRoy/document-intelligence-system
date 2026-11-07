@@ -1,0 +1,58 @@
+{
+  "doc_id": "d055",
+  "file": "files/d055.pdf",
+  "format": "pdf_scanned",
+  "layout": "homecare",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0055",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-700556",
+        "invoice_date": "2026-05-29",
+        "supplier_name": "Evergreen Care Partners Inc.",
+        "customer_name": "Joseph Martinez",
+        "subtotal": "3418.06",
+        "tax": null,
+        "total": "3418.06",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Companion Care services",
+            "quantity": "40",
+            "unit_price": "21.39",
+            "amount": "855.60"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "4",
+            "unit_price": "147.35",
+            "amount": "589.40"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "5",
+            "unit_price": "251.62",
+            "amount": "1258.10"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "24",
+            "unit_price": "29.79",
+            "amount": "714.96"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

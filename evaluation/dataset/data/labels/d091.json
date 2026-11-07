@@ -1,0 +1,76 @@
+{
+  "doc_id": "d091",
+  "file": "files/d091.png",
+  "format": "png",
+  "layout": "homecare",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0091",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-498724",
+        "invoice_date": "2026-08-16",
+        "supplier_name": "Silver Oak Home Care LLC",
+        "customer_name": "Mary Walker",
+        "subtotal": "3069.61",
+        "tax": null,
+        "total": "3069.61",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "4",
+            "unit_price": "35.71",
+            "amount": "142.84"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "16",
+            "unit_price": "27.34",
+            "amount": "437.44"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "63",
+            "unit_price": "0.61",
+            "amount": "38.43"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "28",
+            "unit_price": "32.52",
+            "amount": "910.56"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "37.5",
+            "unit_price": "31.48",
+            "amount": "1180.50"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "8",
+            "unit_price": "29.84",
+            "amount": "238.72"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "4",
+            "unit_price": "30.28",
+            "amount": "121.12"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

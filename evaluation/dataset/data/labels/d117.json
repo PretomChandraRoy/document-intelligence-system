@@ -1,0 +1,82 @@
+{
+  "doc_id": "d117",
+  "file": "files/d117.tiff",
+  "format": "tiff",
+  "layout": "homecare",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0117",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-375201",
+        "invoice_date": "2026-02-23",
+        "supplier_name": "Gentle Hands Home Health Services",
+        "customer_name": "Jennifer Schultz",
+        "subtotal": "4076.50",
+        "tax": null,
+        "total": "4076.50",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Care Coordination fee",
+            "quantity": "6",
+            "unit_price": "99.83",
+            "amount": "598.98"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "135",
+            "unit_price": "0.64",
+            "amount": "86.40"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "4",
+            "unit_price": "21.25",
+            "amount": "85"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "5",
+            "unit_price": "156.13",
+            "amount": "780.65"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "16",
+            "unit_price": "27.17",
+            "amount": "434.72"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "8",
+            "unit_price": "25.83",
+            "amount": "206.64"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "1",
+            "unit_price": "42.11",
+            "amount": "42.11"
+          },
+          {
+            "description": "Medication Reminder visit",
+            "quantity": "37.5",
+            "unit_price": "49.12",
+            "amount": "1842"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

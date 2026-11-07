@@ -1,0 +1,61 @@
+{
+  "doc_id": "d109",
+  "file": "files/d109.png",
+  "format": "png",
+  "layout": "homecare",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0109",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line",
+        "missing_customer_name"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-884645",
+        "invoice_date": "2026-04-18",
+        "supplier_name": "Brightpath Care Partners Inc.",
+        "customer_name": null,
+        "subtotal": "1557.38",
+        "tax": null,
+        "total": "1557.38",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "1",
+            "unit_price": "246.42",
+            "amount": "246.42"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "56",
+            "unit_price": "0.61",
+            "amount": "34.16"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "40",
+            "unit_price": "29.16",
+            "amount": "1166.40"
+          },
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "160",
+            "unit_price": "0.69",
+            "amount": "110.40"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:customer_name"
+      ]
+    }
+  ],
+  "notes": null
+}

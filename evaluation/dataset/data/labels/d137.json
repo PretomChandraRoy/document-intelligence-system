@@ -1,0 +1,38 @@
+{
+  "doc_id": "d137",
+  "file": "files/d137.xlsx",
+  "format": "xlsx",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0137",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-389279",
+        "invoice_date": "2026-05-01",
+        "supplier_name": "Pearson-Lee",
+        "customer_name": "Haynes LLC",
+        "subtotal": "584.30",
+        "tax": "116.86",
+        "total": "701.16",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "10",
+            "unit_price": "58.43",
+            "amount": "584.30"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 3, \"sheet_names\": [\"Summary\", \"Items\", \"Notes\"], \"date_as_text\": true}"
+}

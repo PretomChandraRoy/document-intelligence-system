@@ -1,0 +1,54 @@
+{
+  "doc_id": "d066",
+  "file": "files/d066.pdf",
+  "format": "pdf_scanned",
+  "layout": "receipt",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0066",
+      "locale": "eu",
+      "defects": [
+        "missing_customer_name"
+      ],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/8873",
+        "invoice_date": "2026-01-13",
+        "supplier_name": "Steuer",
+        "customer_name": null,
+        "subtotal": "1203.32",
+        "tax": "252.70",
+        "total": "1456.02",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Stationery Bundle",
+            "quantity": "10",
+            "unit_price": "30.71",
+            "amount": "307.10"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "3",
+            "unit_price": "199.17",
+            "amount": "597.51"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "3",
+            "unit_price": "99.57",
+            "amount": "298.71"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:customer_name"
+      ]
+    }
+  ],
+  "notes": null
+}

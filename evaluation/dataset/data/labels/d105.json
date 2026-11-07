@@ -1,0 +1,44 @@
+{
+  "doc_id": "d105",
+  "file": "files/d105.png",
+  "format": "png",
+  "layout": "receipt",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0105",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "52065",
+        "invoice_date": "2026-01-21",
+        "supplier_name": "Henschel",
+        "customer_name": "Fiebig Caspar GbR",
+        "subtotal": "134.33",
+        "tax": "25.52",
+        "total": "159.85",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "1",
+            "unit_price": "9.35",
+            "amount": "9.35"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "3",
+            "unit_price": "41.66",
+            "amount": "124.98"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

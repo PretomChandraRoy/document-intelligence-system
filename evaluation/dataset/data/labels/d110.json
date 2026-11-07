@@ -1,0 +1,60 @@
+{
+  "doc_id": "d110",
+  "file": "files/d110.png",
+  "format": "png",
+  "layout": "modern",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0110",
+      "locale": "eu",
+      "defects": [
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/9513",
+        "invoice_date": "2026-02-20",
+        "supplier_name": "Ruppersberger",
+        "customer_name": "Hänel e.V.",
+        "subtotal": "4848.22",
+        "tax": "1018.13",
+        "total": "5881.32",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "1",
+            "unit_price": "86.32",
+            "amount": "86.32"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "263.25",
+            "amount": "263.25"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "20",
+            "unit_price": "163.81",
+            "amount": "3276.20"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "5",
+            "unit_price": "244.49",
+            "amount": "1222.45"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

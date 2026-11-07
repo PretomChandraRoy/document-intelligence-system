@@ -1,0 +1,80 @@
+{
+  "doc_id": "d045",
+  "file": "files/d045.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0045",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A60275",
+        "invoice_date": "2026-01-04",
+        "supplier_name": "Smith PLC",
+        "customer_name": "Mitchell-Kim",
+        "subtotal": "14973.18",
+        "tax": "935.82",
+        "total": "15909",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "25",
+            "unit_price": "252.32",
+            "amount": "6308"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "1",
+            "unit_price": "99.76",
+            "amount": "99.76"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "5",
+            "unit_price": "35.15",
+            "amount": "175.75"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "10",
+            "unit_price": "10.33",
+            "amount": "103.30"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "141.59",
+            "amount": "424.77"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "12",
+            "unit_price": "367.33",
+            "amount": "4407.96"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "12",
+            "unit_price": "243.93",
+            "amount": "2927.16"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "2",
+            "unit_price": "263.24",
+            "amount": "526.48"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,64 @@
+{
+  "doc_id": "d164",
+  "file": "files/d164.csv",
+  "format": "csv",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0196",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/3139",
+        "invoice_date": "2026-09-28",
+        "supplier_name": "Padma Technologies Ltd.",
+        "customer_name": "Banani Supplies Ltd.",
+        "subtotal": "1334909",
+        "tax": "200236.35",
+        "total": "1535145.35",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "1",
+            "unit_price": "568",
+            "amount": "568"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "50",
+            "unit_price": "5428",
+            "amount": "271400"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "25",
+            "unit_price": "38966",
+            "amount": "974150"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "3",
+            "unit_price": "19385",
+            "amount": "58155"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "1",
+            "unit_price": "30636",
+            "amount": "30636"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": false}"
+}

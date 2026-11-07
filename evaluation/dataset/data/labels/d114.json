@@ -1,0 +1,80 @@
+{
+  "doc_id": "d114",
+  "file": "files/d114.tiff",
+  "format": "tiff",
+  "layout": "receipt",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0114",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "29601",
+        "invoice_date": "2026-03-16",
+        "supplier_name": "Gröttner",
+        "customer_name": "Harald Kabus B.A.",
+        "subtotal": "21491.92",
+        "tax": "4083.46",
+        "total": "25575.38",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "20",
+            "unit_price": "92.10",
+            "amount": "1842"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "10",
+            "unit_price": "11.44",
+            "amount": "114.40"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "3",
+            "unit_price": "4.51",
+            "amount": "13.53"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "10",
+            "unit_price": "98.35",
+            "amount": "983.50"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "20",
+            "unit_price": "37.59",
+            "amount": "751.80"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "50",
+            "unit_price": "304.64",
+            "amount": "15232"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "5",
+            "unit_price": "51.77",
+            "amount": "258.85"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "12",
+            "unit_price": "191.32",
+            "amount": "2295.84"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

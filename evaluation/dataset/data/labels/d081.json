@@ -1,0 +1,74 @@
+{
+  "doc_id": "d081",
+  "file": "files/d081.jpg",
+  "format": "jpg",
+  "layout": "modern",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0081",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A62818",
+        "invoice_date": "2026-03-30",
+        "supplier_name": "Lalbagh Engineering Works",
+        "customer_name": "Chittagong Port Office Solutions",
+        "subtotal": "3608402",
+        "tax": "541260.30",
+        "total": "4149662.30",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "50",
+            "unit_price": "19870",
+            "amount": "993500"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "494",
+            "amount": "494"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "50",
+            "unit_price": "30921",
+            "amount": "1546050"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "4580",
+            "amount": "4580"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "5",
+            "unit_price": "5988",
+            "amount": "29940"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "12",
+            "unit_price": "5624",
+            "amount": "67488"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "50",
+            "unit_price": "19327",
+            "amount": "966350"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

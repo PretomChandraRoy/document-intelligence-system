@@ -1,0 +1,380 @@
+{
+  "doc_id": "d011",
+  "file": "files/d011.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 2,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0011",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "51114",
+        "invoice_date": "2026-06-26",
+        "supplier_name": "Teesta Engineering Works",
+        "customer_name": "Rahman Enterprise",
+        "subtotal": "9354046",
+        "tax": "701553.45",
+        "total": "10055599.45",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "20",
+            "unit_price": "11067",
+            "amount": "221340"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "1",
+            "unit_price": "21893",
+            "amount": "21893"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "12",
+            "unit_price": "673",
+            "amount": "8076"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "5",
+            "unit_price": "2729",
+            "amount": "13645"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "20",
+            "unit_price": "11014",
+            "amount": "220280"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "3",
+            "unit_price": "75107",
+            "amount": "225321"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "25",
+            "unit_price": "13307",
+            "amount": "332675"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "1",
+            "unit_price": "743",
+            "amount": "743"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "25",
+            "unit_price": "25815",
+            "amount": "645375"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "2",
+            "unit_price": "5615",
+            "amount": "11230"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "37950",
+            "amount": "37950"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "50",
+            "unit_price": "11619",
+            "amount": "580950"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "12",
+            "unit_price": "19614",
+            "amount": "235368"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "23563",
+            "amount": "70689"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "50",
+            "unit_price": "5121",
+            "amount": "256050"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "50",
+            "unit_price": "22451",
+            "amount": "1122550"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "3",
+            "unit_price": "7907",
+            "amount": "23721"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "3",
+            "unit_price": "1573",
+            "amount": "4719"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "5",
+            "unit_price": "27471",
+            "amount": "137355"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "1",
+            "unit_price": "21495",
+            "amount": "21495"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "13551",
+            "amount": "13551"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "25",
+            "unit_price": "10325",
+            "amount": "258125"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "1",
+            "unit_price": "11038",
+            "amount": "11038"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "5",
+            "unit_price": "4688",
+            "amount": "23440"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "5",
+            "unit_price": "17547",
+            "amount": "87735"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "30482",
+            "amount": "30482"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "5",
+            "unit_price": "22124",
+            "amount": "110620"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "2",
+            "unit_price": "3202",
+            "amount": "6404"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "25",
+            "unit_price": "2698",
+            "amount": "67450"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "50",
+            "unit_price": "29243",
+            "amount": "1462150"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "3",
+            "unit_price": "3197",
+            "amount": "9591"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "25",
+            "unit_price": "6512",
+            "amount": "162800"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "1",
+            "unit_price": "9982",
+            "amount": "9982"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "1",
+            "unit_price": "2777",
+            "amount": "2777"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "5",
+            "unit_price": "19666",
+            "amount": "98330"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "25",
+            "unit_price": "3817",
+            "amount": "95425"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "1",
+            "unit_price": "10400",
+            "amount": "10400"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "25",
+            "unit_price": "16351",
+            "amount": "408775"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "50",
+            "unit_price": "8162",
+            "amount": "408100"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "2",
+            "unit_price": "248",
+            "amount": "496"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "1",
+            "unit_price": "11211",
+            "amount": "11211"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "3",
+            "unit_price": "14303",
+            "amount": "42909"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "25",
+            "unit_price": "11080",
+            "amount": "277000"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "50",
+            "unit_price": "715",
+            "amount": "35750"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "2",
+            "unit_price": "96854",
+            "amount": "193708"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "12",
+            "unit_price": "14018",
+            "amount": "168216"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "12",
+            "unit_price": "3639",
+            "amount": "43668"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "5",
+            "unit_price": "23160",
+            "amount": "115800"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "12",
+            "unit_price": "6009",
+            "amount": "72108"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "3",
+            "unit_price": "10771",
+            "amount": "32313"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "10",
+            "unit_price": "2275",
+            "amount": "22750"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "3",
+            "unit_price": "10935",
+            "amount": "32805"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "12",
+            "unit_price": "10950",
+            "amount": "131400"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "5",
+            "unit_price": "18784",
+            "amount": "93920"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "12",
+            "unit_price": "30956",
+            "amount": "371472"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "10",
+            "unit_price": "22231",
+            "amount": "222310"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "5",
+            "unit_price": "2805",
+            "amount": "14025"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "1",
+            "unit_price": "3585",
+            "amount": "3585"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "Long invoice spanning several pages"
+}

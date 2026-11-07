@@ -1,0 +1,38 @@
+{
+  "doc_id": "d151",
+  "file": "files/d151.xls",
+  "format": "xls",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0166",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A45432",
+        "invoice_date": "2026-05-20",
+        "supplier_name": "Macdonald, Mann and Smith",
+        "customer_name": "Gibson Group",
+        "subtotal": "1119.25",
+        "tax": "223.85",
+        "total": "1343.10",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "25",
+            "unit_price": "44.77",
+            "amount": "1119.25"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 2, \"sheet_names\": [\"Summary\", \"Items\"], \"date_as_text\": false}"
+}

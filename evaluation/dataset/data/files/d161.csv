@@ -1,0 +1,35 @@
+Invoice No,Invoice Date,Supplier,Customer,Currency,Item Description,Qty,Unit Price,Line Amount,Subtotal,Tax,Total
+SI-486028,2026-08-20,"Chambers, Richards and Carson","Henson, Hoffman and Herman",USD,Cloud Hosting (monthly),12.00,132.54,1590.48,8242.43,731.52,8973.95
+SI-486028,2026-08-20,"Chambers, Richards and Carson","Henson, Hoffman and Herman",USD,Ergonomic Office Chair,10.00,169.40,1694.00,8242.43,731.52,8973.95
+SI-486028,2026-08-20,"Chambers, Richards and Carson","Henson, Hoffman and Herman",USD,Data Entry Services (batch),25.00,160.07,4001.75,8242.43,731.52,8973.95
+SI-486028,2026-08-20,"Chambers, Richards and Carson","Henson, Hoffman and Herman",USD,Wireless Keyboard and Mouse Set,20.00,47.81,956.20,8242.43,731.52,8973.95
+SI-566885,2026-09-29,Padma Printing & Packaging,Sabbir Hossain,BDT,27-inch LED Monitor,3.00,29146.00,87438.00,368102.00,18405.10,386507.10
+SI-566885,2026-09-29,Padma Printing & Packaging,Sabbir Hossain,BDT,A4 Paper 80gsm (ream),5.00,807.00,4035.00,368102.00,18405.10,386507.10
+SI-566885,2026-09-29,Padma Printing & Packaging,Sabbir Hossain,BDT,UPS 1200VA,2.00,15577.00,31154.00,368102.00,18405.10,386507.10
+SI-566885,2026-09-29,Padma Printing & Packaging,Sabbir Hossain,BDT,Bottled Water 19L,20.00,707.00,14140.00,368102.00,18405.10,386507.10
+SI-566885,2026-09-29,Padma Printing & Packaging,Sabbir Hossain,BDT,A4 Paper 80gsm (ream),5.00,606.00,3030.00,368102.00,18405.10,386507.10
+SI-566885,2026-09-29,Padma Printing & Packaging,Sabbir Hossain,BDT,A4 Paper 80gsm (ream),3.00,1175.00,3525.00,368102.00,18405.10,386507.10
+SI-566885,2026-09-29,Padma Printing & Packaging,Sabbir Hossain,BDT,Cloud Hosting (monthly),10.00,20056.00,200560.00,368102.00,18405.10,386507.10
+SI-566885,2026-09-29,Padma Printing & Packaging,Sabbir Hossain,BDT,Courier Delivery Charge,10.00,2422.00,24220.00,368102.00,18405.10,386507.10
+SI-232617,2026-06-12,"Taylor, Chavez and Santiago",Steven Newman,USD,Website Maintenance (monthly),1.00,231.59,231.59,15970.61,0.00,15970.61
+SI-232617,2026-06-12,"Taylor, Chavez and Santiago",Steven Newman,USD,Website Maintenance (monthly),20.00,675.92,13518.40,15970.61,0.00,15970.61
+SI-232617,2026-06-12,"Taylor, Chavez and Santiago",Steven Newman,USD,Training Workshop (per seat),2.00,227.95,455.90,15970.61,0.00,15970.61
+SI-232617,2026-06-12,"Taylor, Chavez and Santiago",Steven Newman,USD,Website Maintenance (monthly),2.00,685.26,1370.52,15970.61,0.00,15970.61
+SI-232617,2026-06-12,"Taylor, Chavez and Santiago",Steven Newman,USD,27-inch LED Monitor,2.00,197.10,394.20,15970.61,0.00,15970.61
+BD/26-27/9027,2026-01-21,Murphy and Sons,Derek Martinez,USD,UPS 1200VA,2.00,149.37,298.74,17605.78,1232.40,18838.18
+BD/26-27/9027,2026-01-21,Murphy and Sons,Derek Martinez,USD,Wireless Keyboard and Mouse Set,1.00,34.99,34.99,17605.78,1232.40,18838.18
+BD/26-27/9027,2026-01-21,Murphy and Sons,Derek Martinez,USD,Data Entry Services (batch),2.00,240.08,480.16,17605.78,1232.40,18838.18
+BD/26-27/9027,2026-01-21,Murphy and Sons,Derek Martinez,USD,Courier Delivery Charge,2.00,5.15,10.30,17605.78,1232.40,18838.18
+BD/26-27/9027,2026-01-21,Murphy and Sons,Derek Martinez,USD,UPS 1200VA,25.00,123.07,3076.75,17605.78,1232.40,18838.18
+BD/26-27/9027,2026-01-21,Murphy and Sons,Derek Martinez,USD,Website Maintenance (monthly),20.00,642.79,12855.80,17605.78,1232.40,18838.18
+BD/26-27/9027,2026-01-21,Murphy and Sons,Derek Martinez,USD,"Filing Cabinet, 4 drawer",2.00,253.92,507.84,17605.78,1232.40,18838.18
+BD/26-27/9027,2026-01-21,Murphy and Sons,Derek Martinez,USD,Stationery Bundle,10.00,34.12,341.20,17605.78,1232.40,18838.18
+SI-734470,2026-06-12,"Page, Stewart and Phillips",Green Group,GBP,Laser Toner Cartridge,50.00,91.31,4565.50,16273.39,3254.68,19528.07
+SI-734470,2026-06-12,"Page, Stewart and Phillips",Green Group,GBP,"Filing Cabinet, 4 drawer",25.00,149.99,3749.75,16273.39,3254.68,19528.07
+SI-734470,2026-06-12,"Page, Stewart and Phillips",Green Group,GBP,IT Support Services (hours),3.00,26.58,79.74,16273.39,3254.68,19528.07
+SI-734470,2026-06-12,"Page, Stewart and Phillips",Green Group,GBP,UPS 1200VA,20.00,168.02,3360.40,16273.39,3254.68,19528.07
+SI-734470,2026-06-12,"Page, Stewart and Phillips",Green Group,GBP,Ergonomic Office Chair,25.00,180.72,4518.00,16273.39,3254.68,19528.07
+HC-944809,2026-03-25,Gentle Hands Home Health Services,David Robinson,USD,Overnight Care,1.00,214.16,214.16,2456.73,,2456.73
+HC-944809,2026-03-25,Gentle Hands Home Health Services,David Robinson,USD,Overnight Care,5.00,297.30,1486.50,2456.73,,2456.73
+HC-944809,2026-03-25,Gentle Hands Home Health Services,David Robinson,USD,Mileage reimbursement,42.00,0.62,26.04,2456.73,,2456.73
+HC-944809,2026-03-25,Gentle Hands Home Health Services,David Robinson,USD,Care Coordination fee,7.00,104.29,730.03,2456.73,,2456.73

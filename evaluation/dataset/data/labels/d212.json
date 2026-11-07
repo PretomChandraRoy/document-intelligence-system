@@ -1,0 +1,13 @@
+{
+  "doc_id": "d212",
+  "file": "files/d212.xlsx",
+  "format": "xlsx",
+  "layout": null,
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "failed",
+  "expected_error": "corrupted",
+  "invoices": [],
+  "notes": "Plain text renamed to .xlsx"
+}

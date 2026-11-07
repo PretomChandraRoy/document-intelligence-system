@@ -1,0 +1,46 @@
+{
+  "doc_id": "d179",
+  "file": "files/d179.pdf",
+  "format": "pdf_digital",
+  "layout": "modern",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0221",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2026/05/0577",
+        "invoice_date": "2026-08-17",
+        "supplier_name": "Booth-Shaw",
+        "customer_name": "Owens Inc",
+        "subtotal": "11505.80",
+        "tax": "2301.16",
+        "total": "13806.96",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "50",
+            "unit_price": "222.21",
+            "amount": "11110.50"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "10",
+            "unit_price": "39.53",
+            "amount": "395.30"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Cross-verification source document"
+}

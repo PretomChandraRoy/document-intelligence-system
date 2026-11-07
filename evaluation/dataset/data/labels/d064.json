@@ -1,0 +1,46 @@
+{
+  "doc_id": "d064",
+  "file": "files/d064.pdf",
+  "format": "pdf_scanned",
+  "layout": "classic",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0064",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/2933",
+        "invoice_date": "2026-07-16",
+        "supplier_name": "Juncken",
+        "customer_name": "Sontag",
+        "subtotal": "2065.86",
+        "tax": "433.83",
+        "total": "2499.69",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "25",
+            "unit_price": "82.11",
+            "amount": "2052.75"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "3",
+            "unit_price": "4.37",
+            "amount": "13.11"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,49 @@
+{
+  "doc_id": "d008",
+  "file": "files/d008.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0008",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line",
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-359947",
+        "invoice_date": "2026-03-03",
+        "supplier_name": "Silver Oak Care Partners Inc.",
+        "customer_name": "Amanda Howe",
+        "subtotal": "3309.92",
+        "tax": null,
+        "total": "3322.14",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Respite Care services",
+            "quantity": "28",
+            "unit_price": "35.94",
+            "amount": "1006.32"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "8",
+            "unit_price": "287.95",
+            "amount": "2303.60"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

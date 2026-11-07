@@ -1,0 +1,43 @@
+{
+  "doc_id": "d009",
+  "file": "files/d009.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0009",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line",
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-665427",
+        "invoice_date": "2026-04-20",
+        "supplier_name": "Maple Grove Home Health Services",
+        "customer_name": "Brandon Adams",
+        "subtotal": "50.40",
+        "tax": null,
+        "total": "32.04",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "80",
+            "unit_price": "0.63",
+            "amount": "50.40"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

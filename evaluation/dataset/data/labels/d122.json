@@ -1,0 +1,38 @@
+{
+  "doc_id": "d122",
+  "file": "files/d122.tiff",
+  "format": "tiff",
+  "layout": "homecare",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0122",
+      "locale": "homecare",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "HC-583220",
+        "invoice_date": "2026-04-12",
+        "supplier_name": "Silver Oak Home Health Services",
+        "customer_name": "Mark Williams",
+        "subtotal": "396.04",
+        "tax": "0",
+        "total": "396.04",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Care Coordination fee",
+            "quantity": "4",
+            "unit_price": "99.01",
+            "amount": "396.04"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

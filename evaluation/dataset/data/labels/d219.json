@@ -1,0 +1,111 @@
+{
+  "doc_id": "d219",
+  "file": "files/d219.pdf",
+  "format": "pdf_mixed",
+  "layout": "bundle",
+  "degradation": "mild",
+  "pages": 3,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0240",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-988869",
+        "invoice_date": "2026-06-10",
+        "supplier_name": "Hearthside Care Partners Inc.",
+        "customer_name": "Casey Little",
+        "subtotal": "147.68",
+        "tax": null,
+        "total": "147.68",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Home Health Aide services",
+            "quantity": "4",
+            "unit_price": "36.92",
+            "amount": "147.68"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        1,
+        1
+      ]
+    },
+    {
+      "invoice_id": "inv0241",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A95317",
+        "invoice_date": "2026-02-21",
+        "supplier_name": "Karim Engineering Works",
+        "customer_name": "Meghna Distributors",
+        "subtotal": "34644",
+        "tax": "2598.30",
+        "total": "37242.30",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Stationery Bundle",
+            "quantity": "12",
+            "unit_price": "2887",
+            "amount": "34644"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ],
+      "pages": [
+        2,
+        2
+      ]
+    },
+    {
+      "invoice_id": "inv0242",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A56581",
+        "invoice_date": "2026-09-18",
+        "supplier_name": "Meister Hauffer KG",
+        "customer_name": "Juan Mühle B.Eng.",
+        "subtotal": "1303.87",
+        "tax": "247.74",
+        "total": "1551.61",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "50",
+            "unit_price": "9.71",
+            "amount": "485.50"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "272.79",
+            "amount": "818.37"
+          }
+        ]
+      },
+      "expected_flags": [],
+      "pages": [
+        3,
+        3
+      ]
+    }
+  ],
+  "notes": "Three invoices; the second is a scan between two digital ones",
+  "scanned_pages": [
+    2
+  ]
+}

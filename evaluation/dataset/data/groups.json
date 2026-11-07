@@ -1,0 +1,356 @@
+[
+  {
+    "relation": "duplicate",
+    "docs": [
+      "d036",
+      "d173"
+    ],
+    "invoice_ids": [
+      "inv0036",
+      "inv0036d"
+    ],
+    "key": {
+      "supplier_name": "Shapla Supplies Ltd.",
+      "invoice_number": "SI-470037"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "duplicate",
+    "docs": [
+      "d007",
+      "d174"
+    ],
+    "invoice_ids": [
+      "inv0007",
+      "inv0007d"
+    ],
+    "key": {
+      "supplier_name": "Maple Grove Care Partners Inc.",
+      "invoice_number": null
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "duplicate",
+    "docs": [
+      "d041",
+      "d175"
+    ],
+    "invoice_ids": [
+      "inv0041",
+      "inv0041d"
+    ],
+    "key": {
+      "supplier_name": "Green Group",
+      "invoice_number": "BD/26-27/4039"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "duplicate",
+    "docs": [
+      "d037",
+      "d176"
+    ],
+    "invoice_ids": [
+      "inv0037",
+      "inv0037d"
+    ],
+    "key": {
+      "supplier_name": "Lee PLC",
+      "invoice_number": "SI-689107"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "duplicate",
+    "docs": [
+      "d001",
+      "d177"
+    ],
+    "invoice_ids": [
+      "inv0001",
+      "inv0001d"
+    ],
+    "key": {
+      "supplier_name": "Willow Creek Home Care LLC",
+      "invoice_number": "HC-629903"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "duplicate",
+    "docs": [
+      "d010",
+      "d178"
+    ],
+    "invoice_ids": [
+      "inv0010",
+      "inv0010d"
+    ],
+    "key": {
+      "supplier_name": "Gentle Hands Home Health Services",
+      "invoice_number": "HC-360735"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "cross_check_pdf_excel",
+    "docs": [
+      "d179",
+      "d180"
+    ],
+    "invoice_ids": [
+      "inv0221",
+      "inv0221b"
+    ],
+    "key": {
+      "supplier_name": "Booth-Shaw",
+      "invoice_number": "2026/05/0577"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "cross_check_pdf_excel",
+    "docs": [
+      "d181",
+      "d182"
+    ],
+    "invoice_ids": [
+      "inv0222",
+      "inv0222b"
+    ],
+    "key": {
+      "supplier_name": "Thomas Group",
+      "invoice_number": "2026/03/0131"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "cross_check_pdf_excel",
+    "docs": [
+      "d183",
+      "d184"
+    ],
+    "invoice_ids": [
+      "inv0223",
+      "inv0223b"
+    ],
+    "key": {
+      "supplier_name": "Warmer Weimer GmbH & Co. OHG",
+      "invoice_number": "BD/26-27/6439"
+    },
+    "expected_mismatches": [
+      "line_items",
+      "subtotal",
+      "tax",
+      "total"
+    ]
+  },
+  {
+    "relation": "cross_check_pdf_excel",
+    "docs": [
+      "d185",
+      "d186"
+    ],
+    "invoice_ids": [
+      "inv0224",
+      "inv0224b"
+    ],
+    "key": {
+      "supplier_name": "Hearthside Care Partners Inc.",
+      "invoice_number": "HC-789666"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "cross_check_pdf_excel",
+    "docs": [
+      "d187",
+      "d188"
+    ],
+    "invoice_ids": [
+      "inv0225",
+      "inv0225b"
+    ],
+    "key": {
+      "supplier_name": "Rahman Supplies Ltd.",
+      "invoice_number": "2026/01/0881"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "cross_check_pdf_excel",
+    "docs": [
+      "d189",
+      "d190"
+    ],
+    "invoice_ids": [
+      "inv0226",
+      "inv0226b"
+    ],
+    "key": {
+      "supplier_name": "Shapla Traders",
+      "invoice_number": "SI-166595"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "cross_check_pdf_excel",
+    "docs": [
+      "d191",
+      "d192"
+    ],
+    "invoice_ids": [
+      "inv0227",
+      "inv0227b"
+    ],
+    "key": {
+      "supplier_name": "Sheppard-Cartwright",
+      "invoice_number": "95524"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "cross_check_pdf_excel",
+    "docs": [
+      "d193",
+      "d194"
+    ],
+    "invoice_ids": [
+      "inv0228",
+      "inv0228b"
+    ],
+    "key": {
+      "supplier_name": "Willow Creek Care Partners Inc.",
+      "invoice_number": "HC-149334"
+    },
+    "expected_mismatches": [
+      "invoice_date"
+    ]
+  },
+  {
+    "relation": "cross_check_pdf_excel",
+    "docs": [
+      "d195",
+      "d196"
+    ],
+    "invoice_ids": [
+      "inv0229",
+      "inv0229b"
+    ],
+    "key": {
+      "supplier_name": "Padma Logistics",
+      "invoice_number": "SI-144008"
+    },
+    "expected_mismatches": [
+      "total"
+    ]
+  },
+  {
+    "relation": "cross_check_pdf_excel",
+    "docs": [
+      "d197",
+      "d198"
+    ],
+    "invoice_ids": [
+      "inv0230",
+      "inv0230b"
+    ],
+    "key": {
+      "supplier_name": "Dixon Inc",
+      "invoice_number": "2026/01/0252"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "cross_check_pdf_pdf",
+    "docs": [
+      "d199",
+      "d200"
+    ],
+    "invoice_ids": [
+      "inv0231",
+      "inv0231b"
+    ],
+    "key": {
+      "supplier_name": "Brown LLC",
+      "invoice_number": "SI-933206"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "cross_check_pdf_pdf",
+    "docs": [
+      "d201",
+      "d202"
+    ],
+    "invoice_ids": [
+      "inv0232",
+      "inv0232b"
+    ],
+    "key": {
+      "supplier_name": "Willow Creek Home Care LLC",
+      "invoice_number": "HC-813944"
+    },
+    "expected_mismatches": []
+  },
+  {
+    "relation": "cross_check_pdf_pdf",
+    "docs": [
+      "d203",
+      "d204"
+    ],
+    "invoice_ids": [
+      "inv0233",
+      "inv0233b"
+    ],
+    "key": {
+      "supplier_name": "Lalbagh Office Solutions",
+      "invoice_number": "BD/26-27/1521"
+    },
+    "expected_mismatches": [
+      "total"
+    ]
+  },
+  {
+    "relation": "cross_check_pdf_pdf",
+    "docs": [
+      "d205",
+      "d206"
+    ],
+    "invoice_ids": [
+      "inv0234",
+      "inv0234b"
+    ],
+    "key": {
+      "supplier_name": "Rahman Engineering Works",
+      "invoice_number": "2026/04/0825"
+    },
+    "expected_mismatches": [
+      "line_items",
+      "subtotal",
+      "tax",
+      "total"
+    ]
+  },
+  {
+    "relation": "cross_check_pdf_pdf",
+    "docs": [
+      "d207",
+      "d208"
+    ],
+    "invoice_ids": [
+      "inv0235",
+      "inv0235b"
+    ],
+    "key": {
+      "supplier_name": "Wagner and Sons",
+      "invoice_number": "INV-2026-12092"
+    },
+    "expected_mismatches": [
+      "invoice_date"
+    ]
+  }
+]

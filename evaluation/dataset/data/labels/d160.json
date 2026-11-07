@@ -1,0 +1,44 @@
+{
+  "doc_id": "d160",
+  "file": "files/d160.csv",
+  "format": "csv",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0184",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "86037",
+        "invoice_date": "2026-09-02",
+        "supplier_name": "Meghna Printing & Packaging",
+        "customer_name": "Mehedi Hasan",
+        "subtotal": "40221",
+        "tax": "2011.05",
+        "total": "42232.05",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "UPS 1200VA",
+            "quantity": "3",
+            "unit_price": "10779",
+            "amount": "32337"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "3",
+            "unit_price": "2628",
+            "amount": "7884"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": false}"
+}

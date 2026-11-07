@@ -1,0 +1,210 @@
+{
+  "doc_id": "d158",
+  "file": "files/d158.csv",
+  "format": "csv",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0178",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/7122",
+        "invoice_date": "2026-05-26",
+        "supplier_name": "Anderson, Browning and Murphy",
+        "customer_name": "Julie Jones",
+        "subtotal": "5324.21",
+        "tax": "472.52",
+        "total": "5796.73",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "20",
+            "unit_price": "259.40",
+            "amount": "5188"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "136.21",
+            "amount": "136.21"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0179",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-441806",
+        "invoice_date": "2026-10-24",
+        "supplier_name": "Maple Grove Care Partners Inc.",
+        "customer_name": "Zachary Combs",
+        "subtotal": "392.52",
+        "tax": null,
+        "total": "392.52",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Companion Care services",
+            "quantity": "4",
+            "unit_price": "24.85",
+            "amount": "99.40"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "8",
+            "unit_price": "36.64",
+            "amount": "293.12"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0180",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-854787",
+        "invoice_date": "2026-08-23",
+        "supplier_name": "Gentle Hands Home Care LLC",
+        "customer_name": "Lori Johnston",
+        "subtotal": "1043.91",
+        "tax": null,
+        "total": "1043.91",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "2",
+            "unit_price": "125.61",
+            "amount": "251.22"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "1",
+            "unit_price": "111.24",
+            "amount": "111.24"
+          },
+          {
+            "description": "Companion Care services",
+            "quantity": "16",
+            "unit_price": "29.28",
+            "amount": "468.48"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "3",
+            "unit_price": "70.99",
+            "amount": "212.97"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0181",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-996536",
+        "invoice_date": "2026-10-23",
+        "supplier_name": "Renner Junitz KG",
+        "customer_name": "Bertram auch Schlauchin",
+        "subtotal": "14416.30",
+        "tax": "2739.10",
+        "total": "17155.40",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "20",
+            "unit_price": "37.26",
+            "amount": "745.20"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "10",
+            "unit_price": "185.96",
+            "amount": "1859.60"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "50",
+            "unit_price": "236.23",
+            "amount": "11811.50"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0182",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "22844",
+        "invoice_date": "2026-09-03",
+        "supplier_name": "Davis-Sims",
+        "customer_name": "Dr Leigh Brown",
+        "subtotal": "4708.88",
+        "tax": "941.78",
+        "total": "5650.66",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "3",
+            "unit_price": "348.38",
+            "amount": "1045.14"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "270.53",
+            "amount": "811.59"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "2",
+            "unit_price": "274.48",
+            "amount": "548.96"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "12",
+            "unit_price": "11.84",
+            "amount": "142.08"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "20",
+            "unit_price": "98.68",
+            "amount": "1973.60"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "187.51",
+            "amount": "187.51"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": true}"
+}

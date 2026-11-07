@@ -1,0 +1,18 @@
+﻿INVOICE
+
+Supplier;Klemt Hornich GbR
+Invoice Number;2026/01/0678
+Invoice Date;2026-07-02
+Bill To;Pruschke
+Currency;EUR
+
+Description;Quantity;Unit Price;Amount
+Website Maintenance (monthly);10,00;183,78;1837,80
+Filing Cabinet, 4 drawer;1,00;133,08;133,08
+Printed Brochures (pack of 100);10,00;94,76;947,60
+Filing Cabinet, 4 drawer;1,00;247,73;247,73
+Courier Delivery Charge;12,00;8,41;100,92
+
+;;Subtotal;3267,13
+;;MwSt.;686,10
+;;Total;3953,23

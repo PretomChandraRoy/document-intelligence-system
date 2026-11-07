@@ -1,0 +1,42 @@
+{
+  "doc_id": "d048",
+  "file": "files/d048.pdf",
+  "format": "pdf_digital",
+  "layout": "classic",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0048",
+      "locale": "uk",
+      "defects": [
+        "wrong_line_amount"
+      ],
+      "ground_truth": {
+        "invoice_number": "18357",
+        "invoice_date": "2026-06-26",
+        "supplier_name": "Gray PLC",
+        "customer_name": "Brandon Watson",
+        "subtotal": "3837.27",
+        "tax": "765.70",
+        "total": "4602.97",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "50",
+            "unit_price": "76.57",
+            "amount": "3837.27"
+          }
+        ]
+      },
+      "expected_flags": [
+        "line_amount_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

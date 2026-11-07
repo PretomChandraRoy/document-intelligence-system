@@ -1,0 +1,42 @@
+{
+  "doc_id": "d090",
+  "file": "files/d090.jpg",
+  "format": "jpg",
+  "layout": "modern",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0090",
+      "locale": "eu",
+      "defects": [
+        "missing_invoice_date"
+      ],
+      "ground_truth": {
+        "invoice_number": "2026/07/0910",
+        "invoice_date": null,
+        "supplier_name": "Biggen Stiftung & Co. KG",
+        "customer_name": "Beier AG & Co. KGaA",
+        "subtotal": "367.15",
+        "tax": "77.10",
+        "total": "444.25",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "367.15",
+            "amount": "367.15"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:invoice_date"
+      ]
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,68 @@
+{
+  "doc_id": "d119",
+  "file": "files/d119.tiff",
+  "format": "tiff",
+  "layout": "modern",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0119",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "41399",
+        "invoice_date": "2026-08-05",
+        "supplier_name": "Davies Group",
+        "customer_name": "Perry and Sons",
+        "subtotal": "6699.81",
+        "tax": "1339.96",
+        "total": "8039.77",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "20",
+            "unit_price": "116.93",
+            "amount": "2338.60"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "5",
+            "unit_price": "5.58",
+            "amount": "27.90"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "25",
+            "unit_price": "6.99",
+            "amount": "174.75"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "25",
+            "unit_price": "4.62",
+            "amount": "115.50"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "2",
+            "unit_price": "666.25",
+            "amount": "1332.50"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "12",
+            "unit_price": "225.88",
+            "amount": "2710.56"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,52 @@
+{
+  "doc_id": "d157",
+  "file": "files/d157.csv",
+  "format": "csv",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0177",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-69495",
+        "invoice_date": "2026-04-09",
+        "supplier_name": "White, Goodwin and Freeman",
+        "customer_name": "Victoria Patel-Wright",
+        "subtotal": "16030.37",
+        "tax": "3206.07",
+        "total": "19236.44",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "1",
+            "unit_price": "199.07",
+            "amount": "199.07"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "50",
+            "unit_price": "240.56",
+            "amount": "12028"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "10",
+            "unit_price": "380.33",
+            "amount": "3803.30"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": false}"
+}

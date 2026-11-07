@@ -1,0 +1,40 @@
+{
+  "doc_id": "d099",
+  "file": "files/d099.png",
+  "format": "png",
+  "layout": "receipt",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0099",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2026/09/0800",
+        "invoice_date": "2026-10-11",
+        "supplier_name": "Bachmann",
+        "customer_name": "Ottomar Schomber",
+        "subtotal": "160.77",
+        "tax": "30.55",
+        "total": "191.32",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "1",
+            "unit_price": "160.77",
+            "amount": "160.77"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": null
+}

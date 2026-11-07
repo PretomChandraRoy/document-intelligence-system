@@ -1,0 +1,58 @@
+{
+  "doc_id": "d018",
+  "file": "files/d018.pdf",
+  "format": "pdf_digital",
+  "layout": "modern",
+  "degradation": null,
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0018",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2026/10/0568",
+        "invoice_date": "2026-09-17",
+        "supplier_name": "Scott PLC",
+        "customer_name": "Clark, Hughes and Marsh",
+        "subtotal": "2107.91",
+        "tax": "421.58",
+        "total": "2529.49",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "50",
+            "unit_price": "28.93",
+            "amount": "1446.50"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "144.85",
+            "amount": "144.85"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "1",
+            "unit_price": "11.99",
+            "amount": "11.99"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "1",
+            "unit_price": "504.57",
+            "amount": "504.57"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": null
+}

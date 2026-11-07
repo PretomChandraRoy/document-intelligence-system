@@ -1,0 +1,246 @@
+{
+  "doc_id": "d141",
+  "file": "files/d141.xlsx",
+  "format": "xlsx",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0141",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-560623",
+        "invoice_date": "2026-04-01",
+        "supplier_name": "Evergreen Home Care LLC",
+        "customer_name": "Angela Knox MD",
+        "subtotal": "2041.40",
+        "tax": null,
+        "total": "2041.40",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Care Coordination fee",
+            "quantity": "8",
+            "unit_price": "51",
+            "amount": "408"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "4",
+            "unit_price": "97.09",
+            "amount": "388.36"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "20",
+            "unit_price": "33.40",
+            "amount": "668"
+          },
+          {
+            "description": "Skilled Nursing Visit (RN)",
+            "quantity": "4",
+            "unit_price": "144.26",
+            "amount": "577.04"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0142",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-94719",
+        "invoice_date": "2026-08-20",
+        "supplier_name": "Banani Printing & Packaging",
+        "customer_name": "Dhanmondi Distributors",
+        "subtotal": "6104566",
+        "tax": "305228.30",
+        "total": "6409794.30",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Stationery Bundle",
+            "quantity": "1",
+            "unit_price": "4479",
+            "amount": "4479"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "25",
+            "unit_price": "57316",
+            "amount": "1432900"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "25",
+            "unit_price": "7809",
+            "amount": "195225"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "3",
+            "unit_price": "6962",
+            "amount": "20886"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "5",
+            "unit_price": "54050",
+            "amount": "270250"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "20",
+            "unit_price": "26572",
+            "amount": "531440"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "50",
+            "unit_price": "72101",
+            "amount": "3605050"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "2",
+            "unit_price": "22168",
+            "amount": "44336"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0143",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/2931",
+        "invoice_date": "2026-03-25",
+        "supplier_name": "Patel and Sons",
+        "customer_name": "Lewis-Price",
+        "subtotal": "15782.54",
+        "tax": "3156.51",
+        "total": "18939.05",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "2",
+            "unit_price": "7.63",
+            "amount": "15.26"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "20",
+            "unit_price": "78.12",
+            "amount": "1562.40"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "2",
+            "unit_price": "30.14",
+            "amount": "60.28"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "22.79",
+            "amount": "22.79"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "10",
+            "unit_price": "12.99",
+            "amount": "129.90"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "25",
+            "unit_price": "413.79",
+            "amount": "10344.75"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "12",
+            "unit_price": "285.10",
+            "amount": "3421.20"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "2",
+            "unit_price": "112.98",
+            "amount": "225.96"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0144",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-621800",
+        "invoice_date": "2026-08-23",
+        "supplier_name": "Hearthside Home Health Services",
+        "customer_name": "Javier Herman",
+        "subtotal": "1697.08",
+        "tax": null,
+        "total": "1697.08",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Home Health Aide services",
+            "quantity": "12",
+            "unit_price": "37.49",
+            "amount": "449.88"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "40",
+            "unit_price": "31.18",
+            "amount": "1247.20"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0145",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/2430",
+        "invoice_date": "2026-01-26",
+        "supplier_name": "Lawrence LLC",
+        "customer_name": "Shirley Hardy-Jenkins",
+        "subtotal": "7701.25",
+        "tax": "1540.25",
+        "total": "9241.50",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "25",
+            "unit_price": "308.05",
+            "amount": "7701.25"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Export\"], \"date_as_text\": false}"
+}

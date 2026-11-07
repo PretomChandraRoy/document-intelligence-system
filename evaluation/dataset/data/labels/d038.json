@@ -1,0 +1,56 @@
+{
+  "doc_id": "d038",
+  "file": "files/d038.pdf",
+  "format": "pdf_digital",
+  "layout": "modern",
+  "degradation": null,
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0038",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-05939",
+        "invoice_date": "2026-09-14",
+        "supplier_name": "Adolph AG",
+        "customer_name": "Ring AG",
+        "subtotal": "6189.31",
+        "tax": "1299.76",
+        "total": "7489.07",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "50",
+            "unit_price": "79.70",
+            "amount": "3985"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "12",
+            "unit_price": "33.67",
+            "amount": "404.04"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "25",
+            "unit_price": "37.86",
+            "amount": "946.50"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "3",
+            "unit_price": "284.59",
+            "amount": "853.77"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

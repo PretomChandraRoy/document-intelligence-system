@@ -1,0 +1,42 @@
+{
+  "doc_id": "d178",
+  "file": "files/d178.jpg",
+  "format": "jpg",
+  "layout": "homecare",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0010d",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-360735",
+        "invoice_date": "2026-02-25",
+        "supplier_name": "Gentle Hands Home Health Services",
+        "customer_name": "Connor Campbell",
+        "subtotal": "120.92",
+        "tax": null,
+        "total": "120.92",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Home Health Aide services",
+            "quantity": "4",
+            "unit_price": "30.23",
+            "amount": "120.92"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Duplicate of d010"
+}

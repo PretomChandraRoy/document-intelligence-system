@@ -1,0 +1,236 @@
+{
+  "doc_id": "d156",
+  "file": "files/d156.csv",
+  "format": "csv",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0171",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-336817",
+        "invoice_date": "2026-02-05",
+        "supplier_name": "Knight-Sparks",
+        "customer_name": "Smith, Ballard and Santana",
+        "subtotal": "4138.20",
+        "tax": "289.67",
+        "total": "4427.87",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "20",
+            "unit_price": "206.91",
+            "amount": "4138.20"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0172",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/0585",
+        "invoice_date": "2026-04-08",
+        "supplier_name": "Armstrong-Andrews",
+        "customer_name": "Parsons-Hall",
+        "subtotal": "10411.81",
+        "tax": "728.83",
+        "total": "11140.64",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "1",
+            "unit_price": "69.23",
+            "amount": "69.23"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "1",
+            "unit_price": "34.44",
+            "amount": "34.44"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "3",
+            "unit_price": "247.14",
+            "amount": "741.42"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "12",
+            "unit_price": "92.86",
+            "amount": "1114.32"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "12",
+            "unit_price": "643.05",
+            "amount": "7716.60"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "20",
+            "unit_price": "36.79",
+            "amount": "735.80"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0173",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2025/12/0594",
+        "invoice_date": "2026-09-25",
+        "supplier_name": "Northern Technologies Ltd.",
+        "customer_name": "Rahman Traders",
+        "subtotal": "24377",
+        "tax": "1218.85",
+        "total": "25595.85",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "1",
+            "unit_price": "24377",
+            "amount": "24377"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0174",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-89665",
+        "invoice_date": "2026-06-16",
+        "supplier_name": "Robinson-Roberts",
+        "customer_name": "Morris, Woodward and Peters",
+        "subtotal": "3391.45",
+        "tax": "678.29",
+        "total": "4069.74",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "1",
+            "unit_price": "110.67",
+            "amount": "110.67"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "181.34",
+            "amount": "181.34"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "5",
+            "unit_price": "105.66",
+            "amount": "528.30"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "20",
+            "unit_price": "43.67",
+            "amount": "873.40"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "257.20",
+            "amount": "257.20"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "38.88",
+            "amount": "38.88"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "3",
+            "unit_price": "65.78",
+            "amount": "197.34"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "12",
+            "unit_price": "100.36",
+            "amount": "1204.32"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0175",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/9536",
+        "invoice_date": "2026-08-13",
+        "supplier_name": "Thanel",
+        "customer_name": "Dipl.-Ing. Korinna Schmidt",
+        "subtotal": "132.01",
+        "tax": "25.08",
+        "total": "157.09",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "5",
+            "unit_price": "23.93",
+            "amount": "119.65"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "2",
+            "unit_price": "6.18",
+            "amount": "12.36"
+          }
+        ]
+      },
+      "expected_flags": []
+    },
+    {
+      "invoice_id": "inv0176",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "72391",
+        "invoice_date": "2026-08-02",
+        "supplier_name": "Evans LLC",
+        "customer_name": "Lesley Young",
+        "subtotal": "332.02",
+        "tax": "66.40",
+        "total": "398.42",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "332.02",
+            "amount": "332.02"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": true}"
+}

@@ -1,0 +1,13 @@
+{
+  "doc_id": "d214",
+  "file": "files/d214.jpg",
+  "format": "jpg",
+  "layout": null,
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "failed",
+  "expected_error": "corrupted",
+  "invoices": [],
+  "notes": "JPEG cut off halfway; must fail cleanly, not return a half-read invoice"
+}

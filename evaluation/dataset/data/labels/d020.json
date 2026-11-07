@@ -1,0 +1,43 @@
+{
+  "doc_id": "d020",
+  "file": "files/d020.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0020",
+      "locale": "uk",
+      "defects": [
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "A96057",
+        "invoice_date": "2026-05-26",
+        "supplier_name": "Fox-Lane",
+        "customer_name": "Gibbons, Richardson and Allen",
+        "subtotal": "16.54",
+        "tax": "3.31",
+        "total": "3.65",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "1",
+            "unit_price": "16.54",
+            "amount": "16.54"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency",
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

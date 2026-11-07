@@ -1,0 +1,56 @@
+{
+  "doc_id": "d104",
+  "file": "files/d104.png",
+  "format": "png",
+  "layout": "modern",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0104",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "53500",
+        "invoice_date": "2026-04-20",
+        "supplier_name": "Shapla Distributors",
+        "customer_name": "Riverside Office Solutions",
+        "subtotal": "583011",
+        "tax": "87451.65",
+        "total": "670462.65",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "25",
+            "unit_price": "1397",
+            "amount": "34925"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "25",
+            "unit_price": "15450",
+            "amount": "386250"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "2",
+            "unit_price": "20228",
+            "amount": "40456"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "12",
+            "unit_price": "10115",
+            "amount": "121380"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

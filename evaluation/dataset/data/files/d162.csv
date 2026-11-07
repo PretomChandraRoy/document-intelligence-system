@@ -1,0 +1,20 @@
+Invoice No,Invoice Date,Supplier,Customer,Currency,Item Description,Qty,Unit Price,Line Amount,Subtotal,Tax,Total
+SI-614416,2026-05-29,Patel Group,"Jones, Townsend and Stevenson",GBP,Ergonomic Office Chair,50.00,263.91,13195.50,16201.98,3240.40,19442.38
+SI-614416,2026-05-29,Patel Group,"Jones, Townsend and Stevenson",GBP,Ergonomic Office Chair,1.00,184.18,184.18,16201.98,3240.40,19442.38
+SI-614416,2026-05-29,Patel Group,"Jones, Townsend and Stevenson",GBP,IT Support Services (hours),12.00,37.24,446.88,16201.98,3240.40,19442.38
+SI-614416,2026-05-29,Patel Group,"Jones, Townsend and Stevenson",GBP,Stationery Bundle,50.00,36.43,1821.50,16201.98,3240.40,19442.38
+SI-614416,2026-05-29,Patel Group,"Jones, Townsend and Stevenson",GBP,27-inch LED Monitor,3.00,184.64,553.92,16201.98,3240.40,19442.38
+27759,2026-08-25,Rahman Traders,Rupsha Enterprise,BDT,Software Licence (annual),1.00,19566.00,19566.00,3165703.00,237427.73,3403130.73
+27759,2026-08-25,Rahman Traders,Rupsha Enterprise,BDT,IT Support Services (hours),20.00,10406.00,208120.00,3165703.00,237427.73,3403130.73
+27759,2026-08-25,Rahman Traders,Rupsha Enterprise,BDT,Ergonomic Office Chair,50.00,28763.00,1438150.00,3165703.00,237427.73,3403130.73
+27759,2026-08-25,Rahman Traders,Rupsha Enterprise,BDT,"Filing Cabinet, 4 drawer",20.00,23298.00,465960.00,3165703.00,237427.73,3403130.73
+27759,2026-08-25,Rahman Traders,Rupsha Enterprise,BDT,IT Support Services (hours),20.00,10252.00,205040.00,3165703.00,237427.73,3403130.73
+27759,2026-08-25,Rahman Traders,Rupsha Enterprise,BDT,Wireless Keyboard and Mouse Set,10.00,4348.00,43480.00,3165703.00,237427.73,3403130.73
+27759,2026-08-25,Rahman Traders,Rupsha Enterprise,BDT,"Filing Cabinet, 4 drawer",1.00,28837.00,28837.00,3165703.00,237427.73,3403130.73
+27759,2026-08-25,Rahman Traders,Rupsha Enterprise,BDT,Network Switch 24-port,50.00,15131.00,756550.00,3165703.00,237427.73,3403130.73
+HC-438277,2026-10-06,Evergreen Home Care LLC,Miss Brooke Li,USD,Respite Care services,37.50,31.67,1187.63,2427.55,0.00,2427.55
+HC-438277,2026-10-06,Evergreen Home Care LLC,Miss Brooke Li,USD,Home Health Aide services,37.50,27.52,1032.00,2427.55,0.00,2427.55
+HC-438277,2026-10-06,Evergreen Home Care LLC,Miss Brooke Li,USD,Companion Care services,8.00,25.99,207.92,2427.55,0.00,2427.55
+BD/26-27/0285,2026-03-01,Jamuna Engineering Works,Shapla Trading Co.,BDT,Cat6 Ethernet Cable (305 m box),25.00,13773.00,344325.00,1201134.00,180170.10,1381304.10
+BD/26-27/0285,2026-03-01,Jamuna Engineering Works,Shapla Trading Co.,BDT,Cloud Hosting (monthly),25.00,32301.00,807525.00,1201134.00,180170.10,1381304.10
+BD/26-27/0285,2026-03-01,Jamuna Engineering Works,Shapla Trading Co.,BDT,Wireless Keyboard and Mouse Set,12.00,4107.00,49284.00,1201134.00,180170.10,1381304.10

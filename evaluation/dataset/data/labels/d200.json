@@ -1,0 +1,58 @@
+{
+  "doc_id": "d200",
+  "file": "files/d200.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0231b",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-933206",
+        "invoice_date": "2026-08-23",
+        "supplier_name": "Brown LLC",
+        "customer_name": "Jacobs-Mason",
+        "subtotal": "8178.94",
+        "tax": "572.53",
+        "total": "8751.47",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "10",
+            "unit_price": "5.78",
+            "amount": "57.80"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "2",
+            "unit_price": "697.63",
+            "amount": "1395.26"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "12",
+            "unit_price": "321.27",
+            "amount": "3855.24"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "12",
+            "unit_price": "239.22",
+            "amount": "2870.64"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Internal copy of d199"
+}

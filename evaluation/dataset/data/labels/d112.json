@@ -1,0 +1,304 @@
+{
+  "doc_id": "d112",
+  "file": "files/d112.tiff",
+  "format": "tiff",
+  "layout": "modern",
+  "degradation": "mild",
+  "pages": 2,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0112",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "60374",
+        "invoice_date": "2026-01-20",
+        "supplier_name": "Bolander",
+        "customer_name": "Cosima Ullmann",
+        "subtotal": "136654.15",
+        "tax": "25964.29",
+        "total": "162618.44",
+        "currency": null,
+        "line_items": [
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "359.60",
+            "amount": "359.60"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "179.92",
+            "amount": "179.92"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "25",
+            "unit_price": "407.47",
+            "amount": "10186.75"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "50",
+            "unit_price": "209.41",
+            "amount": "10470.50"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "1",
+            "unit_price": "269.13",
+            "amount": "269.13"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "20",
+            "unit_price": "266.83",
+            "amount": "5336.60"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "3",
+            "unit_price": "369.11",
+            "amount": "1107.33"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "2",
+            "unit_price": "248.65",
+            "amount": "497.30"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "50",
+            "unit_price": "317.89",
+            "amount": "15894.50"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "2",
+            "unit_price": "75.69",
+            "amount": "151.38"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "20",
+            "unit_price": "25.88",
+            "amount": "517.60"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "3",
+            "unit_price": "176.99",
+            "amount": "530.97"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "143.98",
+            "amount": "143.98"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "25",
+            "unit_price": "283.22",
+            "amount": "7080.50"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "50",
+            "unit_price": "163.11",
+            "amount": "8155.50"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "50",
+            "unit_price": "173.96",
+            "amount": "8698"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "25",
+            "unit_price": "177.81",
+            "amount": "4445.25"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "20",
+            "unit_price": "241.66",
+            "amount": "4833.20"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "25",
+            "unit_price": "256.88",
+            "amount": "6422"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "25",
+            "unit_price": "4.52",
+            "amount": "113"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "25",
+            "unit_price": "74.32",
+            "amount": "1858"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "12",
+            "unit_price": "126.60",
+            "amount": "1519.20"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "186.59",
+            "amount": "186.59"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "20",
+            "unit_price": "78.61",
+            "amount": "1572.20"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "5",
+            "unit_price": "227.61",
+            "amount": "1138.05"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "12",
+            "unit_price": "113.51",
+            "amount": "1362.12"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "1",
+            "unit_price": "8.62",
+            "amount": "8.62"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "25",
+            "unit_price": "18.30",
+            "amount": "457.50"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "10",
+            "unit_price": "106.80",
+            "amount": "1068"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "2",
+            "unit_price": "35.90",
+            "amount": "71.80"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "5",
+            "unit_price": "157.03",
+            "amount": "785.15"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "12",
+            "unit_price": "153.41",
+            "amount": "1840.92"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "5",
+            "unit_price": "297.95",
+            "amount": "1489.75"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "3",
+            "unit_price": "318.35",
+            "amount": "955.05"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "20",
+            "unit_price": "103.23",
+            "amount": "2064.60"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "25",
+            "unit_price": "142.89",
+            "amount": "3572.25"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "50",
+            "unit_price": "339.40",
+            "amount": "16970"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "2",
+            "unit_price": "530.40",
+            "amount": "1060.80"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "3",
+            "unit_price": "36.76",
+            "amount": "110.28"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "184.34",
+            "amount": "184.34"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "10",
+            "unit_price": "504.41",
+            "amount": "5044.10"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "1",
+            "unit_price": "90.18",
+            "amount": "90.18"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "1",
+            "unit_price": "10.59",
+            "amount": "10.59"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "50",
+            "unit_price": "142.72",
+            "amount": "7136"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "5",
+            "unit_price": "141.01",
+            "amount": "705.05"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:currency"
+      ]
+    }
+  ],
+  "notes": null
+}

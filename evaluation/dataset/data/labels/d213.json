@@ -1,0 +1,13 @@
+{
+  "doc_id": "d213",
+  "file": "files/d213.csv",
+  "format": "csv",
+  "layout": null,
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "failed",
+  "expected_error": "corrupted",
+  "invoices": [],
+  "notes": "Binary data with a .csv extension"
+}

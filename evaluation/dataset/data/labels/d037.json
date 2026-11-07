@@ -1,0 +1,46 @@
+{
+  "doc_id": "d037",
+  "file": "files/d037.pdf",
+  "format": "pdf_digital",
+  "layout": "modern",
+  "degradation": null,
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0037",
+      "locale": "us",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-689107",
+        "invoice_date": "2026-01-27",
+        "supplier_name": "Lee PLC",
+        "customer_name": "Martin Inc",
+        "subtotal": "725.82",
+        "tax": "50.81",
+        "total": "776.63",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "2",
+            "unit_price": "7.29",
+            "amount": "14.58"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "12",
+            "unit_price": "59.27",
+            "amount": "711.24"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": null
+}

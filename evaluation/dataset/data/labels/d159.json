@@ -1,0 +1,80 @@
+{
+  "doc_id": "d159",
+  "file": "files/d159.csv",
+  "format": "csv",
+  "layout": "ledger",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0183",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-452001",
+        "invoice_date": "2026-02-11",
+        "supplier_name": "Jamuna Logistics",
+        "customer_name": "Rahman Office Solutions",
+        "subtotal": "1564339",
+        "tax": "234650.85",
+        "total": "1798989.85",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "50",
+            "unit_price": "12583",
+            "amount": "629150"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "20",
+            "unit_price": "4072",
+            "amount": "81440"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "2",
+            "unit_price": "54905",
+            "amount": "109810"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "20",
+            "unit_price": "9494",
+            "amount": "189880"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "1",
+            "unit_price": "779",
+            "amount": "779"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "25",
+            "unit_price": "676",
+            "amount": "16900"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "5",
+            "unit_price": "681",
+            "amount": "3405"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "25",
+            "unit_price": "21319",
+            "amount": "532975"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"csv_dialect\": \"us\", \"date_as_text\": false}"
+}

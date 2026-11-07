@@ -1,0 +1,6 @@
+Invoice No,Invoice Date,Supplier,Customer,Currency,Item Description,Qty,Unit Price,Line Amount,Subtotal,Tax,Total
+INV-2026-25737,09/08/2026,Webster Inc,Smith-Patel,GBP,Network Switch 24-port,5.00,128.63,643.15,1673.79,334.76,2008.55
+INV-2026-25737,09/08/2026,Webster Inc,Smith-Patel,GBP,Wireless Keyboard and Mouse Set,3.00,23.41,70.23,1673.79,334.76,2008.55
+INV-2026-25737,09/08/2026,Webster Inc,Smith-Patel,GBP,27-inch LED Monitor,3.00,213.78,641.34,1673.79,334.76,2008.55
+INV-2026-25737,09/08/2026,Webster Inc,Smith-Patel,GBP,Cat6 Ethernet Cable (305 m box),2.00,158.30,316.60,1673.79,334.76,2008.55
+INV-2026-25737,09/08/2026,Webster Inc,Smith-Patel,GBP,Bottled Water 19L,1.00,2.47,2.47,1673.79,334.76,2008.55

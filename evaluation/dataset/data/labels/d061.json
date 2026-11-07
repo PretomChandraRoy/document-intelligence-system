@@ -1,0 +1,72 @@
+{
+  "doc_id": "d061",
+  "file": "files/d061.pdf",
+  "format": "pdf_scanned",
+  "layout": "classic",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0061",
+      "locale": "uk",
+      "defects": [
+        "missing_invoice_date"
+      ],
+      "ground_truth": {
+        "invoice_number": "80328",
+        "invoice_date": null,
+        "supplier_name": "Pritchard Inc",
+        "customer_name": "Thomas Group",
+        "subtotal": "11123.75",
+        "tax": "2224.75",
+        "total": "13348.50",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "25",
+            "unit_price": "84.64",
+            "amount": "2116"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "1",
+            "unit_price": "63.17",
+            "amount": "63.17"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "1",
+            "unit_price": "150.30",
+            "amount": "150.30"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "1",
+            "unit_price": "115.89",
+            "amount": "115.89"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "25",
+            "unit_price": "257.51",
+            "amount": "6437.75"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "12",
+            "unit_price": "186.72",
+            "amount": "2240.64"
+          }
+        ]
+      },
+      "expected_flags": [
+        "missing:invoice_date"
+      ]
+    }
+  ],
+  "notes": null
+}

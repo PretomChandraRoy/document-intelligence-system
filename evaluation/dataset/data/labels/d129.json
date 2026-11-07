@@ -1,0 +1,68 @@
+{
+  "doc_id": "d129",
+  "file": "files/d129.xlsx",
+  "format": "xlsx",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0129",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-672130",
+        "invoice_date": "2026-05-04",
+        "supplier_name": "Northern Engineering Works",
+        "customer_name": "Dhanmondi Logistics",
+        "subtotal": "1620926",
+        "tax": "121569.45",
+        "total": "1742495.45",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "2",
+            "unit_price": "5641",
+            "amount": "11282"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "12",
+            "unit_price": "16017",
+            "amount": "192204"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "25",
+            "unit_price": "46148",
+            "amount": "1153700"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "10",
+            "unit_price": "4575",
+            "amount": "45750"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "10",
+            "unit_price": "20881",
+            "amount": "208810"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "12",
+            "unit_price": "765",
+            "amount": "9180"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

@@ -1,0 +1,18 @@
+INVOICE
+
+Supplier,Chittagong Port Office Solutions
+Invoice Number,A74711
+Invoice Date,12-02-2026
+Bill To,Jannatul Ferdous
+Currency,BDT
+
+Description,Quantity,Unit Price,Amount
+Cleaning Services (monthly),12.00,24514.00,294168.00
+Software Licence (annual),12.00,18979.00,227748.00
+Courier Delivery Charge,1.00,2344.00,2344.00
+Cloud Hosting (monthly),2.00,23480.00,46960.00
+Printed Brochures (pack of 100),5.00,8203.00,41015.00
+
+,,Subtotal,612235.00
+,,VAT,91835.25
+,,Total,704070.25

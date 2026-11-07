@@ -1,0 +1,54 @@
+{
+  "doc_id": "d050",
+  "file": "files/d050.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0050",
+      "locale": "us",
+      "defects": [
+        "wrong_line_amount"
+      ],
+      "ground_truth": {
+        "invoice_number": "2025/04/0759",
+        "invoice_date": "2026-01-18",
+        "supplier_name": "Dickson-Brady",
+        "customer_name": "Debra Cobb",
+        "subtotal": "402.61",
+        "tax": "0",
+        "total": "402.61",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "52",
+            "amount": "55.66"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "50",
+            "unit_price": "6.60",
+            "amount": "330"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "3",
+            "unit_price": "5.65",
+            "amount": "16.95"
+          }
+        ]
+      },
+      "expected_flags": [
+        "line_amount_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

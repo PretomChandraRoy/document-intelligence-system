@@ -1,0 +1,70 @@
+{
+  "doc_id": "d191",
+  "file": "files/d191.pdf",
+  "format": "pdf_digital",
+  "layout": "modern",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0227",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "95524",
+        "invoice_date": "2026-08-02",
+        "supplier_name": "Sheppard-Cartwright",
+        "customer_name": "Sutton, Smith and Thompson",
+        "subtotal": "12076.92",
+        "tax": "2415.38",
+        "total": "14492.30",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "20",
+            "unit_price": "85.80",
+            "amount": "1716"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "2",
+            "unit_price": "6.30",
+            "amount": "12.60"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "20",
+            "unit_price": "100.95",
+            "amount": "2019"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "25",
+            "unit_price": "260.16",
+            "amount": "6504"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "50",
+            "unit_price": "34.87",
+            "amount": "1743.50"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "2",
+            "unit_price": "40.91",
+            "amount": "81.82"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Cross-verification source document"
+}

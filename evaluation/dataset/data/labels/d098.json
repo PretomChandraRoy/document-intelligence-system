@@ -1,0 +1,60 @@
+{
+  "doc_id": "d098",
+  "file": "files/d098.png",
+  "format": "png",
+  "layout": "modern",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0098",
+      "locale": "eu",
+      "defects": [
+        "wrong_total"
+      ],
+      "ground_truth": {
+        "invoice_number": "2025/12/0347",
+        "invoice_date": "2026-04-21",
+        "supplier_name": "Stoll Zahn GmbH & Co. KG",
+        "customer_name": "Ladeck",
+        "subtotal": "734.11",
+        "tax": "154.16",
+        "total": "855.01",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "55.67",
+            "amount": "55.67"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "2",
+            "unit_price": "216.15",
+            "amount": "432.30"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "3.53",
+            "amount": "3.53"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "3",
+            "unit_price": "80.87",
+            "amount": "242.61"
+          }
+        ]
+      },
+      "expected_flags": [
+        "total_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,50 @@
+{
+  "doc_id": "d062",
+  "file": "files/d062.pdf",
+  "format": "pdf_scanned",
+  "layout": "receipt",
+  "degradation": "severe",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0062",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-01661",
+        "invoice_date": "2026-03-31",
+        "supplier_name": "Chittagong Port Supplies Ltd.",
+        "customer_name": "Padma Technologies Ltd.",
+        "subtotal": "30001",
+        "tax": "1500.05",
+        "total": "31501.05",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "3",
+            "unit_price": "5159",
+            "amount": "15477"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "519",
+            "amount": "519"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "1",
+            "unit_price": "14005",
+            "amount": "14005"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

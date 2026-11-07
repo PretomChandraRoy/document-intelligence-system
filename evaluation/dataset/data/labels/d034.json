@@ -1,0 +1,60 @@
+{
+  "doc_id": "d034",
+  "file": "files/d034.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0034",
+      "locale": "us",
+      "defects": [
+        "wrong_subtotal"
+      ],
+      "ground_truth": {
+        "invoice_number": "91851",
+        "invoice_date": "2026-03-29",
+        "supplier_name": "Hall, Robinson and Jones",
+        "customer_name": "Sanchez-Kennedy",
+        "subtotal": "23859.42",
+        "tax": "1489.10",
+        "total": "25348.52",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "5",
+            "unit_price": "135.15",
+            "amount": "675.75"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "5",
+            "unit_price": "96.27",
+            "amount": "481.35"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "50",
+            "unit_price": "443.41",
+            "amount": "22170.50"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "2",
+            "unit_price": "248.97",
+            "amount": "497.94"
+          }
+        ]
+      },
+      "expected_flags": [
+        "line_items_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

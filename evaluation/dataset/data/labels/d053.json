@@ -1,0 +1,320 @@
+{
+  "doc_id": "d053",
+  "file": "files/d053.pdf",
+  "format": "pdf_scanned",
+  "layout": "modern",
+  "degradation": "mild",
+  "pages": 2,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0053",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-606384",
+        "invoice_date": "2026-04-16",
+        "supplier_name": "Padma Traders",
+        "customer_name": "Meghna Trading Co.",
+        "subtotal": "15460912",
+        "tax": "1159568.40",
+        "total": "16620480.40",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Stationery Bundle",
+            "quantity": "25",
+            "unit_price": "3236",
+            "amount": "80900"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "237",
+            "amount": "237"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "25",
+            "unit_price": "4119",
+            "amount": "102975"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "10",
+            "unit_price": "29252",
+            "amount": "292520"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "5",
+            "unit_price": "804",
+            "amount": "4020"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "25",
+            "unit_price": "32802",
+            "amount": "820050"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "50",
+            "unit_price": "55804",
+            "amount": "2790200"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "2",
+            "unit_price": "20531",
+            "amount": "41062"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "5",
+            "unit_price": "46334",
+            "amount": "231670"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "2",
+            "unit_price": "20897",
+            "amount": "41794"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "5",
+            "unit_price": "540",
+            "amount": "2700"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "10",
+            "unit_price": "16268",
+            "amount": "162680"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "20",
+            "unit_price": "62361",
+            "amount": "1247220"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "20",
+            "unit_price": "8759",
+            "amount": "175180"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "1",
+            "unit_price": "73904",
+            "amount": "73904"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "50",
+            "unit_price": "2013",
+            "amount": "100650"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "20",
+            "unit_price": "1839",
+            "amount": "36780"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "2",
+            "unit_price": "13762",
+            "amount": "27524"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "3",
+            "unit_price": "18673",
+            "amount": "56019"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "12",
+            "unit_price": "45168",
+            "amount": "542016"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "20",
+            "unit_price": "75050",
+            "amount": "1501000"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "10",
+            "unit_price": "42720",
+            "amount": "427200"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "10",
+            "unit_price": "19213",
+            "amount": "192130"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "23826",
+            "amount": "71478"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "2",
+            "unit_price": "18548",
+            "amount": "37096"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "1",
+            "unit_price": "22428",
+            "amount": "22428"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "3",
+            "unit_price": "2788",
+            "amount": "8364"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "1",
+            "unit_price": "66047",
+            "amount": "66047"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "20",
+            "unit_price": "312",
+            "amount": "6240"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "3",
+            "unit_price": "31787",
+            "amount": "95361"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "12",
+            "unit_price": "36232",
+            "amount": "434784"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "20",
+            "unit_price": "34965",
+            "amount": "699300"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "50",
+            "unit_price": "14977",
+            "amount": "748850"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "12",
+            "unit_price": "25426",
+            "amount": "305112"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "25",
+            "unit_price": "8526",
+            "amount": "213150"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "1",
+            "unit_price": "29355",
+            "amount": "29355"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "2",
+            "unit_price": "8994",
+            "amount": "17988"
+          },
+          {
+            "description": "Laser Toner Cartridge",
+            "quantity": "50",
+            "unit_price": "13056",
+            "amount": "652800"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "10",
+            "unit_price": "64190",
+            "amount": "641900"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "227",
+            "amount": "227"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "3",
+            "unit_price": "6682",
+            "amount": "20046"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "25",
+            "unit_price": "26927",
+            "amount": "673175"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "20926",
+            "amount": "62778"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "20",
+            "unit_price": "53980",
+            "amount": "1079600"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "25",
+            "unit_price": "15085",
+            "amount": "377125"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "20",
+            "unit_price": "532",
+            "amount": "10640"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "297",
+            "amount": "297"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "10",
+            "unit_price": "23634",
+            "amount": "236340"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

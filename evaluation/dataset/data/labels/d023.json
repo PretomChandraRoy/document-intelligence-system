@@ -1,0 +1,54 @@
+{
+  "doc_id": "d023",
+  "file": "files/d023.pdf",
+  "format": "pdf_digital",
+  "layout": "classic",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0023",
+      "locale": "bd",
+      "defects": [
+        "wrong_line_amount"
+      ],
+      "ground_truth": {
+        "invoice_number": "SI-653081",
+        "invoice_date": "2026-07-15",
+        "supplier_name": "Sundarban Logistics",
+        "customer_name": "Imran Kabir",
+        "subtotal": "1992771.99",
+        "tax": "149457.75",
+        "total": "2142229.74",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "20",
+            "unit_price": "71190",
+            "amount": "1423800"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "10",
+            "unit_price": "14415",
+            "amount": "144151.99"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "20",
+            "unit_price": "21241",
+            "amount": "424820"
+          }
+        ]
+      },
+      "expected_flags": [
+        "line_amount_mismatch"
+      ]
+    }
+  ],
+  "notes": null
+}

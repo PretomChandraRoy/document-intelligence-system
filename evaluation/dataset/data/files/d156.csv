@@ -1,0 +1,20 @@
+Invoice No,Invoice Date,Supplier,Customer,Currency,Item Description,Qty,Unit Price,Line Amount,Subtotal,Tax,Total
+SI-336817,02/05/2026,Knight-Sparks,"Smith, Ballard and Santana",USD,Cloud Hosting (monthly),20.00,206.91,4138.20,4138.20,289.67,4427.87
+BD/26-27/0585,"April 8, 2026",Armstrong-Andrews,Parsons-Hall,USD,Laser Toner Cartridge,1.00,69.23,69.23,10411.81,728.83,11140.64
+BD/26-27/0585,"April 8, 2026",Armstrong-Andrews,Parsons-Hall,USD,Courier Delivery Charge,1.00,34.44,34.44,10411.81,728.83,11140.64
+BD/26-27/0585,"April 8, 2026",Armstrong-Andrews,Parsons-Hall,USD,Website Maintenance (monthly),3.00,247.14,741.42,10411.81,728.83,11140.64
+BD/26-27/0585,"April 8, 2026",Armstrong-Andrews,Parsons-Hall,USD,Laser Toner Cartridge,12.00,92.86,1114.32,10411.81,728.83,11140.64
+BD/26-27/0585,"April 8, 2026",Armstrong-Andrews,Parsons-Hall,USD,Website Maintenance (monthly),12.00,643.05,7716.60,10411.81,728.83,11140.64
+BD/26-27/0585,"April 8, 2026",Armstrong-Andrews,Parsons-Hall,USD,Printed Brochures (pack of 100),20.00,36.79,735.80,10411.81,728.83,11140.64
+2025/12/0594,25-09-2026,Northern Technologies Ltd.,Rahman Traders,BDT,Cleaning Services (monthly),1.00,24377.00,24377.00,24377.00,1218.85,25595.85
+INV-2026-89665,16/06/2026,Robinson-Roberts,"Morris, Woodward and Peters",GBP,Training Workshop (per seat),1.00,110.67,110.67,3391.45,678.29,4069.74
+INV-2026-89665,16/06/2026,Robinson-Roberts,"Morris, Woodward and Peters",GBP,27-inch LED Monitor,1.00,181.34,181.34,3391.45,678.29,4069.74
+INV-2026-89665,16/06/2026,Robinson-Roberts,"Morris, Woodward and Peters",GBP,Laser Toner Cartridge,5.00,105.66,528.30,3391.45,678.29,4069.74
+INV-2026-89665,16/06/2026,Robinson-Roberts,"Morris, Woodward and Peters",GBP,Wireless Keyboard and Mouse Set,20.00,43.67,873.40,3391.45,678.29,4069.74
+INV-2026-89665,16/06/2026,Robinson-Roberts,"Morris, Woodward and Peters",GBP,"Filing Cabinet, 4 drawer",1.00,257.20,257.20,3391.45,678.29,4069.74
+INV-2026-89665,16/06/2026,Robinson-Roberts,"Morris, Woodward and Peters",GBP,Wireless Keyboard and Mouse Set,1.00,38.88,38.88,3391.45,678.29,4069.74
+INV-2026-89665,16/06/2026,Robinson-Roberts,"Morris, Woodward and Peters",GBP,Training Workshop (per seat),3.00,65.78,197.34,3391.45,678.29,4069.74
+INV-2026-89665,16/06/2026,Robinson-Roberts,"Morris, Woodward and Peters",GBP,Cat6 Ethernet Cable (305 m box),12.00,100.36,1204.32,3391.45,678.29,4069.74
+BD/26-27/9536,13.08.2026,Thanel,Dipl.-Ing. Korinna Schmidt,EUR,Wireless Keyboard and Mouse Set,5.00,23.93,119.65,132.01,25.08,157.09
+BD/26-27/9536,13.08.2026,Thanel,Dipl.-Ing. Korinna Schmidt,EUR,Bottled Water 19L,2.00,6.18,12.36,132.01,25.08,157.09
+72391,02 Aug 2026,Evans LLC,Lesley Young,GBP,Network Switch 24-port,1.00,332.02,332.02,332.02,66.40,398.42

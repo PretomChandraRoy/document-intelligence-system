@@ -1,0 +1,80 @@
+{
+  "doc_id": "d047",
+  "file": "files/d047.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0047",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "2025/09/0426",
+        "invoice_date": "2026-01-29",
+        "supplier_name": "Hermann GbR",
+        "customer_name": "Wohlgemut KGaA",
+        "subtotal": "11448.10",
+        "tax": "2404.10",
+        "total": "13852.20",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "UPS 1200VA",
+            "quantity": "3",
+            "unit_price": "179.04",
+            "amount": "537.12"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "1",
+            "unit_price": "181.38",
+            "amount": "181.38"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "10",
+            "unit_price": "58.90",
+            "amount": "589"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "1",
+            "unit_price": "121.12",
+            "amount": "121.12"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "25",
+            "unit_price": "106.28",
+            "amount": "2657"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "2",
+            "unit_price": "101.39",
+            "amount": "202.78"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "20",
+            "unit_price": "73.01",
+            "amount": "1460.20"
+          },
+          {
+            "description": "Cat6 Ethernet Cable (305 m box)",
+            "quantity": "50",
+            "unit_price": "113.99",
+            "amount": "5699.50"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

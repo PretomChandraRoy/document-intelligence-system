@@ -1,0 +1,16 @@
+INVOICE
+
+Supplier,Maple Grove Home Care LLC
+Invoice Number,HC-794255
+Invoice Date,2026-05-31
+Bill To,James Cowan
+Currency,USD
+
+Description,Quantity,Unit Price,Amount
+Personal Care Aide services,12.00,26.59,319.08
+Overnight Care,3.00,216.33,648.99
+Home Health Aide services,8.00,33.59,268.72
+Mileage reimbursement,146.00,0.68,99.28
+
+,,Subtotal,1336.07
+,,Total,1336.07

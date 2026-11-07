@@ -1,0 +1,74 @@
+{
+  "doc_id": "d100",
+  "file": "files/d100.png",
+  "format": "png",
+  "layout": "receipt",
+  "degradation": "moderate",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0100",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "BD/26-27/4761",
+        "invoice_date": "2026-04-13",
+        "supplier_name": "Williams, Ali and Bailey",
+        "customer_name": "Thompson-Williams",
+        "subtotal": "14890.94",
+        "tax": "2978.19",
+        "total": "17869.13",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "10",
+            "unit_price": "176.03",
+            "amount": "1760.30"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "12",
+            "unit_price": "590.16",
+            "amount": "7081.92"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "5",
+            "unit_price": "406.25",
+            "amount": "2031.25"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "5",
+            "unit_price": "20.85",
+            "amount": "104.25"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "2",
+            "unit_price": "239.06",
+            "amount": "478.12"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "5",
+            "unit_price": "341.94",
+            "amount": "1709.70"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "10",
+            "unit_price": "172.54",
+            "amount": "1725.40"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

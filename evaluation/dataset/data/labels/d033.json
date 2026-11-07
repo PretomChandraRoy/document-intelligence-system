@@ -1,0 +1,68 @@
+{
+  "doc_id": "d033",
+  "file": "files/d033.pdf",
+  "format": "pdf_digital",
+  "layout": "classic",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0033",
+      "locale": "bd",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-260448",
+        "invoice_date": "2026-03-05",
+        "supplier_name": "Golden Harvest Engineering Works",
+        "customer_name": "Jamuna Distributors",
+        "subtotal": "1394824",
+        "tax": "209223.60",
+        "total": "1604047.60",
+        "currency": "BDT",
+        "line_items": [
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "25",
+            "unit_price": "15186",
+            "amount": "379650"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "50",
+            "unit_price": "269",
+            "amount": "13450"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "1",
+            "unit_price": "2282",
+            "amount": "2282"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "10",
+            "unit_price": "8523",
+            "amount": "85230"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "50",
+            "unit_price": "11402",
+            "amount": "570100"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "12",
+            "unit_price": "28676",
+            "amount": "344112"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

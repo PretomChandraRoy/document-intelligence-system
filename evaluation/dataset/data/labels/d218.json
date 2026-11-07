@@ -1,0 +1,305 @@
+{
+  "doc_id": "d218",
+  "file": "files/d218.pdf",
+  "format": "pdf_mixed",
+  "layout": "classic",
+  "degradation": "moderate",
+  "pages": 2,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0239",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "A17134",
+        "invoice_date": "2026-05-03",
+        "supplier_name": "Jones, Watson and Dixon",
+        "customer_name": "Rebecca Watts",
+        "subtotal": "86522.34",
+        "tax": "17304.47",
+        "total": "103826.81",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "10",
+            "unit_price": "357.05",
+            "amount": "3570.50"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "5",
+            "unit_price": "39.29",
+            "amount": "196.45"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "5",
+            "unit_price": "18.61",
+            "amount": "93.05"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "10",
+            "unit_price": "12.37",
+            "amount": "123.70"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "10",
+            "unit_price": "53.97",
+            "amount": "539.70"
+          },
+          {
+            "description": "27-inch LED Monitor",
+            "quantity": "1",
+            "unit_price": "286.11",
+            "amount": "286.11"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "1",
+            "unit_price": "9.38",
+            "amount": "9.38"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "25",
+            "unit_price": "7.37",
+            "amount": "184.25"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "12",
+            "unit_price": "162.24",
+            "amount": "1946.88"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "25",
+            "unit_price": "97.12",
+            "amount": "2428"
+          },
+          {
+            "description": "Stationery Bundle",
+            "quantity": "1",
+            "unit_price": "22.35",
+            "amount": "22.35"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "50",
+            "unit_price": "291.82",
+            "amount": "14591"
+          },
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "1",
+            "unit_price": "157.43",
+            "amount": "157.43"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "3",
+            "unit_price": "65.57",
+            "amount": "196.71"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "701.91",
+            "amount": "701.91"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "3",
+            "unit_price": "37.20",
+            "amount": "111.60"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "5",
+            "unit_price": "252.10",
+            "amount": "1260.50"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "3",
+            "unit_price": "883.70",
+            "amount": "2651.10"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "1",
+            "unit_price": "52.46",
+            "amount": "52.46"
+          },
+          {
+            "description": "Training Workshop (per seat)",
+            "quantity": "3",
+            "unit_price": "51.78",
+            "amount": "155.34"
+          },
+          {
+            "description": "Cleaning Services (monthly)",
+            "quantity": "1",
+            "unit_price": "537.56",
+            "amount": "537.56"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "25",
+            "unit_price": "198.92",
+            "amount": "4973"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "3",
+            "unit_price": "165.78",
+            "amount": "497.34"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "50",
+            "unit_price": "211.73",
+            "amount": "10586.50"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "50",
+            "unit_price": "119.50",
+            "amount": "5975"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "2",
+            "unit_price": "149.71",
+            "amount": "299.42"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "3",
+            "unit_price": "268.58",
+            "amount": "805.74"
+          },
+          {
+            "description": "IT Support Services (hours)",
+            "quantity": "3",
+            "unit_price": "84.34",
+            "amount": "253.02"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "25",
+            "unit_price": "8.92",
+            "amount": "223"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "20",
+            "unit_price": "80.25",
+            "amount": "1605"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "1",
+            "unit_price": "7.12",
+            "amount": "7.12"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "12",
+            "unit_price": "34.55",
+            "amount": "414.60"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "5",
+            "unit_price": "2.73",
+            "amount": "13.65"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "20",
+            "unit_price": "213.36",
+            "amount": "4267.20"
+          },
+          {
+            "description": "Cloud Hosting (monthly)",
+            "quantity": "1",
+            "unit_price": "357.01",
+            "amount": "357.01"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "1",
+            "unit_price": "307.91",
+            "amount": "307.91"
+          },
+          {
+            "description": "Bottled Water 19L",
+            "quantity": "25",
+            "unit_price": "4.69",
+            "amount": "117.25"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "12",
+            "unit_price": "5.56",
+            "amount": "66.72"
+          },
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "50",
+            "unit_price": "275.76",
+            "amount": "13788"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "12",
+            "unit_price": "865.38",
+            "amount": "10384.56"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "3",
+            "unit_price": "214.87",
+            "amount": "644.61"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "1",
+            "unit_price": "494.30",
+            "amount": "494.30"
+          },
+          {
+            "description": "Wireless Keyboard and Mouse Set",
+            "quantity": "1",
+            "unit_price": "38.16",
+            "amount": "38.16"
+          },
+          {
+            "description": "A4 Paper 80gsm (ream)",
+            "quantity": "50",
+            "unit_price": "10.38",
+            "amount": "519"
+          },
+          {
+            "description": "Courier Delivery Charge",
+            "quantity": "5",
+            "unit_price": "13.65",
+            "amount": "68.25"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "One invoice; page 1 scanned, later pages digital",
+  "scanned_pages": [
+    1
+  ]
+}

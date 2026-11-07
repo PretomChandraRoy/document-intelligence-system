@@ -1,0 +1,44 @@
+{
+  "doc_id": "d125",
+  "file": "files/d125.tiff",
+  "format": "tiff",
+  "layout": "receipt",
+  "degradation": "mild",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0125",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "SI-681456",
+        "invoice_date": "2026-05-21",
+        "supplier_name": "Pohl",
+        "customer_name": "Ignatz Rörricht B.A.",
+        "subtotal": "1723.81",
+        "tax": "362",
+        "total": "2085.81",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "3",
+            "unit_price": "167.67",
+            "amount": "503.01"
+          },
+          {
+            "description": "UPS 1200VA",
+            "quantity": "10",
+            "unit_price": "122.08",
+            "amount": "1220.80"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

@@ -1,0 +1,40 @@
+{
+  "doc_id": "d139",
+  "file": "files/d139.xlsx",
+  "format": "xlsx",
+  "layout": "multisheet",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0139",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-433025",
+        "invoice_date": "2026-04-05",
+        "supplier_name": "Harbor Light Home Health Services",
+        "customer_name": "Erik Brown",
+        "subtotal": "107.64",
+        "tax": null,
+        "total": "107.64",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "156",
+            "unit_price": "0.69",
+            "amount": "107.64"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 2, \"sheet_names\": [\"Summary\", \"Items\"], \"date_as_text\": false}"
+}

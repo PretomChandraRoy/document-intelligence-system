@@ -1,0 +1,58 @@
+{
+  "doc_id": "d097",
+  "file": "files/d097.png",
+  "format": "png",
+  "layout": "homecare",
+  "degradation": "clean",
+  "pages": 1,
+  "split": "dev",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0097",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-219562",
+        "invoice_date": "2026-08-20",
+        "supplier_name": "Brightpath Care Partners Inc.",
+        "customer_name": "Cindy Lee",
+        "subtotal": "3104.74",
+        "tax": null,
+        "total": "3104.74",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Mileage reimbursement",
+            "quantity": "72",
+            "unit_price": "0.67",
+            "amount": "48.24"
+          },
+          {
+            "description": "Care Coordination fee",
+            "quantity": "6",
+            "unit_price": "69.07",
+            "amount": "414.42"
+          },
+          {
+            "description": "Personal Care Aide services",
+            "quantity": "16",
+            "unit_price": "32.13",
+            "amount": "514.08"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "8",
+            "unit_price": "266",
+            "amount": "2128"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

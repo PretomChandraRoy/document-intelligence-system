@@ -1,0 +1,44 @@
+{
+  "doc_id": "d029",
+  "file": "files/d029.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0029",
+      "locale": "eu",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "68183",
+        "invoice_date": "2026-03-27",
+        "supplier_name": "Mende",
+        "customer_name": "Ekaterina Beer",
+        "subtotal": "12048.90",
+        "tax": "2530.27",
+        "total": "14579.17",
+        "currency": "EUR",
+        "line_items": [
+          {
+            "description": "Ergonomic Office Chair",
+            "quantity": "10",
+            "unit_price": "242.01",
+            "amount": "2420.10"
+          },
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "20",
+            "unit_price": "481.44",
+            "amount": "9628.80"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

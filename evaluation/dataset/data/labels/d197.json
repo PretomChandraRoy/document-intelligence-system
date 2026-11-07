@@ -1,0 +1,54 @@
+{
+  "doc_id": "d197",
+  "file": "files/d197.pdf",
+  "format": "pdf_digital",
+  "layout": "receipt",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0230",
+      "locale": "us",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "2026/01/0252",
+        "invoice_date": "2026-04-14",
+        "supplier_name": "Dixon Inc",
+        "customer_name": "Lori Marshall",
+        "subtotal": "12426.22",
+        "tax": null,
+        "total": "12426.22",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Website Maintenance (monthly)",
+            "quantity": "20",
+            "unit_price": "569.08",
+            "amount": "11381.60"
+          },
+          {
+            "description": "Data Entry Services (batch)",
+            "quantity": "1",
+            "unit_price": "89.32",
+            "amount": "89.32"
+          },
+          {
+            "description": "Printed Brochures (pack of 100)",
+            "quantity": "10",
+            "unit_price": "95.53",
+            "amount": "955.30"
+          }
+        ]
+      },
+      "expected_flags": [
+        "duplicate"
+      ]
+    }
+  ],
+  "notes": "Cross-verification source document"
+}

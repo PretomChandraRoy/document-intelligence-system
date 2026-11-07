@@ -1,0 +1,58 @@
+{
+  "doc_id": "d002",
+  "file": "files/d002.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0002",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-182627",
+        "invoice_date": "2026-07-13",
+        "supplier_name": "Maple Grove Home Care LLC",
+        "customer_name": "Jesus Miller",
+        "subtotal": "2371.08",
+        "tax": null,
+        "total": "2371.08",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Overnight Care",
+            "quantity": "5",
+            "unit_price": "198.66",
+            "amount": "993.30"
+          },
+          {
+            "description": "Overnight Care",
+            "quantity": "2",
+            "unit_price": "191.13",
+            "amount": "382.26"
+          },
+          {
+            "description": "Home Health Aide services",
+            "quantity": "24",
+            "unit_price": "36.02",
+            "amount": "864.48"
+          },
+          {
+            "description": "Respite Care services",
+            "quantity": "4",
+            "unit_price": "32.76",
+            "amount": "131.04"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}

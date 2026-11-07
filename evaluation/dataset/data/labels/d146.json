@@ -1,0 +1,50 @@
+{
+  "doc_id": "d146",
+  "file": "files/d146.xls",
+  "format": "xls",
+  "layout": "form",
+  "degradation": null,
+  "pages": null,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0161",
+      "locale": "uk",
+      "defects": [],
+      "ground_truth": {
+        "invoice_number": "INV-2026-74469",
+        "invoice_date": "2026-01-18",
+        "supplier_name": "Hughes-Moss",
+        "customer_name": "Lee, Smith and Carter",
+        "subtotal": "16384.59",
+        "tax": "3276.92",
+        "total": "19661.51",
+        "currency": "GBP",
+        "line_items": [
+          {
+            "description": "Network Switch 24-port",
+            "quantity": "12",
+            "unit_price": "301.37",
+            "amount": "3616.44"
+          },
+          {
+            "description": "Filing Cabinet, 4 drawer",
+            "quantity": "20",
+            "unit_price": "262.42",
+            "amount": "5248.40"
+          },
+          {
+            "description": "Software Licence (annual)",
+            "quantity": "25",
+            "unit_price": "300.79",
+            "amount": "7519.75"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": "{\"sheets\": 1, \"sheet_names\": [\"Invoice\"], \"date_as_text\": false}"
+}

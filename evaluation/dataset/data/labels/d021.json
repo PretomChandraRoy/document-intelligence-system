@@ -1,0 +1,40 @@
+{
+  "doc_id": "d021",
+  "file": "files/d021.pdf",
+  "format": "pdf_digital",
+  "layout": "homecare",
+  "degradation": null,
+  "pages": 1,
+  "split": "test",
+  "expected_status": "completed",
+  "expected_error": null,
+  "invoices": [
+    {
+      "invoice_id": "inv0021",
+      "locale": "homecare",
+      "defects": [
+        "no_tax_line"
+      ],
+      "ground_truth": {
+        "invoice_number": "HC-802667",
+        "invoice_date": "2026-03-07",
+        "supplier_name": "Gentle Hands Home Care LLC",
+        "customer_name": "Nancy Baird",
+        "subtotal": "1069.50",
+        "tax": null,
+        "total": "1069.50",
+        "currency": "USD",
+        "line_items": [
+          {
+            "description": "Respite Care services",
+            "quantity": "37.5",
+            "unit_price": "28.52",
+            "amount": "1069.50"
+          }
+        ]
+      },
+      "expected_flags": []
+    }
+  ],
+  "notes": null
+}
