@@ -1,0 +1,78 @@
+# Start everything:   docker compose up -d --build
+# Then open:          http://localhost:3000  (frontend)   http://localhost:8000/docs  (API)
+name: docintel
+
+x-backend: &backend
+  build: ./backend
+  env_file: .env
+  environment:
+    DOCINTEL_DATABASE_URL: postgresql+psycopg://docintel:${POSTGRES_PASSWORD:-docintel}@db:5432/docintel
+    DOCINTEL_REDIS_URL: redis://redis:6379/0
+    DOCINTEL_STORAGE_DIR: /data/storage
+    DOCINTEL_CORS_ORIGINS: '["http://localhost:3000"]'
+  volumes:
+    - storage:/data/storage
+  extra_hosts:
+    - "host.docker.internal:host-gateway"   # reach Ollama on the host (needed on Linux, harmless on Windows)
+  restart: unless-stopped
+
+services:
+  db:
+    image: pgvector/pgvector:0.8.0-pg16
+    environment:
+      POSTGRES_USER: docintel
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-docintel}
+      POSTGRES_DB: docintel
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U docintel"]
+      interval: 5s
+      retries: 20
+    restart: unless-stopped
+
+  redis:
+    image: redis:7.4-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 20
+    restart: unless-stopped
+
+  migrate:
+    <<: *backend
+    command: ["alembic", "upgrade", "head"]
+    restart: "no"
+    depends_on:
+      db: {condition: service_healthy}
+
+  api:
+    <<: *backend
+    ports: ["8000:8000"]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+
+  # CPU work: file checks, OCR, validation and indexing
+  worker-cpu:
+    <<: *backend
+    command: ["celery", "-A", "app.worker", "worker", "-Q", "ingest,ocr,post",
+              "--concurrency", "${OCR_CONCURRENCY:-4}", "--loglevel", "INFO", "-n", "cpu@%h"]
+    healthcheck: {disable: true}
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+
+  # GPU-bound extraction: one task at a time so the model is never overloaded
+  worker-llm:
+    <<: *backend
+    command: ["celery", "-A", "app.worker", "worker", "-Q", "extract",
+              "--concurrency", "1", "--loglevel", "INFO", "-n", "llm@%h"]
+    healthcheck: {disable: true}
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+
+volumes:
+  pgdata:
+  storage:
