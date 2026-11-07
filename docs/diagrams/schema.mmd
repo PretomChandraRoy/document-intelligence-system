@@ -1,0 +1,118 @@
+erDiagram
+  documents ||--o{ pages : "has"
+  documents ||--o{ invoices : "contains"
+  documents ||--o{ processing_runs : "processed by"
+  processing_runs ||--o{ processing_events : "logs"
+  invoices ||--o{ line_items : "has"
+  invoices ||--o{ validation_issues : "raises"
+  documents ||--o{ validation_issues : "raises"
+  invoices ||--o{ corrections : "edited by"
+  invoice_groups ||--o{ invoices : "groups"
+
+  documents {
+    uuid id PK
+    text original_filename
+    char64 sha256
+    text format
+    bigint size_bytes
+    text storage_path
+    int page_count
+    text status
+    text stage
+    int progress_done
+    int progress_total
+    text error_code
+    text error_message
+    uuid exact_duplicate_of FK
+    timestamptz uploaded_at
+    timestamptz updated_at
+  }
+  pages {
+    uuid id PK
+    uuid document_id FK
+    int page_number
+    text sheet_name
+    text kind
+    text text
+    real ocr_confidence
+    int processing_ms
+  }
+  invoices {
+    uuid id PK
+    uuid document_id FK
+    int page_start
+    int page_end
+    text invoice_number
+    date invoice_date
+    text supplier_name
+    text customer_name
+    numeric subtotal
+    numeric tax
+    numeric total
+    char3 currency
+    text extraction_method
+    jsonb field_confidence
+    jsonb evidence
+    jsonb raw_model_output
+    text review_status
+    text dedupe_key
+    uuid group_id FK
+    text search_text
+    tsvector search_tsv
+    vector768 embedding
+  }
+  line_items {
+    uuid id PK
+    uuid invoice_id FK
+    int position
+    text description
+    numeric quantity
+    numeric unit_price
+    numeric amount
+  }
+  validation_issues {
+    uuid id PK
+    uuid document_id FK
+    uuid invoice_id FK
+    text code
+    text severity
+    text field
+    text message
+    jsonb details
+    bool resolved
+  }
+  invoice_groups {
+    uuid id PK
+    text match_key
+    text match_method
+    text status
+    jsonb mismatched_fields
+    timestamptz created_at
+  }
+  corrections {
+    uuid id PK
+    uuid invoice_id FK
+    text field_path
+    text old_value
+    text new_value
+    text corrected_by
+    timestamptz created_at
+  }
+  processing_runs {
+    uuid id PK
+    uuid document_id FK
+    int attempt
+    text trigger
+    text status
+    jsonb stage_timings_ms
+    timestamptz started_at
+    timestamptz finished_at
+  }
+  processing_events {
+    bigint id PK
+    uuid run_id FK
+    text stage
+    text level
+    text message
+    timestamptz created_at
+  }

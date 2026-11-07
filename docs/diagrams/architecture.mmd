@@ -1,0 +1,34 @@
+%%{init: {"flowchart": {"curve": "basis", "nodeSpacing": 40, "rankSpacing": 50}} }%%
+flowchart TB
+  user([Reviewer in browser])
+  fe["Next.js frontend :3000<br/>server-side proxy adds the API key"]
+  api["FastAPI :8000<br/>API-key auth, upload checks, REST endpoints"]
+  redis[("Redis<br/>task broker")]
+
+  subgraph workers["Celery workers (separate queues)"]
+    direction LR
+    wi["1 ingest<br/>file type, page split,<br/>spreadsheet parsing"]
+    wo["2 ocr<br/>OpenCV clean-up + Tesseract<br/>one process per CPU core"]
+    we["3 extract<br/>rules first, LLM fallback<br/>one at a time (GPU)"]
+    wp["4 post<br/>validation, duplicates,<br/>cross-check, indexing"]
+    wi --> wo --> we --> wp
+    wi -. "spreadsheets and<br/>digital PDFs skip OCR" .-> we
+  end
+
+  pg[("PostgreSQL 16 + pgvector<br/>structured data, full-text index,<br/>vector index, processing history")]
+  fs[("File store volume<br/>originals named by SHA-256")]
+
+  subgraph host["Windows host, outside Docker"]
+    ollama["Ollama on the RTX 3050<br/>qwen3:8b extraction<br/>nomic-embed-text embeddings"]
+  end
+
+  user --> fe
+  fe -->|"REST + X-API-Key"| api
+  api -->|"1. save original"| fs
+  api -->|"2. document row: queued"| pg
+  api -->|"3. enqueue"| redis
+  redis --> workers
+  workers <-->|"files"| fs
+  workers -->|"progress, results, events"| pg
+  workers -->|"prompts, embeddings"| ollama
+  api -->|"status, search, corrections"| pg

@@ -1,0 +1,34 @@
+sequenceDiagram
+  autonumber
+  participant U as Frontend
+  participant A as FastAPI
+  participant Q as Redis queues
+  participant W as Workers
+  participant L as Ollama (local LLM)
+  participant D as PostgreSQL
+
+  U->>A: POST /documents (files)
+  A->>A: check API key, size, real file type (magic bytes)
+  A->>D: insert document (queued), SHA-256 exact-duplicate check
+  A->>Q: enqueue ingest
+  A-->>U: 202 Accepted + document ids
+  loop every 2 s until finished
+    U->>A: GET /documents/{id}
+    A-->>U: status, stage, pages done / total
+  end
+  Q->>W: ingest: open file, classify each page (text layer or scan)
+  W->>Q: OCR batches of 20 scanned pages (run in parallel)
+  Q->>W: OCR: deskew, denoise, binarise, Tesseract, store text + confidence
+  W->>W: split pages into invoices (header and "page x of y" cues)
+  W->>W: rules extractor (labels, regex, line arithmetic)
+  alt rules complete and arithmetic consistent
+    W->>W: accept, method = rules
+  else fields missing or inconsistent
+    W->>L: page text + JSON schema, temperature 0
+    L-->>W: structured JSON with evidence snippets
+    W->>W: grounding check: values not found in source text become null
+  end
+  W->>W: validation rules, duplicate and cross-check matching
+  W->>L: embed invoice summary
+  W->>D: invoices, line items, issues, embedding, events
+  W->>D: document status = completed / needs_review / failed
