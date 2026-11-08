@@ -236,3 +236,12 @@ def test_reprocessing_does_not_leave_empty_groups(client, files):
     client.post(f"/api/v1/documents/{a}/reprocess", json={"from_stage": "extract"})
     groups = client.get("/api/v1/groups").json()["items"]
     assert len(groups) == 1 and len(groups[0]["members"]) == 2
+
+
+def test_semantic_search_drops_unrelated_invoices(client, files):
+    upload(client, files, "classic.pdf", "modern.pdf", "homecare.pdf")
+    hc = files["homecare.pdf"].gt
+    query = " ".join(li["description"] for li in hc["line_items"])
+    r = client.get("/api/v1/search", params={"q": query, "mode": "semantic"}).json()["results"]
+    # the home care invoice ranks first and the unrelated office-supply invoices are left out
+    assert r[0]["invoice_number"] == hc["invoice_number"] and len(r) < 3

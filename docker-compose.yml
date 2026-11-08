@@ -73,6 +73,16 @@ services:
       migrate: {condition: service_completed_successfully}
       redis: {condition: service_healthy}
 
+  frontend:
+    build: ./frontend
+    ports: ["3000:3000"]
+    environment:
+      BACKEND_URL: http://api:8000
+      DOCINTEL_API_KEY: ${DOCINTEL_API_KEY}   # read from .env; used only by the Next.js server
+    depends_on:
+      api: {condition: service_healthy}
+    restart: unless-stopped
+
 volumes:
   pgdata:
   storage:

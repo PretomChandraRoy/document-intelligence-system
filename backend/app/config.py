@@ -35,6 +35,9 @@ class Settings(BaseSettings):
     embed_dim: int = 768
     llm_timeout_s: int = 180
     llm_num_ctx: int = 8192
+    # semantic results below this cosine similarity are dropped, otherwise every
+    # invoice would come back ranked; calibrate per embedding model
+    semantic_min_similarity: float = 0.5
 
     # processing
     ocr_batch_pages: int = 20

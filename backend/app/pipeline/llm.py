@@ -162,6 +162,7 @@ class MockClient:
     which behaves like a crude semantic embedding.
     """
     name = "mock"
+    min_similarity = 0.12  # bag-of-words vectors score lower than real embeddings
 
     def __init__(self, dim: int = 768):
         self.dim = dim

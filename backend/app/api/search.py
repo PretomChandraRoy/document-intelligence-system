@@ -45,12 +45,14 @@ def search(request: Request, q: str | None = Query(None, max_length=500),
         keyword = [(r, float(s)) for r, s in rows]
     if mode in ("semantic", "hybrid"):
         try:
-            vec = get_client().embed([q])[0]
+            client = get_client()
+            vec = client.embed([q])[0]
             dist = Invoice.embedding.cosine_distance(vec).label("dist")
             sub = base.subquery()
             rows = db.execute(select(Invoice, dist).join(sub, sub.c.id == Invoice.id)
                               .where(Invoice.embedding.is_not(None)).order_by(dist).limit(limit * 3)).all()
-            semantic = [(r, 1 - float(d)) for r, d in rows]
+            floor = getattr(client, "min_similarity", get_settings().semantic_min_similarity)
+            semantic = [(r, 1 - float(d)) for r, d in rows if 1 - float(d) >= floor]
         except Exception:
             semantic = []  # model unavailable: keyword results still returned
 
