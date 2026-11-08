@@ -69,6 +69,7 @@ def _labelled(segment: str) -> tuple[str, str, str] | None:
 
 
 def _valid(field: str, value: str, currency: str | None):
+    value = value.strip(" :;#.-")
     if not value:
         return None
     if field == "invoice_number":
@@ -105,17 +106,26 @@ def extract_rules(text: str, page_start: int | None = None, page_end: int | None
             if not hit:
                 continue
             field, lab, rest = hit
+            # OCR often separates the colon from both label and value
+            # ("INV. NO.    :    87847"), so skip segments with no letters or digits
+            after = [s for _, s in segs[si + 1:] if re.search(r"[A-Za-z0-9]", s)]
             if field in MONEY_FIELDS:
                 # money: value is the rest of the segment or the last segment of the line
-                candidates = [rest] + [s for _, s in segs[si + 1:]][::-1]
+                candidates = [rest] + after[::-1]
             elif rest:
                 candidates = [rest]
-            elif si + 1 < len(segs):
-                candidates = [segs[si + 1][1]]
-                # a label alone, with its value below it in the same column
+            elif after:
+                # OCR can also split the label itself ("INV.    NO.    : 123"),
+                # so look at the next two segments
+                candidates = after[:2]
+                if field == "invoice_date":
+                    candidates.insert(0, " ".join(after[:3]))  # "July 8,    2026"
+                # a label alone may have its value below it in the same column.
+                # "Customer:" with a colon introduces a value on the same line;
+                # a heading such as "BILLED TO" has its value underneath
                 if li + 1 < len(lines):
                     below = [s for c, s in split_segments(lines[li + 1]) if abs(c - col) <= 6]
-                    candidates = below + candidates
+                    candidates = candidates + below if seg.rstrip().endswith(":") else below + candidates
             elif li + 1 < len(lines):
                 candidates = [s for c, s in split_segments(lines[li + 1]) if abs(c - col) <= 6]
             else:
@@ -159,18 +169,24 @@ def extract_rules(text: str, page_start: int | None = None, page_end: int | None
     return inv
 
 
+def _is_name_part(seg: str) -> bool:
+    low = seg.lower().strip(" :")
+    return not (low in TITLES or _labelled(seg) or re.search(r"\d", seg) or re.fullmatch(r"[-=_\s.,]+", seg))
+
+
 def _supplier_guess(lines: list[str]) -> tuple[str, str] | None:
     for line in lines[:6]:
-        seg = split_segments(line)
-        if not seg:
+        segs = [s for _, s in split_segments(line)]
+        if not segs or len(segs[0]) < 3 or not _is_name_part(segs[0]):
             continue
-        first = seg[0][1]
-        low = first.lower().strip(" :")
-        if low in TITLES or _labelled(first) or re.search(r"\d", first) or len(first) < 3:
-            continue
-        if re.fullmatch(r"[-=_\s]+", first):
-            continue
-        return first, line.strip()
+        # a wide gap inside a name ("BOONE    LLC") splits it; join the parts
+        # until a title such as "INVOICE" or anything with digits
+        parts = [segs[0]]
+        for s in segs[1:]:
+            if not _is_name_part(s):
+                break
+            parts.append(s)
+        return " ".join(parts), line.strip()
     return None
 
 

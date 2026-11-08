@@ -67,7 +67,7 @@ export default function DocumentPage({ params }: { params: Promise<{ id: string 
                   <tr key={i.id} className="hover:bg-paper/60">
                     <td className="td"><Link className="font-medium text-navy-800 hover:underline" href={`/invoices/${i.id}`}>{i.invoice_number ?? "No number"}</Link></td>
                     <td className="td">{i.supplier_name ?? "–"}</td>
-                    <td className="td text-right tabular-nums">{money(i.total, i.currency)}</td>
+                    <td className="td text-right whitespace-nowrap tabular-nums">{money(i.total, i.currency)}</td>
                     <td className="td"><Badge status={i.review_status} /></td>
                     <td className="td text-right tabular-nums">{i.issue_count}</td>
                   </tr>))}

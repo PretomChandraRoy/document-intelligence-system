@@ -5,7 +5,7 @@ import { use, useEffect, useMemo, useState } from "react";
 import { useReviewer } from "@/components/reviewer";
 import { Badge, Confidence, ErrorBox, PageHeader, Severity } from "@/components/ui";
 import { api, fileUrl, json, pageImageUrl, type Correction, type InvoiceDetail } from "@/lib/api";
-import { FIELD_LABELS, ISSUE_LABELS, dateTime, money } from "@/lib/format";
+import { FIELD_LABELS, ISSUE_LABELS, METHOD_LABELS, dateTime, money } from "@/lib/format";
 
 const FIELDS = ["invoice_number", "invoice_date", "supplier_name", "customer_name",
   "subtotal", "tax", "total", "currency"] as const;
@@ -87,7 +87,7 @@ export default function InvoicePage({ params }: { params: Promise<{ id: string }
       <PageHeader title={d.invoice_number ? `Invoice ${d.invoice_number}` : "Invoice without a number"}
         subtitle={<>From <Link className="underline" href={`/documents/${d.document_id}`}>{d.document_filename}</Link>
           {d.page_start && <> · page {d.page_start}{d.page_end !== d.page_start && `–${d.page_end}`}</>}
-          {" · "}read by <strong>{d.extraction_method}</strong></>}
+          {" · "}read by <strong>{METHOD_LABELS[d.extraction_method] ?? d.extraction_method}</strong></>}
         actions={<Badge status={d.review_status} />} />
 
       <div className="grid gap-4 xl:grid-cols-2">

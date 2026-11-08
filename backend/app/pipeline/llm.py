@@ -177,7 +177,13 @@ class MockClient:
             else user.split("<page>")[-1].split("</page>")[0]
         inv = extract_rules(text)
         d = inv.as_dict()
-        lines = [{k: v for k, v in li.items()} for li in d["line_items"]]
+        src = norm_text(text)
+        # like a careful model, answer only with values that appear in the text;
+        # normalised forms such as ISO dates are not printed, so leave them out
+        for f in list(d):
+            if f != "line_items" and d[f] is not None and norm_text(d[f]) not in src:
+                d[f] = None
+        lines = [li for li in d["line_items"] if norm_text(li["description"]) in src]
         if "invoice_number" not in schema.get("properties", {}):
             return {"line_items": lines}
         out = {f: {"value": d[f], "evidence": inv.evidence.get(f)} for f in

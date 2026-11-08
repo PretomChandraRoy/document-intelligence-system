@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import { Badge, Empty, ErrorBox, PageHeader } from "@/components/ui";
 import { api, exportUrl, qs, type InvoiceBrief, type Paged } from "@/lib/api";
-import { ISSUE_LABELS, date, money } from "@/lib/format";
+import { ISSUE_LABELS, METHOD_LABELS, date, money } from "@/lib/format";
 
 function Queue() {
   const sp = useSearchParams();
@@ -53,12 +53,12 @@ function Queue() {
             <tbody className="divide-y divide-line">
               {q.data.items.map((i) => (
                 <tr key={i.id} className="hover:bg-paper/60">
-                  <td className="td"><Link className="font-medium text-navy-800 hover:underline" href={`/invoices/${i.id}`}>{i.invoice_number ?? "No number"}</Link></td>
+                  <td className="td whitespace-nowrap"><Link className="font-medium text-navy-800 hover:underline" href={`/invoices/${i.id}`}>{i.invoice_number ?? "No number"}</Link></td>
                   <td className="td">{i.supplier_name ?? "–"}</td>
                   <td className="td">{i.customer_name ?? "–"}</td>
-                  <td className="td">{date(i.invoice_date)}</td>
-                  <td className="td text-right tabular-nums">{money(i.total, i.currency)}</td>
-                  <td className="td text-muted">{i.extraction_method}</td>
+                  <td className="td whitespace-nowrap">{date(i.invoice_date)}</td>
+                  <td className="td text-right whitespace-nowrap tabular-nums">{money(i.total, i.currency)}</td>
+                  <td className="td text-muted">{METHOD_LABELS[i.extraction_method] ?? i.extraction_method}</td>
                   <td className="td"><Badge status={i.review_status} /></td>
                   <td className="td text-right tabular-nums">{i.issue_count}</td>
                 </tr>))}

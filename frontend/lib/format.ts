@@ -40,3 +40,7 @@ export const ERROR_LABELS: Record<string, string> = {
   no_data: "No data rows", unsupported_format: "Unsupported format", no_invoice_found: "No invoice found",
   internal: "Internal error",
 };
+
+export const METHOD_LABELS: Record<string, string> = {
+  rules: "rules", llm: "language model", spreadsheet: "spreadsheet parser", manual: "corrected by hand",
+};

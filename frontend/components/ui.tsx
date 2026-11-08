@@ -16,7 +16,7 @@ const STATUS: Record<string, { label: string; cls: string }> = {
 
 export function Badge({ status }: { status: string }) {
   const s = STATUS[status] ?? { label: status, cls: "bg-slate-100 text-slate-700" };
-  return <span className={`inline-flex rounded-full px-2 py-0.5 text-xs font-medium ${s.cls}`}>{s.label}</span>;
+  return <span className={`inline-flex rounded-full px-2 py-0.5 text-xs font-medium whitespace-nowrap ${s.cls}`}>{s.label}</span>;
 }
 
 export function Severity({ level }: { level: string }) {
