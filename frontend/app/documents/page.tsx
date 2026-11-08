@@ -14,14 +14,17 @@ function Documents() {
   const status = sp.get("status") ?? "";
   const format = sp.get("format") ?? "";
   const [page, setPage] = useState(1);
+  const [retriedAt, setRetriedAt] = useState(0);
   const q = useQuery({
     queryKey: ["documents", status, format, page],
     queryFn: () => api<Paged<DocumentBrief>>(`/documents${qs({ status, format, page, page_size: 25 })}`),
-    refetchInterval: (x) => (isActive(x.state.data?.items) ? 2000 : false),
+    // keep refreshing while anything shown is processing, and briefly after a bulk
+    // retry, because retried documents leave a "failed" view before they finish
+    refetchInterval: (x) => (isActive(x.state.data?.items) || Date.now() - retriedAt < 30000 ? 2000 : false),
   });
   const retry = useMutation({
     mutationFn: () => api<{ queued: number }>("/documents/reprocess-failed", json("POST", {})),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["documents"] }),
+    onSuccess: () => { setRetriedAt(Date.now()); qc.invalidateQueries({ queryKey: ["documents"] }); },
   });
   const set = (k: string, v: string) => {
     const p = new URLSearchParams(sp.toString());

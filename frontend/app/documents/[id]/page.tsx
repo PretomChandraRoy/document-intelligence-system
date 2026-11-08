@@ -31,7 +31,8 @@ export default function DocumentPage({ params }: { params: Promise<{ id: string 
   return (
     <>
       <PageHeader title={d.filename}
-        subtitle={<span className="uppercase">{d.format} · {bytes(d.size_bytes)}{d.page_count ? ` · ${d.page_count} page(s)` : ""}</span>}
+        subtitle={<>{d.format.toUpperCase()} · {bytes(d.size_bytes)}
+          {d.page_count ? ` · ${d.page_count} ${["xlsx", "xls", "csv"].includes(d.format) ? "sheet" : "page"}${d.page_count > 1 ? "s" : ""}` : ""}</>}
         actions={<>
           <a className="btn-ghost" href={fileUrl(d.id)} target="_blank" rel="noreferrer">Open original</a>
           <select className="input" value={stage} onChange={(e) => setStage(e.target.value)} aria-label="Reprocess from">
@@ -48,7 +49,7 @@ export default function DocumentPage({ params }: { params: Promise<{ id: string 
             <span className="text-sm text-muted">Stage: {d.stage}</span></div>
           <div className="mt-3"><Progress done={d.progress_done} total={d.progress_total} status={d.status} /></div>
           {d.status === "failed" && (
-            <div className="mt-3 rounded-md bg-red-50 px-3 py-2 text-sm text-err">
+            <div className="mt-3 rounded-md bg-red-50 px-3 py-2 text-sm break-words text-err">
               <strong>{ERROR_LABELS[d.error_code ?? ""] ?? d.error_code}.</strong> {d.error_message}
             </div>)}
           {d.exact_duplicate_of && (
@@ -76,6 +77,7 @@ export default function DocumentPage({ params }: { params: Promise<{ id: string 
 
         <div className="card p-4">
           <h2 className="mb-2 text-sm font-semibold">Pages</h2>
+          {d.pages.length === 0 && <p className="text-sm text-muted">No pages were read.</p>}
           <ul className="max-h-64 space-y-1 overflow-y-auto text-sm">
             {d.pages.map((p) => (
               <li key={p.page_number} className="flex justify-between">
@@ -96,12 +98,13 @@ export default function DocumentPage({ params }: { params: Promise<{ id: string 
               <Badge status={r.status === "succeeded" ? "completed" : r.status === "running" ? "processing" : "failed"} />
               <span className="text-muted">{dateTime(r.started_at)}</span>
               <span className="text-muted tabular-nums">
-                {Object.entries(r.stage_timings_ms).map(([k, v]) => `${k} ${(Number(v) / 1000).toFixed(1)} s`).join(" · ")}
+                {["ingest", "ocr", "extract", "post"].filter((k) => k in r.stage_timings_ms)
+                  .map((k) => `${k} ${(Number(r.stage_timings_ms[k]) / 1000).toFixed(1)} s`).join(" · ")}
               </span>
             </div>
             <ul className="mt-2 space-y-0.5 text-sm">
               {r.events.map((e, i) => (
-                <li key={i} className={e.level === "error" ? "text-err" : e.level === "warning" ? "text-warn" : "text-muted"}>
+                <li key={i} className={`break-words ${e.level === "error" ? "text-err" : e.level === "warning" ? "text-warn" : "text-muted"}`}>
                   <span className="mr-2 font-mono text-xs">{e.stage}</span>{e.message}
                 </li>))}
             </ul>

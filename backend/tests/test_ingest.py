@@ -48,3 +48,10 @@ def test_bad_files_fail_with_a_reason(files, name, fmt, code):
         ingest(files[name].path, fmt)
     assert e.value.code == code
     assert e.value.message
+
+
+def test_error_messages_do_not_leak_server_paths(files):
+    for name, fmt in (("truncated.pdf", "pdf"), ("random.pdf", "pdf"), ("truncated.jpg", "jpg")):
+        with pytest.raises(IngestError) as e:
+            ingest(files[name].path, fmt)
+        assert "/" not in e.value.message

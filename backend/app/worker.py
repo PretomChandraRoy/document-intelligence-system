@@ -62,7 +62,9 @@ def _guard(document_id, run_id, stage, fn):
         from . import services
         with session_scope() as db:
             doc, run = db.get(Document, document_id), db.get(ProcessingRun, run_id)
-            services.fail(db, doc, run, stage, "internal", f"Unexpected error in {stage}: {type(e).__name__}: {e}")
+            # the full traceback goes to the server log, not to users
+            services.fail(db, doc, run, stage, "internal",
+                          f"An unexpected error stopped the {stage} stage ({type(e).__name__}); see the server log")
         return None
 
 

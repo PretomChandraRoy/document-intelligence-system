@@ -21,6 +21,8 @@ from .text import Word, lines_from_words
 
 
 class IngestError(Exception):
+    """A permanent, user-facing failure. Messages never include library
+    errors, which can contain server file paths."""
     def __init__(self, code: str, message: str):
         super().__init__(message)
         self.code = code
@@ -67,7 +69,7 @@ def _pdf(path: str, min_chars: int) -> IngestResult:
     try:
         doc = pymupdf.open(path)
     except Exception as e:
-        raise IngestError("corrupted", f"PDF could not be opened: {e}") from e
+        raise IngestError("corrupted", "The PDF could not be opened; it is damaged or incomplete") from e
     if doc.needs_pass or doc.is_encrypted:
         raise IngestError("encrypted", "The PDF is password-protected")
     if doc.page_count == 0:
@@ -81,7 +83,7 @@ def _pdf(path: str, min_chars: int) -> IngestResult:
             page = doc[i]
             text = digital_text(page)
         except Exception as e:
-            raise IngestError("corrupted", f"Page {i + 1} could not be read: {e}") from e
+            raise IngestError("corrupted", f"Page {i + 1} of the PDF is damaged and could not be read") from e
         if len(text.replace(" ", "").replace("\n", "")) >= min_chars:
             pages.append(PageData(i + 1, "digital", text))
         else:
@@ -124,7 +126,7 @@ def _image(path: str, fmt: str, max_pixels: int) -> IngestResult:
     except (Image.DecompressionBombError, Image.DecompressionBombWarning) as e:
         raise IngestError("corrupted", "Image is too large to process safely") from e
     except Exception as e:
-        raise IngestError("corrupted", f"Image could not be decoded: {e}") from e
+        raise IngestError("corrupted", "The image could not be decoded; it is damaged or incomplete") from e
     return IngestResult(fmt, [PageData(i + 1, "scanned") for i in range(n)])
 
 
@@ -150,7 +152,8 @@ def _sheets(path: str, fmt: str, max_rows: int) -> IngestResult:
     except IngestError:
         raise
     except Exception as e:
-        raise IngestError("corrupted", f"Spreadsheet could not be read: {e}") from e
+        raise IngestError("corrupted", "The spreadsheet could not be read; it is damaged or not a real "
+                                       f"{fmt.upper()} file") from e
 
     pages = []
     for i, (name, rows) in enumerate(sheets.items(), start=1):
