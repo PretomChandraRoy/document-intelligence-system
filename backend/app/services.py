@@ -72,7 +72,7 @@ def stage_ingest(db: Session, doc_id, run_id) -> list[int]:
     doc, run = db.get(Document, doc_id), db.get(ProcessingRun, run_id)
     t0 = time.perf_counter()
     doc.status, doc.stage = "processing", "ingest"
-    db.execute(delete(Invoice).where(Invoice.document_id == doc.id))
+    clear_invoices(db, doc.id)
     db.execute(delete(ValidationIssue).where(ValidationIssue.document_id == doc.id))
     db.execute(delete(Page).where(Page.document_id == doc.id))
     try:
@@ -124,7 +124,7 @@ def stage_extract(db: Session, doc_id, run_id, client: LLMClient | None, llm_onl
     doc, run = db.get(Document, doc_id), db.get(ProcessingRun, run_id)
     t0 = time.perf_counter()
     doc.status, doc.stage = "processing", "extract"
-    db.execute(delete(Invoice).where(Invoice.document_id == doc.id))
+    clear_invoices(db, doc.id)
     db.execute(delete(ValidationIssue).where(ValidationIssue.document_id == doc.id))
     pages = list(db.scalars(select(Page).where(Page.document_id == doc.id).order_by(Page.page_number)))
 
@@ -161,6 +161,31 @@ def stage_extract(db: Session, doc_id, run_id, client: LLMClient | None, llm_onl
     _timing(run, "extract", int((time.perf_counter() - t0) * 1000))
     doc.stage = "post"
     return len(extracted)
+
+
+def clear_invoices(db: Session, doc_id) -> None:
+    """Delete a document's invoices before re-extracting, and tidy the groups they were in.
+
+    A group left with one member is no longer a duplicate, so it is removed
+    and that member's duplicate and cross-check issues are cleared.
+    """
+    group_ids = set(db.scalars(select(Invoice.group_id).where(Invoice.document_id == doc_id,
+                                                             Invoice.group_id.is_not(None))))
+    db.execute(delete(Invoice).where(Invoice.document_id == doc_id))
+    db.flush()
+    for gid in group_ids:
+        group = db.get(InvoiceGroup, gid)
+        rest = list(db.scalars(select(Invoice).where(Invoice.group_id == gid)))
+        if len(rest) >= 2:
+            refresh_group(db, group)
+            continue
+        for inv in rest:
+            inv.group_id = None
+            db.execute(delete(ValidationIssue).where(ValidationIssue.invoice_id == inv.id,
+                                                     ValidationIssue.code.in_(["duplicate", "cross_mismatch"]),
+                                                     ValidationIssue.resolved.is_(False)))
+        db.flush()
+        db.delete(group)
 
 
 def save_invoice(db: Session, doc: Document, e: ExtractedInvoice) -> Invoice:

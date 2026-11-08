@@ -5,7 +5,11 @@ export type S = components["schemas"];
 export type InvoiceDetail = S["InvoiceDetail"];
 export type Issue = S["IssueOut"];
 export type SearchResponse = S["SearchResponse"];
-export type GroupDetail = S["GroupDetail"];
+export interface CompareRow { field: string; values: (string | null)[]; match: boolean }
+export type GroupDetail = Omit<S["GroupDetail"], "comparison" | "mismatched_fields"> & {
+  comparison: CompareRow[];
+  mismatched_fields: string[];
+};
 export type RunWithEvents = S["RunWithEvents"];
 export type Correction = S["CorrectionOut"];
 export type UploadResponse = S["UploadResponse"];

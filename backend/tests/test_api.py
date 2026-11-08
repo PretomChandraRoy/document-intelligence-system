@@ -227,3 +227,12 @@ def test_stats(client, files):
     s = client.get("/api/v1/stats").json()
     assert s["documents"]["total"] == 2 and s["documents"]["failed"] == 1
     assert s["failure_reasons"] == {"encrypted": 1}
+
+
+def test_reprocessing_does_not_leave_empty_groups(client, files):
+    a = upload(client, files, "dup_a.pdf")["accepted"][0]["id"]
+    upload(client, files, "dup_b.png")
+    assert client.get("/api/v1/groups").json()["total"] == 1
+    client.post(f"/api/v1/documents/{a}/reprocess", json={"from_stage": "extract"})
+    groups = client.get("/api/v1/groups").json()["items"]
+    assert len(groups) == 1 and len(groups[0]["members"]) == 2
