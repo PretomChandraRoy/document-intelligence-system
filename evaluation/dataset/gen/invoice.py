@@ -188,6 +188,10 @@ class Invoice:
             if abs(li.quantity * li.unit_price - li.amount) > CENT:
                 flags.append("line_amount_mismatch")
                 break
+        # the printed rate no longer matches when a defect changed the subtotal
+        if self.tax_rate and self.tax is not None and self.subtotal is not None:
+            if abs(money(self.subtotal * self.tax_rate / 100) - self.tax) > CENT:
+                flags.append("tax_rate_mismatch")
         return sorted(set(flags))
 
     def clone(self, new_id: str) -> "Invoice":

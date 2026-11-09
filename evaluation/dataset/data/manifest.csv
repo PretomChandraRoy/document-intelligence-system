@@ -11,9 +11,9 @@ d009,files/d009.pdf,pdf_digital,homecare,,1,dev,completed,1,total_mismatch,
 d010,files/d010.pdf,pdf_digital,homecare,,1,test,completed,1,duplicate,
 d011,files/d011.pdf,pdf_digital,receipt,,2,dev,completed,1,,Long invoice spanning several pages
 d012,files/d012.pdf,pdf_digital,classic,,2,test,completed,1,,Long invoice spanning several pages
-d013,files/d013.pdf,pdf_digital,modern,,2,dev,completed,1,line_items_mismatch,Long invoice spanning several pages
-d014,files/d014.pdf,pdf_digital,modern,,3,test,completed,1,line_items_mismatch,Long invoice spanning several pages
-d015,files/d015.pdf,pdf_digital,classic,,2,test,completed,1,line_items_mismatch,Long invoice spanning several pages
+d013,files/d013.pdf,pdf_digital,modern,,2,dev,completed,1,line_items_mismatch;tax_rate_mismatch,Long invoice spanning several pages
+d014,files/d014.pdf,pdf_digital,modern,,3,test,completed,1,line_items_mismatch;tax_rate_mismatch,Long invoice spanning several pages
+d015,files/d015.pdf,pdf_digital,classic,,2,test,completed,1,line_items_mismatch;tax_rate_mismatch,Long invoice spanning several pages
 d016,files/d016.pdf,pdf_digital,classic,,3,test,completed,1,total_mismatch,Long invoice spanning several pages
 d017,files/d017.pdf,pdf_digital,modern,,2,test,completed,1,total_mismatch,Long invoice spanning several pages
 d018,files/d018.pdf,pdf_digital,modern,,1,dev,completed,1,missing:currency,
@@ -21,7 +21,7 @@ d019,files/d019.pdf,pdf_digital,receipt,,1,test,completed,1,missing:invoice_date
 d020,files/d020.pdf,pdf_digital,receipt,,1,test,completed,1,missing:currency;total_mismatch,
 d021,files/d021.pdf,pdf_digital,homecare,,1,test,completed,1,,
 d022,files/d022.pdf,pdf_digital,classic,,1,test,completed,1,,
-d023,files/d023.pdf,pdf_digital,classic,,1,test,completed,1,line_amount_mismatch,
+d023,files/d023.pdf,pdf_digital,classic,,1,test,completed,1,line_amount_mismatch;tax_rate_mismatch,
 d024,files/d024.pdf,pdf_digital,classic,,1,test,completed,1,total_mismatch,
 d025,files/d025.pdf,pdf_digital,classic,,1,test,completed,1,,
 d026,files/d026.pdf,pdf_digital,modern,,1,test,completed,1,,
@@ -32,8 +32,8 @@ d030,files/d030.pdf,pdf_digital,homecare,,1,dev,completed,1,missing:invoice_date
 d031,files/d031.pdf,pdf_digital,receipt,,1,test,completed,1,total_mismatch,
 d032,files/d032.pdf,pdf_digital,receipt,,1,test,completed,1,missing:currency,
 d033,files/d033.pdf,pdf_digital,classic,,1,test,completed,1,,
-d034,files/d034.pdf,pdf_digital,receipt,,1,test,completed,1,line_items_mismatch,
-d035,files/d035.pdf,pdf_digital,modern,,1,test,completed,1,line_items_mismatch,
+d034,files/d034.pdf,pdf_digital,receipt,,1,test,completed,1,line_items_mismatch;tax_rate_mismatch,
+d035,files/d035.pdf,pdf_digital,modern,,1,test,completed,1,line_items_mismatch;tax_rate_mismatch,
 d036,files/d036.pdf,pdf_digital,receipt,,1,test,completed,1,duplicate,
 d037,files/d037.pdf,pdf_digital,modern,,1,dev,completed,1,duplicate,
 d038,files/d038.pdf,pdf_digital,modern,,1,dev,completed,1,,
@@ -44,9 +44,9 @@ d042,files/d042.pdf,pdf_digital,homecare,,1,test,completed,1,line_amount_mismatc
 d043,files/d043.pdf,pdf_digital,modern,,1,test,completed,1,,
 d044,files/d044.pdf,pdf_digital,classic,,1,test,completed,1,,
 d045,files/d045.pdf,pdf_digital,receipt,,1,dev,completed,1,,
-d046,files/d046.pdf,pdf_digital,receipt,,1,test,completed,1,line_items_mismatch,
+d046,files/d046.pdf,pdf_digital,receipt,,1,test,completed,1,line_items_mismatch;tax_rate_mismatch,
 d047,files/d047.pdf,pdf_digital,receipt,,1,test,completed,1,,
-d048,files/d048.pdf,pdf_digital,classic,,1,test,completed,1,line_amount_mismatch,
+d048,files/d048.pdf,pdf_digital,classic,,1,test,completed,1,line_amount_mismatch;tax_rate_mismatch,
 d049,files/d049.pdf,pdf_digital,classic,,1,test,completed,1,,
 d050,files/d050.pdf,pdf_digital,receipt,,1,test,completed,1,line_amount_mismatch,
 d051,files/d051.pdf,pdf_scanned,classic,clean,2,test,completed,1,missing:customer_name,
@@ -68,7 +68,7 @@ d066,files/d066.pdf,pdf_scanned,receipt,moderate,1,test,completed,1,missing:cust
 d067,files/d067.pdf,pdf_scanned,homecare,moderate,1,dev,completed,1,,
 d068,files/d068.pdf,pdf_scanned,receipt,severe,1,dev,completed,1,total_mismatch,
 d069,files/d069.pdf,pdf_scanned,modern,clean,1,test,completed,1,,
-d070,files/d070.pdf,pdf_scanned,classic,mild,1,test,completed,1,line_amount_mismatch,
+d070,files/d070.pdf,pdf_scanned,classic,mild,1,test,completed,1,line_amount_mismatch;tax_rate_mismatch,
 d071,files/d071.jpg,jpg,homecare,clean,1,dev,completed,1,,
 d072,files/d072.jpg,jpg,modern,mild,1,test,completed,1,,
 d073,files/d073.jpg,jpg,classic,mild,1,test,completed,1,,
@@ -114,17 +114,17 @@ d112,files/d112.tiff,tiff,modern,mild,2,test,completed,1,missing:currency,
 d113,files/d113.tiff,tiff,homecare,mild,2,dev,completed,1,,
 d114,files/d114.tiff,tiff,receipt,moderate,1,test,completed,1,,
 d115,files/d115.tiff,tiff,modern,moderate,1,test,completed,1,,
-d116,files/d116.tiff,tiff,receipt,severe,1,test,completed,1,line_amount_mismatch,
+d116,files/d116.tiff,tiff,receipt,severe,1,test,completed,1,line_amount_mismatch;tax_rate_mismatch,
 d117,files/d117.tiff,tiff,homecare,clean,1,dev,completed,1,,
 d118,files/d118.tiff,tiff,receipt,mild,1,test,completed,1,total_mismatch,
 d119,files/d119.tiff,tiff,modern,mild,1,test,completed,1,,
 d120,files/d120.tiff,tiff,receipt,moderate,1,test,completed,1,missing:customer_name,
-d121,files/d121.tiff,tiff,modern,moderate,1,dev,completed,1,line_items_mismatch,
+d121,files/d121.tiff,tiff,modern,moderate,1,dev,completed,1,line_items_mismatch;tax_rate_mismatch,
 d122,files/d122.tiff,tiff,homecare,severe,1,dev,completed,1,,
 d123,files/d123.tiff,tiff,homecare,clean,1,test,completed,1,,
 d124,files/d124.tiff,tiff,classic,mild,1,test,completed,1,,
 d125,files/d125.tiff,tiff,receipt,mild,1,dev,completed,1,,
-d126,files/d126.xlsx,xlsx,form,,,test,completed,1,line_items_mismatch,"{""sheets"": 1, ""sheet_names"": [""Invoice""], ""date_as_text"": false}"
+d126,files/d126.xlsx,xlsx,form,,,test,completed,1,line_items_mismatch;tax_rate_mismatch,"{""sheets"": 1, ""sheet_names"": [""Invoice""], ""date_as_text"": false}"
 d127,files/d127.xlsx,xlsx,form,,,test,completed,1,,"{""sheets"": 1, ""sheet_names"": [""Invoice""], ""date_as_text"": false}"
 d128,files/d128.xlsx,xlsx,form,,,test,completed,1,,"{""sheets"": 1, ""sheet_names"": [""Invoice""], ""date_as_text"": false}"
 d129,files/d129.xlsx,xlsx,form,,,dev,completed,1,,"{""sheets"": 1, ""sheet_names"": [""Invoice""], ""date_as_text"": false}"

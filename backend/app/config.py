@@ -40,6 +40,9 @@ class Settings(BaseSettings):
     semantic_min_similarity: float = 0.5
 
     # processing
+    # "hybrid": rules first, model when needed (normal operation)
+    # "llm_only": always use the model for PDFs and images (used by the evaluation for comparison)
+    extraction_mode: str = "hybrid"
     ocr_batch_pages: int = 20
     ocr_lang: str = "eng"
     digital_text_min_chars: int = 25  # below this a PDF page is treated as scanned

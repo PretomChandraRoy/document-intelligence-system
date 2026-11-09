@@ -107,7 +107,8 @@ def extract_task(self, document_id: str, run_id: str):
 
     def work(client):
         with session_scope() as db:
-            services.stage_extract(db, document_id, run_id, client)
+            services.stage_extract(db, document_id, run_id, client,
+                                   llm_only=settings.extraction_mode == "llm_only" and client is not None)
 
     try:
         _guard(document_id, run_id, "extract", lambda: work(get_client()))

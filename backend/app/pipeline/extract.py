@@ -66,6 +66,13 @@ def extract_invoice(text: str, client: LLMClient | None, *, page_texts: list[str
         result = merge(rules, model)
 
     if ocr_confidence is not None:
+        # On scans the supplier is usually guessed from the first readable line,
+        # and the evaluation showed that guess is wrong often enough (for example
+        # when the name sits on a dark band OCR cannot read) to be the main source
+        # of silent errors. A guessed supplier on OCR text is therefore always reviewed.
+        for f in rules.guessed:
+            if f in result.confidence and getattr(result, f) == getattr(rules, f):
+                result.confidence[f] = min(result.confidence[f], 0.55)
         cap = max(0.3, min(1.0, ocr_confidence / 100 + 0.1))
         for f in list(result.confidence):
             result.confidence[f] = round(min(result.confidence[f], cap), 3)

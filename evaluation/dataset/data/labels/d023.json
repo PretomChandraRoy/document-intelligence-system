@@ -46,7 +46,8 @@
         ]
       },
       "expected_flags": [
-        "line_amount_mismatch"
+        "line_amount_mismatch",
+        "tax_rate_mismatch"
       ]
     }
   ],

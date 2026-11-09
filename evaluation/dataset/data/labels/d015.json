@@ -256,7 +256,8 @@
         ]
       },
       "expected_flags": [
-        "line_items_mismatch"
+        "line_items_mismatch",
+        "tax_rate_mismatch"
       ]
     }
   ],

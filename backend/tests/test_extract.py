@@ -129,3 +129,11 @@ def test_ollama_timeout_raises_retryable_error(monkeypatch):
     monkeypatch.setattr(llm.httpx, "post", boom)
     with pytest.raises(llm.LLMError):
         llm.OllamaClient("http://h", "m", "e").chat_json("s", "u", {})
+
+
+def test_guessed_supplier_on_a_scan_goes_to_review(files):
+    text = text_of(files["classic.pdf"].path)
+    inv = extract_invoice(text, llm.MockClient(), ocr_confidence=95)
+    assert inv.confidence["supplier_name"] <= 0.55
+    inv = extract_invoice(text, llm.MockClient())            # digital text: guess trusted
+    assert inv.confidence["supplier_name"] > 0.6

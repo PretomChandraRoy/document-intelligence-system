@@ -38,6 +38,7 @@ class ExtractedInvoice:
     evidence: dict[str, str] = field(default_factory=dict)
     warnings: list[dict] = field(default_factory=list)  # e.g. ungrounded values
     tax_rate: Decimal | None = None  # printed rate, if any (for the tax-rate rule)
+    guessed: set[str] = field(default_factory=set)  # fields found by position, not by a label
     raw_model_output: dict | None = None
 
     page_start: int | None = None
@@ -51,7 +52,10 @@ class ExtractedInvoice:
         def s(v):
             if v is None:
                 return None
-            return v.isoformat() if isinstance(v, date) else str(v)
+            if isinstance(v, date):
+                return v.isoformat()
+            # format(..., "f") avoids exponent notation such as Decimal("1E+1") for 10
+            return format(v, "f") if isinstance(v, Decimal) else str(v)
         out = {f: s(getattr(self, f)) for f in HEADER_FIELDS}
         out["line_items"] = [{"description": li.description, "quantity": s(li.quantity),
                               "unit_price": s(li.unit_price), "amount": s(li.amount)}

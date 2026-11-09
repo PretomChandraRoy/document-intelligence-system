@@ -161,6 +161,7 @@ def extract_rules(text: str, page_start: int | None = None, page_end: int | None
         if sup:
             inv.supplier_name, line = sup
             inv.confidence["supplier_name"] = 0.75
+            inv.guessed.add("supplier_name")
             inv.evidence["supplier_name"] = line
 
     inv.line_items = _line_items(lines, currency)
