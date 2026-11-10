@@ -223,6 +223,7 @@ def main():
     flags = defaultdict(Counter)
     silent_errors = review_total = 0
     silent_cases = []
+    error_cases = []   # every invoice not read fully correctly, for the error analysis
     status_ok = status_total = fail_ok = fail_total = false_fail = 0
     fail_codes = Counter()
     per_page_ms = defaultdict(list)
@@ -278,6 +279,14 @@ def main():
             lines[0] += mt; lines[1] += pp; lines[2] += tt
             all_ok &= (mt == pp == tt)
             inv_all_correct += all_ok
+            if not all_ok:
+                error_cases.append({
+                    "doc": did, "format": L["format"], "degradation": L["degradation"], "locale": t["_locale"],
+                    "method": p["extraction_method"], "review_status": p["review_status"],
+                    "wrong": {f: [p.get(f), t[f]] for f in FIELDS
+                              if field_outcome(f, p.get(f), t[f]) not in ("correct", "correct_null")},
+                    "lines": {"matched": mt, "extracted": pp, "expected": tt},
+                })
             for k, v in meta.items():
                 by[k][v]["invoices"]["total"] += 1
                 by[k][v]["invoices"]["fully_correct"] += all_ok
@@ -366,6 +375,10 @@ def main():
         "line_item_precision": pct(lines[0], lines[1]), "line_item_recall": pct(lines[0], lines[2]),
         "silent_error_rate": pct(silent_errors, review_total),
         "silent_error_cases": silent_cases,
+        "error_cases": error_cases,
+        "missed_invoices": [{"doc": did, "format": lab[did]["format"], "degradation": lab[did]["degradation"]}
+                            for did, d in docs.items() if lab[did]["expected_status"] != "failed"
+                            and len(d["invoices"]) < len(lab[did]["invoices"])],
         "extraction_method": dict(methods),
         "validation_flags": {k: {**v, "precision": pct(v["tp"], v["tp"] + v["fp"]),
                                  "recall": pct(v["tp"], v["tp"] + v["fn"])} for k, v in sorted(flags.items())},
