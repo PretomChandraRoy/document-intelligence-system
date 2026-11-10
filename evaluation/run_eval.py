@@ -397,20 +397,25 @@ def main():
     print((out / "report.md").read_text(encoding="utf-8"))
 
 
+def P(v) -> str:
+    """A percentage, or n/a when there was nothing to measure."""
+    return "n/a" if v is None else f"{v}%"
+
+
 def render(m: dict) -> str:
     r = [f"# Evaluation run: {m['label']}", "",
          f"{m['date']} · {m['documents']} documents ({m['split']} split plus cross-check pairs)", "",
          "| Metric | Value |", "|---|---|"]
     rows = [
-        ("Document success rate (readable files processed)", f"{m['document_success_rate']}%"),
-        ("Unexpected failure rate (readable files that failed)", f"{m['document_failure_rate_unexpected']}%"),
-        ("Bad files rejected with the right reason", f"{m['bad_files_rejected_correctly']}%"),
-        ("Invoices detected", f"{m['invoices_found']} of {m['invoices_expected']} ({m['invoice_detection_rate']}%)"),
-        ("Field accuracy (8 header fields)", f"{m['field_accuracy']}%"),
-        ("Invoices with every field and line correct", f"{m['invoices_fully_correct']}%"),
-        ("Line items: precision / recall", f"{m['line_item_precision']}% / {m['line_item_recall']}%"),
-        ("Invented values (a value returned where the document has none)", f"{m['invented_value_rate']}%"),
-        ("Silent errors (wrong but auto-approved)", f"{m['silent_error_rate']}%"),
+        ("Document success rate (readable files processed)", f"{P(m['document_success_rate'])}"),
+        ("Unexpected failure rate (readable files that failed)", f"{P(m['document_failure_rate_unexpected'])}"),
+        ("Bad files rejected with the right reason", f"{P(m['bad_files_rejected_correctly'])}"),
+        ("Invoices detected", f"{m['invoices_found']} of {m['invoices_expected']} ({P(m['invoice_detection_rate'])})"),
+        ("Field accuracy (8 header fields)", f"{P(m['field_accuracy'])}"),
+        ("Invoices with every field and line correct", f"{P(m['invoices_fully_correct'])}"),
+        ("Line items: precision / recall", f"{P(m['line_item_precision'])} / {P(m['line_item_recall'])}"),
+        ("Invented values (a value returned where the document has none)", f"{P(m['invented_value_rate'])}"),
+        ("Silent errors (wrong but auto-approved)", f"{P(m['silent_error_rate'])}"),
         ("Duplicate and cross-check groups found", f"{m['groups_found']} of {m['groups_expected']} "
                                                    f"({m['groups_with_exact_mismatch_fields']} with exactly the right differing fields; "
                                                    f"{m['unexpected_groups']} unexpected)"),
@@ -420,10 +425,10 @@ def render(m: dict) -> str:
     ]
     r += [f"| {a} | {b} |" for a, b in rows]
     r += ["", "## Field accuracy by field", "", "| Field | Accuracy |", "|---|---|"]
-    r += [f"| {f} | {v}% |" for f, v in m["field_accuracy_by_field"].items()]
+    r += [f"| {f} | {P(v)} |" for f, v in m["field_accuracy_by_field"].items()]
     for k in ("format", "degradation", "locale", "method"):
         r += ["", f"## By {k}", "", f"| {k} | Invoices | Field accuracy | Fully correct |", "|---|---|---|---|"]
-        r += [f"| {v} | {x['invoices']} | {x['field_accuracy']}% | {x['fully_correct']}% |"
+        r += [f"| {v} | {x['invoices']} | {P(x['field_accuracy'])} | {P(x['fully_correct'])} |"
               for v, x in m["breakdown"][k].items()]
     r += ["", "## Validation flags", "",
           "Expected flags come from the labels. An unexpected flag on a misread invoice is the system",
@@ -431,7 +436,7 @@ def render(m: dict) -> str:
           "are false alarms.", "",
           "| Flag | Precision | Recall | Expected and raised | Unexpected | of which false alarms | Missed |",
           "|---|---|---|---|---|---|---|"]
-    r += [f"| {k} | {v['precision']}% | {v['recall']}% | {v.get('tp', 0)} | {v.get('fp', 0)} | {v.get('false_alarm', 0)} | {v.get('fn', 0)} |"
+    r += [f"| {k} | {P(v['precision'])} | {P(v['recall'])} | {v.get('tp', 0)} | {v.get('fp', 0)} | {v.get('false_alarm', 0)} | {v.get('fn', 0)} |"
           for k, v in m["validation_flags"].items()]
     r += ["", "## Speed", "", "| Format | Median ms per page |", "|---|---|"]
     r += [f"| {k} | {v} |" for k, v in m["median_ms_per_page_by_format"].items()]
