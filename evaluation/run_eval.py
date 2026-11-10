@@ -88,6 +88,11 @@ def match_invoices(preds: list[dict], truths: list[dict]) -> list[tuple[dict | N
     return pairs
 
 
+def iso(s: str) -> datetime:
+    # Python 3.10 does not accept a trailing "Z" for UTC
+    return datetime.fromisoformat(s.replace("Z", "+00:00"))
+
+
 def pct(a, b):
     return None if not b else round(100 * a / b, 1)
 
@@ -201,8 +206,8 @@ def main():
 
     # wall-clock time from the first upload to the last finished document, taken
     # from the server's own timestamps so it is also right after --resume
-    starts = [datetime.fromisoformat(d["uploaded_at"]) for d in docs.values()]
-    ends = [datetime.fromisoformat(d["last_run"]["finished_at"]) for d in docs.values()
+    starts = [iso(d["uploaded_at"]) for d in docs.values()]
+    ends = [iso(d["last_run"]["finished_at"]) for d in docs.values()
             if d.get("last_run") and d["last_run"].get("finished_at")]
     if starts and ends:
         wall_s = (max(ends) - min(starts)).total_seconds()
