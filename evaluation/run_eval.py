@@ -97,10 +97,31 @@ class Api:
     def __init__(self, base: str, key: str):
         self.c = httpx.Client(base_url=base.rstrip("/") + "/api/v1", headers={"X-API-Key": key}, timeout=300)
 
-    def get(self, path, **params):
-        r = self.c.get(path, params=params)
-        r.raise_for_status()
-        return r.json()
+    def get(self, path, retries: int = 30, **params):
+        # the API can be briefly unavailable while the machine is busy with OCR and
+        # the model; wait and retry instead of abandoning a long evaluation run
+        for attempt in range(retries):
+            try:
+                r = self.c.get(path, params=params)
+                r.raise_for_status()
+                return r.json()
+            except (httpx.TransportError, httpx.HTTPStatusError) as e:
+                status = getattr(getattr(e, "response", None), "status_code", None)
+                if status is not None and status < 500:
+                    raise
+                if attempt == retries - 1:
+                    raise
+                print(f"\n  API not responding ({type(e).__name__}); retrying in 10 s")
+                time.sleep(10)
+
+    def all_documents(self) -> list[dict]:
+        out, page = [], 1
+        while True:
+            d = self.get("/documents", page_size=100, page=page)
+            out += d["items"]
+            if page * 100 >= d["total"]:
+                return out
+            page += 1
 
     def upload(self, paths: list[Path]) -> dict:
         files = [("files", (p.name, p.open("rb"))) for p in paths]
@@ -122,6 +143,8 @@ def main():
     ap.add_argument("--split", default="test", choices=["test", "dev", "all"])
     ap.add_argument("--label", default="run")
     ap.add_argument("--timeout-min", type=int, default=240)
+    ap.add_argument("--resume", action="store_true",
+                    help="do not upload; use the documents already in the system (after an interrupted run)")
     a = ap.parse_args()
 
     data = Path(a.data)
@@ -133,10 +156,18 @@ def main():
     api = Api(a.api, a.key)
     print(f"{len(chosen)} documents ({a.split} split plus all cross-check pairs)")
 
-    # 1. upload
+    # 1. upload (or, with --resume, find the documents uploaded by the interrupted run)
     t0 = time.perf_counter()
     doc_of: dict[str, str] = {}
-    for i in range(0, len(chosen), 20):
+    if a.resume:
+        by_name = {d["filename"]: d["id"] for d in api.all_documents()}
+        for l in chosen:
+            name = l["file"].split("/")[-1]
+            if name in by_name:
+                doc_of[l["doc_id"]] = by_name[name]
+        print(f"resuming: found {len(doc_of)} of {len(chosen)} documents already uploaded")
+        chosen = [l for l in chosen if l["doc_id"] in doc_of]
+    for i in range(0, len(chosen) if not a.resume else 0, 20):
         batch = chosen[i:i + 20]
         res = api.upload([data / l["file"] for l in batch])
         names = {l["file"].split("/")[-1]: l["doc_id"] for l in batch}
@@ -152,12 +183,13 @@ def main():
     deadline = time.time() + a.timeout_min * 60
     while pending and time.time() < deadline:
         time.sleep(5)
-        page = api.get("/documents", page_size=100, status="processing")["items"] + \
-            api.get("/documents", page_size=100, status="queued")["items"]
-        busy = {d["id"] for d in page} & pending
+        busy = {d["id"] for d in api.all_documents() if d["status"] in ("queued", "processing")} & pending
         pending = busy
         print(f"  {len(busy)} still processing", end="\r")
     wall_s = time.perf_counter() - t0
+    if a.resume:
+        print("note: with --resume, wall-clock time covers only the resumed part; "
+              "use the per-document stage timings for speed")
     print(f"\nall finished in {wall_s:.0f} s" if not pending else f"\nTIMED OUT with {len(pending)} pending")
 
     # 3. collect
@@ -166,6 +198,14 @@ def main():
         d = api.get(f"/documents/{sid}")
         d["invoice_details"] = [api.get(f"/invoices/{i['id']}") for i in d["invoices"]]
         docs[doc_label] = d
+
+    # wall-clock time from the first upload to the last finished document, taken
+    # from the server's own timestamps so it is also right after --resume
+    starts = [datetime.fromisoformat(d["uploaded_at"]) for d in docs.values()]
+    ends = [datetime.fromisoformat(d["last_run"]["finished_at"]) for d in docs.values()
+            if d.get("last_run") and d["last_run"].get("finished_at")]
+    if starts and ends:
+        wall_s = (max(ends) - min(starts)).total_seconds()
 
     # 4. score
     lab = {l["doc_id"]: l for l in labels}
