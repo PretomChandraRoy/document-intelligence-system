@@ -153,8 +153,8 @@ def main():
     a = ap.parse_args()
 
     data = Path(a.data)
-    labels = [json.loads(p.read_text()) for p in sorted((data / "labels").glob("*.json"))]
-    groups = json.loads((data / "groups.json").read_text())
+    labels = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((data / "labels").glob("*.json"))]
+    groups = json.loads((data / "groups.json").read_text(encoding="utf-8"))
     # cross-check pairs are kept whole so both halves are always uploaded together
     in_pair = {d for g in groups for d in g["docs"]}
     chosen = [l for l in labels if a.split == "all" or l["split"] == a.split or l["doc_id"] in in_pair]
@@ -392,9 +392,9 @@ def main():
     })
     out = HERE / "runs" / a.label
     out.mkdir(parents=True, exist_ok=True)
-    (out / "metrics.json").write_text(json.dumps(m, indent=2, default=str))
-    (out / "report.md").write_text(render(m))
-    print((out / "report.md").read_text())
+    (out / "metrics.json").write_text(json.dumps(m, indent=2, default=str, ensure_ascii=False), encoding="utf-8")
+    (out / "report.md").write_text(render(m), encoding="utf-8")
+    print((out / "report.md").read_text(encoding="utf-8"))
 
 
 def render(m: dict) -> str:
