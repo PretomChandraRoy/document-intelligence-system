@@ -6,10 +6,10 @@ against each other, and makes everything searchable through a REST API and a
 web interface.
 
 Built for the Care Guide AI Engineer assessment (Project: AI-Powered Document
-Intelligence System) by Pretom Chandra Roy, with AI assistance as disclosed in
+Intelligence System) by [Pretom Chandra Roy](https://pretomchandraroy.github.io), with AI assistance as disclosed in
 [`docs/AI_DISCLOSURE.md`](docs/AI_DISCLOSURE.md).
 
-**Walkthrough video:** to be added.
+**Walkthrough video:** <https://youtu.be/wUWwwKTf8Y8>
 
 ## Results at a glance
 
