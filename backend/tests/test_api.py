@@ -222,6 +222,25 @@ def test_unexpected_error_marks_document_failed(client, files, monkeypatch):
     assert d["status"] == "failed" and d["error_code"] == "internal"
 
 
+def test_post_stage_success_clears_an_earlier_error(client, files):
+    from app import worker
+    from app.db import session_scope
+    from app.models import Document, ProcessingRun
+    d = doc(client, upload(client, files, "classic.pdf")["accepted"][0]["id"])
+    with session_scope() as db:
+        row = db.get(Document, d["id"])
+        row.error_code, row.error_message = "internal", "earlier failure"
+        run_id = str(db.query(ProcessingRun).filter_by(document_id=row.id).one().id)
+    worker.post_task(d["id"], run_id)
+    again = doc(client, d["id"])
+    assert again["status"] == "completed" and again["error_code"] is None
+
+
+def test_long_stages_are_not_handed_out_twice():
+    from app import worker
+    assert worker.celery.conf.broker_transport_options["visibility_timeout"] >= 6 * 3600
+
+
 def test_stats(client, files):
     upload(client, files, "classic.pdf", "encrypted.pdf")
     s = client.get("/api/v1/stats").json()

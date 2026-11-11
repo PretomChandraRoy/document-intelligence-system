@@ -239,6 +239,7 @@ def finish(db: Session, doc: Document, run: ProcessingRun) -> None:
         event(db, run.id, "post", doc.error_message, "error")
     else:
         doc.status = "needs_review" if any(i.review_status == "needs_review" for i in invoices) else "completed"
+        doc.error_code = doc.error_message = None   # a stage that succeeds on retry leaves no stale error
         run.status = "succeeded"
     doc.stage = "done"
     doc.progress_done = doc.progress_total

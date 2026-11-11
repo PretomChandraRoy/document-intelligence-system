@@ -36,6 +36,10 @@ celery.conf.update(
     },
     result_expires=3600,
     broker_connection_retry_on_startup=True,
+    # With Redis, an unacknowledged task is handed out again after the visibility
+    # timeout (default one hour). Extracting a 1,000-page PDF took just over an hour,
+    # so the stage ran twice and the two runs collided. Allow a long stage to finish.
+    broker_transport_options={"visibility_timeout": 12 * 3600},
 )
 
 STAGE_ORDER = ["ingest", "ocr", "extract", "post"]
