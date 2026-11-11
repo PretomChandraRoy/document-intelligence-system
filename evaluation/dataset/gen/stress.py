@@ -7,6 +7,11 @@ the pipeline's speed and invoice splitting can be measured at that size.
     python -m gen.stress --pages 1000 --scanned-fraction 0.2 --out data_stress
 
 Scanned pages are rasterised and degraded, so they exercise the OCR path.
+The output is laid out like the main dataset (files/, labels/, groups.json),
+so the evaluation runner can score it directly:
+
+    python evaluation/run_eval.py --data evaluation/dataset/data_stress --split all --label stress-1000
+
 The output is not committed to git (it is large and fully reproducible).
 """
 
@@ -38,7 +43,8 @@ def main():
     t0 = time.time()
     rng = random.Random(a.seed)
     fac = InvoiceFactory(a.seed)
-    os.makedirs(a.out, exist_ok=True)
+    for sub in ("files", "labels"):
+        os.makedirs(os.path.join(a.out, sub), exist_ok=True)
     out = pymupdf.open()
     invoices = []
     with tempfile.TemporaryDirectory() as tmp:
@@ -60,15 +66,24 @@ def main():
                 src = pymupdf.open(p)
             start = out.page_count + 1
             out.insert_pdf(src)
-            invoices.append({"invoice_id": inv.invoice_id, "pages": [start, out.page_count],
-                             "scanned": scanned, "ground_truth": inv.ground_truth(),
-                             "expected_flags": inv.expected_flags()})
+            invoices.append({"invoice_id": inv.invoice_id, "locale": inv.locale, "defects": [],
+                             "pages": [start, out.page_count],
+                             # per-invoice format and quality, so results can be broken down
+                             "format": "pdf_scanned" if scanned else "pdf_digital",
+                             "degradation": "mild" if scanned else None,
+                             "ground_truth": inv.ground_truth(), "expected_flags": inv.expected_flags()})
             src.close()
-    path = os.path.join(a.out, f"stress_{a.pages}p.pdf")
+    name = f"stress_{a.pages}p.pdf"
+    path = os.path.join(a.out, "files", name)
     out.save(path, garbage=3, deflate=True)
-    with open(os.path.join(a.out, f"stress_{a.pages}p.json"), "w") as fh:
-        json.dump({"file": os.path.basename(path), "pages": out.page_count,
-                   "invoices": invoices}, fh, indent=1)
+    label = {"doc_id": f"s{a.pages}", "file": f"files/{name}", "format": "pdf_mixed", "layout": "mixed",
+             "degradation": "mild" if a.scanned_fraction else None, "pages": out.page_count,
+             "split": "stress", "expected_status": "completed", "expected_error": None,
+             "invoices": invoices}
+    with open(os.path.join(a.out, "labels", f"s{a.pages}.json"), "w", encoding="utf-8") as fh:
+        json.dump(label, fh, indent=1, ensure_ascii=False)
+    with open(os.path.join(a.out, "groups.json"), "w", encoding="utf-8") as fh:
+        json.dump([], fh)
     size = os.path.getsize(path) / 1e6
     print(f"{out.page_count} pages, {len(invoices)} invoices, {size:.1f} MB, built in {time.time() - t0:.0f}s")
 

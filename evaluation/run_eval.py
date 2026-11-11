@@ -38,7 +38,8 @@ def norm(field, v):
     if field in MONEY:
         return Decimal(str(v)).quantize(Decimal("0.01"))
     if field in ("supplier_name", "customer_name"):
-        return " ".join(str(v).lower().replace(".", "").split())
+        # casefold, not lower: a name printed in capitals turns "ß" into "SS" ("Preiß AG" -> "PREISS AG")
+        return " ".join(str(v).casefold().replace(".", "").split())
     if field == "invoice_number":
         return str(v).strip().upper()
     return str(v)
@@ -218,7 +219,7 @@ def main():
          "date": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     fields = defaultdict(Counter)
     by = {k: defaultdict(lambda: defaultdict(Counter)) for k in ("format", "degradation", "locale", "method")}
-    inv_total = inv_found = inv_all_correct = 0
+    inv_total = inv_found = inv_all_correct = inv_extracted = 0
     lines = [0, 0, 0]
     flags = defaultdict(Counter)
     silent_errors = review_total = 0
@@ -253,10 +254,15 @@ def main():
             false_fail += 1
 
         preds = d["invoice_details"]
-        truths = [i["ground_truth"] | {"_flags": i["expected_flags"], "_locale": i["locale"]} for i in L["invoices"]]
+        inv_extracted += len(preds)
+        # an invoice may carry its own format and quality (the stress PDF mixes digital and scanned invoices)
+        truths = [i["ground_truth"] | {"_flags": i["expected_flags"], "_locale": i["locale"],
+                                       "_format": i.get("format", L["format"]),
+                                       "_degradation": i.get("degradation", L["degradation"])}
+                  for i in L["invoices"]]
         for p, t in match_invoices(preds, truths):
             inv_total += 1
-            meta = {"format": L["format"], "degradation": L["degradation"] or "none", "locale": t["_locale"],
+            meta = {"format": t["_format"], "degradation": t["_degradation"] or "none", "locale": t["_locale"],
                     "method": (p or {}).get("extraction_method", "not found")}
             if p is None:
                 for f in FIELDS:
@@ -281,7 +287,7 @@ def main():
             inv_all_correct += all_ok
             if not all_ok:
                 error_cases.append({
-                    "doc": did, "format": L["format"], "degradation": L["degradation"], "locale": t["_locale"],
+                    "doc": did, "format": t["_format"], "degradation": t["_degradation"], "locale": t["_locale"],
                     "method": p["extraction_method"], "review_status": p["review_status"],
                     "wrong": {f: [p.get(f), t[f]] for f in FIELDS
                               if field_outcome(f, p.get(f), t[f]) not in ("correct", "correct_null")},
@@ -297,7 +303,7 @@ def main():
                 wrong = [f for f in FIELDS if field_outcome(f, p.get(f), t[f]) not in ("correct", "correct_null")]
                 if mt != tt or pp != tt:
                     wrong.append("line_items")
-                silent_cases.append({"doc": did, "format": L["format"], "degradation": L["degradation"],
+                silent_cases.append({"doc": did, "format": t["_format"], "degradation": t["_degradation"],
                                      "wrong": {f: [p.get(f), t[f]] for f in wrong if f != "line_items"},
                                      "line_items": wrong[-1] == "line_items" if wrong else False})
             # validation flags
@@ -365,7 +371,7 @@ def main():
         "document_failure_rate_unexpected": pct(false_fail, status_total),
         "bad_files_rejected_correctly": pct(fail_ok, fail_total),
         "bad_file_outcomes": {f"{e} -> {g}": n for (e, g), n in fail_codes.items()},
-        "invoices_expected": inv_total, "invoices_found": inv_found,
+        "invoices_expected": inv_total, "invoices_found": inv_found, "invoices_extracted": inv_extracted,
         "invoice_detection_rate": pct(inv_found, inv_total),
         "field_accuracy": pct(correct_fields, total_fields),
         "field_accuracy_by_field": {f: pct(c["correct"] + c["correct_null"], sum(c.values())) for f, c in fields.items()},
@@ -411,6 +417,8 @@ def render(m: dict) -> str:
         ("Unexpected failure rate (readable files that failed)", f"{P(m['document_failure_rate_unexpected'])}"),
         ("Bad files rejected with the right reason", f"{P(m['bad_files_rejected_correctly'])}"),
         ("Invoices detected", f"{m['invoices_found']} of {m['invoices_expected']} ({P(m['invoice_detection_rate'])})"),
+        ("Invoices extracted in total (more than expected means some were split wrongly)",
+         f"{m.get('invoices_extracted', 'n/a')}"),
         ("Field accuracy (8 header fields)", f"{P(m['field_accuracy'])}"),
         ("Invoices with every field and line correct", f"{P(m['invoices_fully_correct'])}"),
         ("Line items: precision / recall", f"{P(m['line_item_precision'])} / {P(m['line_item_recall'])}"),
