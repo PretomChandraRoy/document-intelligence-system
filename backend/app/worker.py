@@ -138,3 +138,11 @@ def post_task(document_id: str, run_id: str):
         with session_scope() as db:
             services.stage_post(db, document_id, run_id, get_client())
     _guard(document_id, run_id, "post", work)
+
+    # after the commit: correct the status of documents grouped with this one,
+    # in case a related document was finishing at the same moment
+    try:
+        with session_scope() as db:
+            services.reconcile_status(db, document_id)
+    except Exception:  # never fail a finished document over this
+        log.exception("status reconciliation failed for %s", document_id)

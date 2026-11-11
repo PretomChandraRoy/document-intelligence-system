@@ -257,6 +257,23 @@ def test_reprocessing_does_not_leave_empty_groups(client, files):
     assert len(groups) == 1 and len(groups[0]["members"]) == 2
 
 
+def test_grouped_document_status_is_corrected_after_a_race(client, files):
+    """Two related documents finishing together: the first can save "completed"
+    after the second has flagged its invoice. Reconciliation puts it right."""
+    from app import services
+    from app.db import session_scope
+    from app.models import Document, Invoice
+    a = upload(client, files, "dup_a.pdf")["accepted"][0]["id"]
+    b = upload(client, files, "dup_b.png")["accepted"][0]["id"]
+    with session_scope() as db:   # the lost update: invoice flagged, document says completed
+        db.get(Document, a).status = "completed"
+        for inv in db.query(Invoice).filter_by(document_id=a):
+            inv.review_status = "needs_review"
+    with session_scope() as db:
+        services.reconcile_status(db, b)
+    assert doc(client, a)["status"] == "needs_review"
+
+
 def test_semantic_search_drops_unrelated_invoices(client, files):
     upload(client, files, "classic.pdf", "modern.pdf", "homecare.pdf")
     hc = files["homecare.pdf"].gt

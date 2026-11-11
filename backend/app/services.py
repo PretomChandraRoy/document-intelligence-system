@@ -246,6 +246,28 @@ def finish(db: Session, doc: Document, run: ProcessingRun) -> None:
     run.finished_at = now()
 
 
+def reconcile_status(db: Session, doc_id) -> None:
+    """Re-derive the status of this document and of every document grouped with it.
+
+    Two related documents (a PDF and its Excel record, say) can finish their
+    post stages at the same moment. Each stage runs in its own transaction, so
+    when one marks the other's invoice for review, the other may still be
+    running and then save its own earlier verdict ("completed"). Called after
+    the post stage has committed, this reads the committed invoices and puts
+    the document status right. Only finished documents are touched.
+    """
+    group_ids = select(Invoice.group_id).where(Invoice.document_id == doc_id, Invoice.group_id.is_not(None))
+    related = select(Invoice.document_id).where(Invoice.group_id.in_(group_ids))
+    docs = db.scalars(select(Document).where((Document.id == doc_id) | Document.id.in_(related))
+                      .with_for_update())
+    for d in docs:
+        if d.status not in ("completed", "needs_review"):
+            continue
+        statuses = list(db.scalars(select(Invoice.review_status).where(Invoice.document_id == d.id)))
+        if statuses:
+            d.status = "needs_review" if "needs_review" in statuses else "completed"
+
+
 def match_invoice(db: Session, inv: Invoice) -> None:
     """Group this invoice with the same invoice in other documents, then compare."""
     candidates: list[Invoice] = []

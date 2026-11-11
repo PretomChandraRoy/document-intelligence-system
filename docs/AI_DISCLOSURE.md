@@ -45,7 +45,7 @@ required by deliverable 9 of the brief.
 ### How AI output was checked
 
 Nothing was accepted on the strength of the AI's own claims. The code is
-covered by 142 automated tests; every reported figure comes from a recorded
+covered by 143 automated tests; every reported figure comes from a recorded
 evaluation run against labelled data; and the application was run and used on
 the target desktop. This process caught real mistakes, including AI-written
 ones: for example, the evaluation script read the answer key with the wrong

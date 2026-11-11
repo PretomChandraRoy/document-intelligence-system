@@ -221,6 +221,14 @@ explains the three groups whose list of differing fields was not exactly
 right, and three of the six unexpected `cross_mismatch` flags; the other
 three were false alarms on correctly read pairs.
 
+While preparing the walkthrough, a timing fault was found when both halves
+of a pair finish at the same moment: the second correctly flagged the first's
+invoice for review, but the first document then saved its earlier status,
+"completed". The invoice itself stayed in the review queue, so nothing was
+approved, but the document's label was wrong. Document statuses are now
+re-checked against the saved invoices after each document finishes (with a
+test).
+
 ### 3.7 Speed
 
 | Format | Median time per page |

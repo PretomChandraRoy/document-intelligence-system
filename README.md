@@ -26,7 +26,7 @@ the [evaluation report](evaluation/REPORT.md).
 | Wrong invoices approved without review | 0 |
 | Digital PDF, median time per page | 153 ms |
 | 1,000-page PDF with 760 invoices | all 760 split correctly, 99.1% field accuracy |
-| Automated tests | 142 passing, 92% line coverage |
+| Automated tests | 143 passing, 92% line coverage |
 
 ## What it does, against the brief
 
@@ -40,7 +40,7 @@ the [evaluation report](evaluation/REPORT.md).
 | **Task 4.** REST API for upload, status, results, search, corrections, reprocessing; background jobs | FastAPI; Celery with Redis on four queues (ingest, OCR, extract, post) |
 | **Task 5.** Metadata, text, results, errors, history; keyword and semantic search | PostgreSQL with full-text search, pgvector embeddings and a hybrid ranking of both |
 | **Task 6.** React or Next.js interface | Next.js: upload with progress, review and correction side by side with the page image, cross-checks, search |
-| **Task 7.** Automated tests; labelled evaluation with measured metrics | 142 tests; a 219-document labelled dataset; [evaluation report](evaluation/REPORT.md) |
+| **Task 7.** Automated tests; labelled evaluation with measured metrics | 143 tests; a 219-document labelled dataset; [evaluation report](evaluation/REPORT.md) |
 
 ## Architecture
 
@@ -150,7 +150,7 @@ uploads.
 
 ## Tests
 
-The 142 automated tests cover document processing, OCR, spreadsheet parsing,
+The 143 automated tests cover document processing, OCR, spreadsheet parsing,
 extraction, validation, every API endpoint and failure scenarios (encrypted,
 truncated, empty and disguised files, model outage). They use a real
 PostgreSQL database and a deterministic mock model, so they need no GPU.
